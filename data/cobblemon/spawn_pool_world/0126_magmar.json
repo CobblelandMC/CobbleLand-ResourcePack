@@ -1,0 +1,91 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "magmar-1",
+            "pokemon": "magmar",
+            "presets": [
+                "surface_lava"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30-49",
+            "weight": 0.9,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_hills"
+                ],
+                "isRaining": false
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_volcanic"
+                ]
+            }
+        },
+        {
+            "id": "magmar-2",
+            "pokemon": "magmar",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "30-49",
+            "weight": 0.9,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_volcanic"
+                ],
+                "isRaining": false
+            }
+        },
+        {
+            "id": "magmar-3",
+            "pokemon": "magmar",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "30-49",
+            "weight": 0.9,
+            "condition": {
+                "biomes": [
+                    "minecraft:basalt_deltas",
+                    "minecraft:crimson_forest",
+                    "minecraft:nether_wastes"
+                ]
+            }
+        },
+        {
+            "id": "magmar-4",
+            "pokemon": "magmar",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "10-30",
+            "weight": 50,
+            "condition": {
+                "neededBaseBlocks": [
+                    "minecraft:magma_block"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:lava"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:water"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "enabled": "true",
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "garchomp-1",
+            "pokemon": "garchomp",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "48-60",
+            "weight": 0.06,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_mountain"
+                ]
+            }
+        },
+        {
+            "id": "garchomp-2",
+            "pokemon": "garchomp",
+            "presets": [
+                "underground"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "48-60",
+            "weight": 0.1,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_abyss",
+					"#cobblemon:is_mountain"
+                ]
+            }
+        },
+        {
+            "id": "garchomp-3",
+            "pokemon": "garchomp",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "12-30",
+            "weight": 5,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_desert"
+                ]
+            }
+        },
+        {
+            "id": "garchomp-4",
+            "pokemon": "garchomp",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "50-65",
+            "weight": 100,
+            "condition": {
+                "canSeeSky": false,
+                "maxY": 73,
+                "minY": 30,
+                "biomes": [
+                    "#cobblemon:is_desert"
+                ],
+                "neededBaseBlocks": [
+                    "minecraft:coarse_dirt"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:amethyst_block",
+					"minecraft:budding_amethyst",
+					"#minecraft:diamond_ores",
+					"#minecraft:emerald_ores"
+                ]
+            }
+        }
+    ]
+}

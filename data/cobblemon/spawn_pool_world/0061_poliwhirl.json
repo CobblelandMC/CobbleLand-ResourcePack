@@ -1,0 +1,72 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "poliwhirl-1",
+            "pokemon": "poliwhirl",
+            "presets": [
+                "natural",
+				"freshwater"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "25-38",
+            "weight": 0.9,
+            "condition": {
+                "canSeeSky": true,
+                "isRaining": true
+            }
+        },
+        {
+            "id": "poliwhirl-2",
+            "pokemon": "poliwhirl",
+            "presets": [
+                "freshwater",
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "common",
+            "level": "25-38",
+            "weight": 0.9,
+            "condition": {
+                "canSeeSky": true,
+				"neededNearbyBlocks": [
+                    "minecraft:lily_pad"
+                ]
+            }
+        },
+        {
+            "id": "poliwhirl-3",
+            "pokemon": "poliwhirl",
+            "type": "pokemon",
+            "context":"submerged",
+            "bucket": "common",
+            "level": "25-50",
+            "weight": 50,
+            "condition": {
+                "canSeeSky": true,
+                "timeRange": "day",
+                "maxY": 58,
+                "neededNearbyBlocks": [
+                    "minecraft:seagrass",
+                    "minecraft:tall_seagrass"
+                ],
+                "biomes": [
+                    "#cobblemon:is_temperate",
+                    "#cobblemon:is_arid",
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_swamp"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:mud"
+                ]
+            }
+        }
+    ]
+}

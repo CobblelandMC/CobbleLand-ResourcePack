@@ -1,0 +1,66 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "bronzor-1",
+      "pokemon": "bronzor",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "20-30",
+      "weight": 3,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_spooky"
+        ]
+      }
+    },
+    {
+      "id": "bronzor-2",
+      "pokemon": "bronzor",
+      "presets": [
+        "underground"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "20-30",
+      "weight": 3,
+      "condition": {
+        "canSeeSky": false,
+        "biomes": [
+          "#cobblemon:is_cave"
+        ],
+        "anticondition": {
+          "biomes": [
+            "#cobblemon:is_lush"
+          ]
+        }
+      }
+    },
+    {
+      "id": "bronzor-3",
+      "pokemon": "bronzor",
+      "presets": [
+        "natural"
+      ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "rare",
+      "level": "20-30",
+      "weight": 3,
+      "condition": {
+        "biomes": [
+          "#cobblemon:is_mountain"
+        ],
+        "timeRange": "night"
+      }
+    }
+  ]
+}

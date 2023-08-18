@@ -1,0 +1,44 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "araquanid-1",
+            "pokemon": "araquanid",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "22-45",
+            "weight": 0.4,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_swamp",
+					"#cobblemon:is_coast",
+					"#cobblemon:is_island"
+                ]
+			}
+		},
+		{
+			"id": "araquanid-2",
+            "pokemon": "araquanid",
+			"presets": [
+                "freshwater",
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "common",
+            "level": "22-45",
+            "weight": 0.4,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_river",
+					"#cobblemon:is_freshwater"
+                ]
+            }
+        }
+    ]
+}

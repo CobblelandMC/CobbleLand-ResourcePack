@@ -1,0 +1,58 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "bergmite-1",
+            "pokemon": "bergmite",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "9-30",
+            "weight": 9,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_frozen"
+                ]
+            }
+        },
+        {
+            "id": "bergmite-2",
+            "pokemon": "bergmite",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-30",
+            "weight": 25,
+ "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_mountain",
+                    "#cobblemon:is_peak"
+                ],
+                "isThundering": true,
+        "minY": 100,
+                 "neededNearbyBlocks": [
+		 "minecraft:ice",
+		 "minecraft:snow_block"
+],
+                 "neededBaseBlocks": [
+		 "minecraft:ice"
+]
+            },
+"anticondition": {
+     "biomes": [
+                 "terralith:volcanic_peaks"
+]
+}
+        }
+    ]
+}

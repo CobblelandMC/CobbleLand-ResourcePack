@@ -1,0 +1,62 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "steelix-1",
+            "pokemon": "steelix",
+            "presets": [
+                "underground"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "39-51",
+            "weight": 0.06,
+            "condition": {
+                "canSeeSky": false,
+                "minHeight": 5,
+                "minWidth":3,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_abyss"
+                ]
+            }
+        },
+        {
+            "id": "steelix-2",
+            "pokemon": "steelix",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-60",
+            "weight": 50,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_hills"
+                ],
+                "minHeight": 5,
+                "minWidth":3,
+                "neededBaseBlocks": [
+                    "minecraft:dirt"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:iron_ore"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:water",
+                    "minecraft:lava",
+                    "minecraft:stonecutter"
+                ]
+            }
+        }
+    ]
+}

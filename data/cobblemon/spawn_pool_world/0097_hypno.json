@@ -1,0 +1,51 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "hypno-1",
+            "pokemon": "hypno",
+            "presets": [
+                "natural",
+				"urban"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "26-48",
+            "weight": 0.6,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_jungle",
+                    "#cobblemon:is_savanna"
+                ],
+                "timeRange": "night"
+            }
+        },
+        {
+            "id": "hypno-2",
+            "pokemon": "hypno",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "35-50",
+            "weight": 50,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_savanna"
+                ],
+                "timeRange": "night",
+                "minY":63,
+                "neededNearbyBlocks": [
+                    "minecraft:bell"
+                ],
+                "neededBaseBlocks": [
+                    "minecraft:dirt_path"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "grimer-1",
+            "pokemon": "grimer",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "15-32",
+            "weight": 1.8,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_swamp"
+                ]
+            }
+        },
+        {
+            "id": "grimer-2",
+            "pokemon": "grimer",
+            "presets": [
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "common",
+            "level": "1",
+            "weight": 50,
+            "condition": {
+                "canSeeSky": true,
+                "maxY": 60,
+                "biomes": [
+                    "#cobblemon:is_river",
+                    "#minecraft:is_ocean"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:composter"
+                ]
+            }
+        }
+    ]
+}

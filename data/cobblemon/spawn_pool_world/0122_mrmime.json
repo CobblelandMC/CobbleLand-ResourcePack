@@ -1,0 +1,84 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "mrmime-1",
+            "pokemon": "mrmime",
+            "presets": [
+                "natural",
+				"urban"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "32-46",
+            "weight": 0.2,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_arid",
+                    "#cobblemon:is_taiga",
+                    "#cobblemon:is_temperate"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_snowy"
+                ]
+            }
+        },
+        {
+            "id": "mrmime-2",
+            "pokemon": "mrmime",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "32-46",
+            "weight": 20,
+            "condition": {
+                "canSeeSky": true,
+                "isRaining": false,
+                "minY": 63,
+                "neededNearbyBlocks": [
+                    "minecraft:tinted_glass"
+                ],
+                "neededBaseBlocks": [
+                    "minecraft:grass_block"
+                ],
+                "biomes": [
+                    "#cobblemon:is_arid",
+                    "#cobblemon:is_taiga",
+                    "#cobblemon:is_temperate"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_snowy"
+                ]
+            }
+        },
+        {
+            "id": "mrmime-3",
+            "pokemon": "mrmime",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "20",
+            "weight": 20,
+            "condition": {
+                "minY": 63,
+                "neededNearbyBlocks": [
+                    "minecraft:barrier"
+                ],
+                "neededBaseBlocks": [
+                    "minecraft:grass_block"
+                ],
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            }
+        }
+    ]
+}

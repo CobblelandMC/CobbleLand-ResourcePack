@@ -1,0 +1,61 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "golduck-1",
+            "pokemon": "golduck",
+            "presets": [
+                "natural",
+				"freshwater"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "33-50",
+            "weight": 0.6,
+            "condition": {
+                "canSeeSky": true
+            }
+        },
+        {
+            "id": "golduck-2",
+            "pokemon": "golduck",
+            "presets": [
+                "freshwater",
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "common",
+            "level": "33-50",
+            "weight": 0.6,
+            "condition": {
+                "canSeeSky": true
+            }
+        },
+        {
+            "id": "golduck-3",
+            "pokemon": "golduck",
+            "type": "pokemon",
+            "presets": [
+                "water_surface"
+            ],
+            "bucket": "uncommon",
+            "level": "33-50",
+            "weight": 50,
+            "condition": {
+                "canSeeSky": true,
+                "timeRange": "day",
+                "neededNearbyBlocks": [
+                    "minecraft:grass",
+                    "minecraft:tall_grass"
+                ],
+                "biomes": [
+                    "#cobblemon:is_temperate"
+                ]
+            }
+        }
+    ]
+}

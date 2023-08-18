@@ -1,0 +1,40 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "charmander-3",
+            "pokemon": "charmander",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-15",
+            "weight": 1000.0,
+            "condition": {
+                "canSeeSky": true,
+                "isRaining": false,
+                "timeRange": "day",
+                "minZ": 0,
+                "neededBaseBlocks": [
+                    "minecraft:tuff"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:fire",
+                    "minecraft:soul_fire",
+                    "minecraft:campfire",
+                    "minecraft:soul_campfire"
+                ],
+                "biomes": [
+                    "#cobblemon:is_mountain",
+                    "terralith:volcanic_peaks"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:water"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "magnemite-1",
+            "pokemon": "magnemite",
+            "presets": [
+                "redstone"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "12-32",
+            "weight": 1.8,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_abyss"
+                ]
+            }
+        },
+        {
+            "id": "magnemite-2",
+            "pokemon": "magnemite",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "12-32",
+            "weight": 50,
+            "condition": {
+                "canSeeSky": true,
+                "timeRange": "day",
+                "minY": 63,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:redstone_lamp"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_abyss",
+                    "#minecraft:is_ocean"
+                ]
+            }
+        },
+        {
+            "id": "magnemite-3",
+            "pokemon": "magnemite",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "12-32",
+            "weight": 50,
+            "condition": {
+                "biomes": [
+                    "#minecraft:is_end"
+                ]
+            }
+        }
+    ]
+}

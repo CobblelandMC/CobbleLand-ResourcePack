@@ -1,0 +1,48 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "kingdra-1",
+            "pokemon": "kingdra",
+            "presets": [
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "uncommon",
+            "level": "45-54",
+            "weight": 0.1,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_lukewarm"
+                ],
+                "isRaining": true
+            }
+        },
+        {
+            "id": "kingdra-2",
+            "pokemon": "kingdra",
+            "presets": [
+                "sunlight_zone"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "rare",
+            "level": "45-60",
+            "weight": 50.0,
+            "condition": {
+                "canSeeSky": true,
+                "timeRange": "day",
+                "biomes": [
+                    "#cobblemon:is_lukewarm"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:kelp_plant"
+                ]
+            }
+        }
+    ]
+}

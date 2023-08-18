@@ -1,0 +1,66 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "diglett-1",
+            "pokemon": "diglett",
+            "presets": [
+                "underground"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "8-26",
+            "weight": 9.0,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "#cobblemon:is_overworld"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_abyss"
+                ]
+            }
+        },
+        {
+            "id": "diglett-2",
+            "pokemon": "diglett",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-25",
+            "weight": 50.0,
+            "condition": {
+                "canSeeSky": true,
+                "isRaining": false,
+                "timeRange": "afternoon, night",
+                "biomes": [
+                    "#cobblemon:is_temperate",
+                    "#cobblemon:is_arid"
+                ],
+                "neededBaseBlocks": [
+                    "minecraft:farmland"
+                ]
+            },
+            "anticondition": {
+                "biomes": [
+                    "#cobblemon:is_abyss"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:wheat",
+                    "minecraft:beetroots",
+                    "minecraft:carrots",
+                    "minecraft:potatoes",
+                    "minecraft:melon_stem",
+                    "minecraft:attached_melon_stem",
+                    "minecraft:pumpkin_stem",
+                    "minecraft:attached_pumpkin_stem"
+                ]
+            }
+        }
+    ]
+}

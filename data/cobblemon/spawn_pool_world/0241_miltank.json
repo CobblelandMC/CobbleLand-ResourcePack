@@ -1,0 +1,54 @@
+{
+    "enabled": "true",
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "miltank-1",
+            "pokemon": "miltank",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "uncommon",
+            "level": "15-49",
+            "weight": 10.0,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_grassland"
+                ],
+                "timeRange": "day"
+            }
+        },
+        {
+            "id": "miltank-2",
+            "pokemon": "miltank",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "20-49",
+            "weight": 50,
+            "condition": {
+                "canSeeSky": true,
+                "minY": 63,
+                "neededBaseBlocks": [
+                    "minecraft:grass_block"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:cauldron"
+                ],
+                "biomes": [
+                    "#cobblemon:is_grassland"
+                ],
+                "timeRange": "day"
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:tall_grass"
+                ]
+            }
+        }
+    ]
+}

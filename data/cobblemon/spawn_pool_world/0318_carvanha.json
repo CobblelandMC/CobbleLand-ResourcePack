@@ -1,0 +1,52 @@
+{
+    "enabled": "true",
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "carvanha-1",
+            "pokemon": "carvanha",
+            "presets": [
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "uncommon",
+            "level": "12-30",
+            "weight": 9.0,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#minecraft:is_ocean"
+                ]
+            }
+        },
+        {
+            "id": "carvanha-2",
+            "pokemon": "carvanha",
+            "presets": [
+                "sunlight_zone",
+                "twilight_zone"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "common",
+            "level": "12-30",
+            "weight": 100.0,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#minecraft:is_ocean",
+                    "#minecraft:is_river"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:oak_planks",
+                    "minecraft:dark_oak_planks",
+                    "minecraft:birch_planks",
+                    "minecraft:spruce_planks",
+                    "minecraft:jungle_planks"
+                ]
+            }
+        }
+    ]
+}

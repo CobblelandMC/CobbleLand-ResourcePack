@@ -1,0 +1,40 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "mudkip-3",
+            "pokemon": "mudkip",
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "common",
+            "level": "5-15",
+            "weight": 500.0,
+            "condition": {
+                "canSeeSky": true,
+                "timeRange": "day",
+                "minZ": 0,
+                "neededBaseBlocks": [
+                    "minecraft:mud"
+                ],
+                "neededNearbyBlocks": [
+                    "minecraft:water"
+                ],
+                "biomes": [
+                    "#cobblemon:is_swamp"
+                ]
+            },
+            "anticondition": {
+                "neededNearbyBlocks": [
+                    "minecraft:grass",
+                    "minecraft:grass_block"
+                ],
+                "biomes": [
+                    "#cobblemon:is_snowy",
+                    "#cobblemon:is_taiga"
+                ]
+            }
+        }
+    ]
+}
