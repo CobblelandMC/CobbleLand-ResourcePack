@@ -1,0 +1,73 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.phione.ground_idle": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"body": {
+					"rotation": ["math.sin(query.anim_time*90*1-0)*2", "math.sin(query.anim_time*90*1-90)*2", 0],
+					"position": [0, "10-math.sin(query.anim_time*90*1-0)*2", 0]
+				},
+				"head": {
+					"rotation": ["2.5-math.sin(query.anim_time*90*1-25)*2", "0-math.sin(query.anim_time*90*1-115)*1", "0+math.sin(query.anim_time*90*1-25)*1"]
+				},
+				"tail": {
+					"rotation": ["math.sin(query.anim_time*90*1-25)*5", "math.sin(query.anim_time*90*1+50)*5", 0]
+				},
+				"tail2": {
+					"rotation": ["-math.sin(query.anim_time*90*1-50)*10", 0, 0]
+				},
+				"tail3": {
+					"rotation": ["-math.sin(query.anim_time*90*1-75)*10", 0, 0]
+				},
+				"arm_left": {
+					"rotation": [-2.5, 0, "33.5-math.sin(query.anim_time*90*1-25)*10"]
+				},
+				"hand_left": {
+					"rotation": [0, 0, "10-math.sin(query.anim_time*90*1-50)*15"]
+				},
+				"arm_right": {
+					"rotation": [-2.5, 0, "-33.5+math.sin(query.anim_time*90*1-25)*10"]
+				},
+				"arm_left2": {
+					"rotation": [0, 0, "-10+math.sin(query.anim_time*90*1-50)*15"]
+				}
+			}
+		},
+		"animation.phione.ground_walk": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"body": {
+					"rotation": ["17.2318+math.sin(query.anim_time*90*2-0)*2", "0+math.sin(query.anim_time*90*2-90)*2", 0],
+					"position": [0, "10-math.sin(query.anim_time*90*2-0)*2", 0]
+				},
+				"head": {
+					"rotation": ["-7.3361-math.sin(query.anim_time*90*2-25)*2", "0-math.sin(query.anim_time*90*2-115)*1", "0+math.sin(query.anim_time*90*2-25)*1"]
+				},
+				"tail": {
+					"rotation": ["5+math.sin(query.anim_time*90*2-25)*5", "math.sin(query.anim_time*90*2+50)*5", 0]
+				},
+				"tail2": {
+					"rotation": ["7.5-math.sin(query.anim_time*90*2-50)*10", 0, 0]
+				},
+				"tail3": {
+					"rotation": ["7.5-math.sin(query.anim_time*90*2-75)*10", 0, 0]
+				},
+				"arm_left": {
+					"rotation": [20, 0, "33.5-math.sin(query.anim_time*90*2-25)*10"]
+				},
+				"hand_left": {
+					"rotation": [0, 0, "10-math.sin(query.anim_time*90*2-50)*15"]
+				},
+				"arm_right": {
+					"rotation": [20, 0, "-33.5+math.sin(query.anim_time*90*2-25)*10"]
+				},
+				"arm_left2": {
+					"rotation": [0, 0, "-10+math.sin(query.anim_time*90*2-50)*15"]
+				}
+			}
+		}
+	}
+}
