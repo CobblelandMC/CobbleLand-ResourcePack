@@ -67,8 +67,22 @@
   "pokedex": [
     "cobblemon.species.meltan.desc"
   ],
-  "evolutions": [],
-  "baseScale": 1,
+  "evolutions": [
+    {
+      "id": "meltan_melmetal",
+      "variant": "item_interact",
+      "result": "melmetal",
+      "consumeHeldItem": false,
+      "requirements": [
+        {
+          "variant": "friendship",
+          "amount": 255
+        }
+      ],
+      "requiredContext": "minecraft:iron_block"
+    }
+  ],
+  "baseScale": 0.6,
   "hitbox": {
     "width": 1,
     "height": 1,

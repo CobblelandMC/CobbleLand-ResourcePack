@@ -1,0 +1,89 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.nymble.ground_idle": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"body": {
+					"position": [0, "-math.sin(query.anim_time*90*2-0)*0.05", 0]
+				},
+				"torso": {
+					"rotation": ["math.sin(query.anim_time*90*2-0)*1", 0, 0]
+				},
+				"wing_right": {
+					"rotation": ["math.sin(query.anim_time*90*2-20)*1", 0, "math.sin(query.anim_time*90*1-20)*1"]
+				},
+				"wing_left": {
+					"rotation": ["math.sin(query.anim_time*90*2-20)*1", 0, "-math.sin(query.anim_time*90*1-20)*1"]
+				},
+				"head": {
+					"rotation": ["math.sin(query.anim_time*90*2-20)*1", 0, 0]
+				},
+				"leg_left_front": {
+					"rotation": [0, 0, 0],
+					"position": [0, "math.sin(query.anim_time*90*2-0)*0.05", 0]
+				},
+				"bone3": {
+					"rotation": [0, 0, 0]
+				},
+				"leg_right_front": {
+					"rotation": [0, 0, 0],
+					"position": [0, "math.sin(query.anim_time*90*2-0)*0.05", 0]
+				},
+				"bone6": {
+					"rotation": [0, 0, 0]
+				},
+				"leg_left_back": {
+					"rotation": [0, 0, 0],
+					"position": [0, "math.sin(query.anim_time*90*2-0)*0.05", 0]
+				},
+				"bone4": {
+					"rotation": [0, 0, 0]
+				},
+				"leg_right_back": {
+					"rotation": [0, 0, 0],
+					"position": [0, "math.sin(query.anim_time*90*2-0)*0.05", 0]
+				},
+				"bone5": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.nymble.ground_walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"body": {
+					"position": [0, "math.clamp(math.sin(q.anim_time*90*4)*15,0,15)", "math.cos(q.anim_time*90*4)*5"]
+				},
+				"wing_right": {
+					"rotation": ["math.cos(q.anim_time*90*4)*20", 0, 0]
+				},
+				"wing_left": {
+					"rotation": ["math.cos(q.anim_time*90*4)*20", 0, 0]
+				},
+				"leg_left_front": {
+					"rotation": [0, "-math.clamp(math.sin(q.anim_time*90*4)*50,0,50)", 0]
+				},
+				"leg_right_front": {
+					"rotation": [0, "math.clamp(math.sin(q.anim_time*90*4)*50,0,50)", 0]
+				},
+				"leg_left_back": {
+					"rotation": [0, "-math.clamp(math.sin(q.anim_time*90*4)*50,0,50)", 0]
+				},
+				"leg_right_back": {
+					"rotation": [0, "math.clamp(math.sin(q.anim_time*90*4)*50,0,50)", 0]
+				}
+			}
+		},
+		"animation.model.speed": {
+			"loop": true,
+			"bones": {
+				"nymble": {
+					"position": [0, 0, "-q.anim_time*90*0.3"]
+				}
+			}
+		}
+	}
+}
