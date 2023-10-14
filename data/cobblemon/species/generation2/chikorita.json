@@ -1,8 +1,8 @@
 {
+  "implemented": true,
   "name": "Chikorita",
   "nationalPokedexNumber": 152,
   "primaryType": "grass",
-  "secondaryType": null,
   "abilities": [
     "overgrow",
     "h:leafguard"
@@ -16,18 +16,40 @@
     "speed": 45
   },
   "catchRate": 45,
-  "maleRatio": 0.5,
+  "maleRatio": 0.875,
   "shoulderMountable": false,
-  "baseExperienceYield": 285,
+  "baseExperienceYield": 64,
   "experienceGroup": "medium_slow",
-  "eggCycles": 120,
+  "eggCycles": 20,
   "eggGroups": [
     "monster",
     "grass"
   ],
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      }
+    }
+  },
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 5.0
+      }
+    ]
+  },
   "moves": [
-    "1:tackle",
     "1:growl",
+    "1:tackle",
     "6:razorleaf",
     "9:poisonpowder",
     "12:synthesis",
@@ -39,7 +61,103 @@
     "34:bodyslam",
     "39:safeguard",
     "42:aromatherapy",
-    "45:solarbeam"
+    "45:solarbeam",
+    "egg:ancientpower",
+    "egg:aromatherapy",
+    "egg:bodyslam",
+    "egg:counter",
+    "egg:flail",
+    "egg:grasswhistle",
+    "egg:grassyterrain",
+    "egg:healpulse",
+    "egg:ingrain",
+    "egg:leafstorm",
+    "egg:leechseed",
+    "egg:naturepower",
+    "egg:refresh",
+    "egg:vinewhip",
+    "egg:wringout",
+    "tm:attract",
+    "tm:bulletseed",
+    "tm:captivate",
+    "tm:confide",
+    "tm:cut",
+    "tm:doubleteam",
+    "tm:echoedvoice",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flash",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:hiddenpower",
+    "tm:irontail",
+    "tm:lightscreen",
+    "tm:naturalgift",
+    "tm:naturepower",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:return",
+    "tm:round",
+    "tm:safeguard",
+    "tm:secretpower",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:swordsdance",
+    "tm:toxic",
+    "tm:workup",
+    "tutor:ancientpower",
+    "tutor:attract",
+    "tutor:bodyslam",
+    "tutor:counter",
+    "tutor:curse",
+    "tutor:cut",
+    "tutor:detect",
+    "tutor:doubleedge",
+    "tutor:doubleteam",
+    "tutor:endure",
+    "tutor:flail",
+    "tutor:flash",
+    "tutor:frenzyplant",
+    "tutor:frustration",
+    "tutor:furycutter",
+    "tutor:gigadrain",
+    "tutor:grasspledge",
+    "tutor:growl",
+    "tutor:headbutt",
+    "tutor:hiddenpower",
+    "tutor:irontail",
+    "tutor:leechseed",
+    "tutor:lightscreen",
+    "tutor:magiccoat",
+    "tutor:mimic",
+    "tutor:mudslap",
+    "tutor:poisonpowder",
+    "tutor:protect",
+    "tutor:razorleaf",
+    "tutor:reflect",
+    "tutor:rest",
+    "tutor:return",
+    "tutor:safeguard",
+    "tutor:seedbomb",
+    "tutor:sleeptalk",
+    "tutor:snore",
+    "tutor:solarbeam",
+    "tutor:substitute",
+    "tutor:sunnyday",
+    "tutor:swagger",
+    "tutor:sweetscent",
+    "tutor:swordsdance",
+    "tutor:synthesis",
+    "tutor:tackle",
+    "tutor:toxic",
+    "tutor:vinewhip",
+    "tutor:worryseed"
   ],
   "labels": [
     "gen2"
@@ -47,7 +165,6 @@
   "pokedex": [
     "cobblemon.species.chikorita.desc"
   ],
-  "preEvolution": null,
   "evolutions": [
     {
       "id": "chikorita_bayleef",
@@ -63,10 +180,10 @@
       ]
     }
   ],
-  "baseScale": 1,
+  "baseScale": 0.6,
   "hitbox": {
-    "width": 1.7,
-    "height": 0.7,
+    "width": 0.7,
+    "height": 1.1,
     "fixed": false
   },
   "baseFriendship": 70,
@@ -78,8 +195,8 @@
     "special_defence": 1,
     "speed": 0
   },
-  "height": 19,
-  "weight": 447,
+  "height": 9,
+  "weight": 64,
   "aspects": [],
   "cannotDynamax": false
 }
