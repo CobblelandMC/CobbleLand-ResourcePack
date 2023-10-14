@@ -20,6 +20,11 @@
       "canSleep": true,
       "depth": "normal",
       "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.26
+      }
     }
   },
   "catchRate": 255,
@@ -36,24 +41,28 @@
     "bug"
   ],
   "drops": {
-    "amount": "1",
+    "amount": 2,
     "entries": [
       {
         "item": "minecraft:string",
-        "percentage": 50
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:wepear_berry",
+        "percentage": 2.5
       }
     ]
   },
   "moves": [
     "1:stringshot",
     "1:tackle",
-    "15:bugbite",
-    "100:electroweb",
-    "100:bugbite",
-    "100:electroweb",
-    "100:snore",
-    "100:stringshot",
-    "100:tackle"
+    "9:bugbite",
+    "tm:electroweb",
+    "tutor:bugbite",
+    "tutor:electroweb",
+    "tutor:snore",
+    "tutor:stringshot",
+    "tutor:tackle"
   ],
   "labels": [
     "gen1"

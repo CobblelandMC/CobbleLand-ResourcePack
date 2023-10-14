@@ -24,6 +24,11 @@
       "canSleep": true,
       "depth": "normal",
       "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.26
+      }
     }
   },
   "catchRate": 255,
@@ -36,22 +41,26 @@
     "bug"
   ],
   "drops": {
-    "amount": "1",
+    "amount": 2,
     "entries": [
       {
         "item": "minecraft:string",
-        "percentage": 50
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:pinap_berry",
+        "percentage": 2.5
       }
     ]
   },
   "moves": [
     "1:poisonsting",
     "1:stringshot",
-    "15:bugbite",
-    "100:bugbite",
-    "100:electroweb",
-    "100:poisonsting",
-    "100:stringshot"
+    "9:bugbite",
+    "tutor:bugbite",
+    "tutor:electroweb",
+    "tutor:poisonsting",
+    "tutor:stringshot"
   ],
   "labels": [
     "gen1"
