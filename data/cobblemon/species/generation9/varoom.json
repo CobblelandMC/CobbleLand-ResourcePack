@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Varoom",
   "nationalPokedexNumber": 965,
   "primaryType": "steel",
@@ -7,6 +8,23 @@
     "overcoat",
     "h:slowstart"
   ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:iron_nugget",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:black_sludge",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:shuca_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "baseStats": {
     "hp": 45,
     "attack": 70,
@@ -14,6 +32,14 @@
     "special_attack": 30,
     "special_defence": 45,
     "speed": 47
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4"
+    }
   },
   "catchRate": 190,
   "maleRatio": 0.5,
@@ -48,37 +74,37 @@
     "41:uproar",
     "46:spinout",
     "50:gunkshot",
-    "100:haze",
-    "100:partingshot",
-    "100:selfdestruct",
-    "100:torment",
-    "100:toxic",
-    "100:acidspray",
-    "100:bodyslam",
-    "100:bulldoze",
-    "100:endure",
-    "100:facade",
-    "100:flashcannon",
-    "100:gunkshot",
-    "100:irondefense",
-    "100:ironhead",
-    "100:poisonjab",
-    "100:protect",
-    "100:raindance",
-    "100:sandstorm",
-    "100:scaryface",
-    "100:sleeptalk",
-    "100:sludgebomb",
-    "100:steelbeam",
-    "100:substitute",
-    "100:sunnyday",
-    "100:takedown",
-    "100:taunt",
-    "100:terablast",
-    "100:thief",
-    "100:toxicspikes",
-    "100:venoshock",
-    "100:zenheadbutt"
+    "egg:haze",
+    "egg:partingshot",
+    "egg:selfdestruct",
+    "egg:torment",
+    "egg:toxic",
+    "tm:acidspray",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:gunkshot",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:sandstorm",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:steelbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:toxicspikes",
+    "tm:venoshock",
+    "tm:zenheadbutt"
   ],
   "labels": [
     "gen9"
@@ -103,6 +129,12 @@
       ]
     }
   ],
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.75,
+    "height": 1.0,
+    "fixed": false
+  },
   "cannotDynamax": false,
   "pokedex": [
     "cobblemon.species.varoom.desc"

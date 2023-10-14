@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Charcadet",
   "nationalPokedexNumber": 935,
   "primaryType": "fire",
@@ -6,6 +7,27 @@
     "flashfire",
     "h:flamebody"
   ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:charcoal",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:blaze_rod",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:charcoal_stick",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:rawst_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "baseStats": {
     "hp": 40,
     "attack": 50,
@@ -13,6 +35,19 @@
     "special_attack": 50,
     "special_defence": 40,
     "speed": 35
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.25
+      }
+    }
   },
   "catchRate": 90,
   "maleRatio": 0.5,
@@ -42,28 +77,28 @@
     "24:flamecharge",
     "28:incinerate",
     "32:lavaplume",
-    "100:destinybond",
-    "100:disable",
-    "100:spite",
-    "100:confuseray",
-    "100:endure",
-    "100:facade",
-    "100:fireblast",
-    "100:firespin",
-    "100:flamecharge",
-    "100:flamethrower",
-    "100:flareblitz",
-    "100:heatwave",
-    "100:helpinghand",
-    "100:nightshade",
-    "100:overheat",
-    "100:protect",
-    "100:sleeptalk",
-    "100:substitute",
-    "100:sunnyday",
-    "100:takedown",
-    "100:terablast",
-    "100:willowisp"
+    "egg:destinybond",
+    "egg:disable",
+    "egg:spite",
+    "tm:confuseray",
+    "tm:endure",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firespin",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flareblitz",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:nightshade",
+    "tm:overheat",
+    "tm:protect",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:willowisp"
   ],
   "labels": [
     "gen9"
@@ -81,7 +116,7 @@
         "psyshock"
       ],
       "requirements": [],
-      "requiredContext": "minecraft:netherite_chestplate"
+      "requiredContext": "cobblemon:auspicious_armor"
     },
     {
       "id": "charcadet_ceruledge",
@@ -92,7 +127,7 @@
         "shadowclaw"
       ],
       "requirements": [],
-      "requiredContext": "minecraft:netherite_sword"
+      "requiredContext": "cobblemon:malicious_armor"
     }
   ],
   "baseScale": 0.55,

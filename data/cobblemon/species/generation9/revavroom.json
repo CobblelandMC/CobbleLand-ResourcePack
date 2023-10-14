@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Revavroom",
   "nationalPokedexNumber": 966,
   "primaryType": "steel",
@@ -7,6 +8,23 @@
     "overcoat",
     "h:filter"
   ],
+  "drops": {
+    "amount": 4,
+    "entries": [
+      {
+        "item": "minecraft:iron_nugget",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:black_sludge",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:shuca_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "baseStats": {
     "hp": 80,
     "attack": 119,
@@ -14,6 +32,14 @@
     "special_attack": 54,
     "special_defence": 67,
     "speed": 90
+  },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4"
+    }
   },
   "catchRate": 75,
   "maleRatio": 0.5,
@@ -36,6 +62,7 @@
     "1:lick",
     "1:magnetrise",
     "1:poisongas",
+    "1:shiftgear",
     "4:smog",
     "7:taunt",
     "10:assurance",
@@ -49,40 +76,37 @@
     "46:uproar",
     "52:spinout",
     "58:gunkshot",
-    "100:acidspray",
-    "100:bodyslam",
-    "100:bulldoze",
-    "100:endure",
-    "100:facade",
-    "100:flashcannon",
-    "100:gigaimpact",
-    "100:gunkshot",
-    "100:heavyslam",
-    "100:hyperbeam",
-    "100:irondefense",
-    "100:ironhead",
-    "100:overheat",
-    "100:poisonjab",
-    "100:protect",
-    "100:raindance",
-    "100:rest",
-    "100:sandstorm",
-    "100:scaryface",
-    "100:sleeptalk",
-    "100:sludgebomb",
-    "100:steelbeam",
-    "100:substitute",
-    "100:sunnyday",
-    "100:takedown",
-    "100:taunt",
-    "100:terablast",
-    "100:thief",
-    "100:toxicspikes",
-    "100:venoshock",
-    "100:zenheadbutt",
-    "100:partingshot",
-    "100:haze",
-    "100:toxic"
+    "tm:acidspray",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:gigaimpact",
+    "tm:gunkshot",
+    "tm:heavyslam",
+    "tm:hyperbeam",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:overheat",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:sandstorm",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:steelbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:toxicspikes",
+    "tm:venoshock",
+    "tm:zenheadbutt"
   ],
   "labels": [
     "gen9"

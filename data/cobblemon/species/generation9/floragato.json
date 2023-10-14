@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Floragato",
   "nationalPokedexNumber": 907,
   "primaryType": "grass",
@@ -6,6 +7,15 @@
     "overgrow",
     "h:protean"
   ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:miracle_seed",
+        "percentage": 10.0
+      }
+    ]
+  },
   "baseStats": {
     "hp": 61,
     "attack": 80,
@@ -32,6 +42,17 @@
     "field",
     "grass"
   ],
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4"
+    },
+    "walk": {
+      "walkSpeed": 0.25
+    }
+  },
   "moves": [
     "1:leafage",
     "1:scratch",
@@ -47,43 +68,43 @@
     "38:energyball",
     "42:playrough",
     "46:leafstorm",
-    "100:acrobatics",
-    "100:aerialace",
-    "100:agility",
-    "100:bulletseed",
-    "100:charm",
-    "100:disarmingvoice",
-    "100:endure",
-    "100:energyball",
-    "100:facade",
-    "100:faketears",
-    "100:fling",
-    "100:gigadrain",
-    "100:grassknot",
-    "100:grasspledge",
-    "100:grassyterrain",
-    "100:helpinghand",
-    "100:leafstorm",
-    "100:lowkick",
-    "100:lowsweep",
-    "100:magicalleaf",
-    "100:mudslap",
-    "100:nastyplot",
-    "100:playrough",
-    "100:protect",
-    "100:rest",
-    "100:seedbomb",
-    "100:shadowclaw",
-    "100:sleeptalk",
-    "100:solarbeam",
-    "100:substitute",
-    "100:swift",
-    "100:takedown",
-    "100:taunt",
-    "100:terablast",
-    "100:thunderpunch",
-    "100:trailblaze",
-    "100:uturn"
+    "tm:acrobatics",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:bulletseed",
+    "tm:charm",
+    "tm:disarmingvoice",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:faketears",
+    "tm:fling",
+    "tm:gigadrain",
+    "tm:grassknot",
+    "tm:grasspledge",
+    "tm:grassyterrain",
+    "tm:helpinghand",
+    "tm:leafstorm",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:magicalleaf",
+    "tm:mudslap",
+    "tm:nastyplot",
+    "tm:playrough",
+    "tm:protect",
+    "tm:rest",
+    "tm:seedbomb",
+    "tm:shadowclaw",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:swift",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thunderpunch",
+    "tm:trailblaze",
+    "tm:uturn"
   ],
   "labels": [
     "gen9"
@@ -91,7 +112,6 @@
   "aspects": [],
   "height": 9,
   "weight": 122,
-  "baseScale": 0.55,
   "preEvolution": "sprigatito",
   "evolutions": [
     {
@@ -110,6 +130,12 @@
       ]
     }
   ],
+  "baseScale": 0.6,
+  "hitbox": {
+    "width": 1,
+    "height": 1.9,
+    "fixed": false
+  },
   "cannotDynamax": false,
   "pokedex": [
     "cobblemon.species.floragato.desc"

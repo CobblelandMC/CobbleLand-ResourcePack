@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Armarouge",
   "nationalPokedexNumber": 936,
   "primaryType": "fire",
@@ -7,6 +8,31 @@
     "flashfire",
     "h:weakarmor"
   ],
+  "drops": {
+    "amount": 7,
+    "entries": [
+      {
+        "item": "minecraft:charcoal",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "minecraft:blaze_rod",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:charcoal_stick",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:auspicious_armor",
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:rawst_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "baseStats": {
     "hp": 85,
     "attack": 60,
@@ -15,10 +41,29 @@
     "special_defence": 80,
     "speed": 75
   },
+  "behaviour": {
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4"
+    },
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.23
+      }
+    }
+  },
   "catchRate": 25,
   "maleRatio": 0.5,
   "baseExperienceYield": 263,
   "baseFriendship": 20,
+  "baseScale": 0.9,
+  "hitbox": {
+    "width": 0.9,
+    "height": 2.1,
+    "fixed": false
+  },
   "evYield": {
     "hp": 0,
     "attack": 0,
@@ -38,6 +83,7 @@
     "1:leer",
     "1:mysticalfire",
     "1:wideguard",
+    "1:psyshock",
     "8:clearsmog",
     "12:firespin",
     "16:willowisp",
@@ -50,48 +96,48 @@
     "48:flamethrower",
     "56:expandingforce",
     "62:armorcannon",
-    "100:acidspray",
-    "100:aurasphere",
-    "100:calmmind",
-    "100:confuseray",
-    "100:darkpulse",
-    "100:dragonpulse",
-    "100:endure",
-    "100:energyball",
-    "100:facade",
-    "100:fireblast",
-    "100:firespin",
-    "100:flamecharge",
-    "100:flamethrower",
-    "100:flareblitz",
-    "100:flashcannon",
-    "100:fling",
-    "100:focusblast",
-    "100:heatwave",
-    "100:helpinghand",
-    "100:irondefense",
-    "100:lightscreen",
-    "100:nightshade",
-    "100:overheat",
-    "100:protect",
-    "100:psybeam",
-    "100:psychic",
-    "100:psychicterrain",
-    "100:psyshock",
-    "100:reflect",
-    "100:rest",
-    "100:shadowball",
-    "100:sleeptalk",
-    "100:solarbeam",
-    "100:storedpower",
-    "100:substitute",
-    "100:sunnyday",
-    "100:takedown",
-    "100:taunt",
-    "100:terablast",
-    "100:trick",
-    "100:trickroom",
-    "100:willowisp"
+    "tm:acidspray",
+    "tm:aurasphere",
+    "tm:calmmind",
+    "tm:confuseray",
+    "tm:darkpulse",
+    "tm:dragonpulse",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:firespin",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flareblitz",
+    "tm:flashcannon",
+    "tm:fling",
+    "tm:focusblast",
+    "tm:heatwave",
+    "tm:helpinghand",
+    "tm:irondefense",
+    "tm:lightscreen",
+    "tm:nightshade",
+    "tm:overheat",
+    "tm:protect",
+    "tm:psybeam",
+    "tm:psychic",
+    "tm:psychicterrain",
+    "tm:psyshock",
+    "tm:reflect",
+    "tm:rest",
+    "tm:shadowball",
+    "tm:sleeptalk",
+    "tm:solarbeam",
+    "tm:storedpower",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:willowisp"
   ],
   "labels": [
     "gen9"

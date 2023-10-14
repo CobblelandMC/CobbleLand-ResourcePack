@@ -36,6 +36,7 @@
   "moves": [
     "1:growl",
     "1:scratch",
+    "1:armthrust",
     "3:thundershock",
     "6:quickattack",
     "8:charge",
@@ -49,70 +50,77 @@
     "42:discharge",
     "46:agility",
     "52:wildcharge",
-    "100:agility",
-    "100:batonpass",
-    "100:chargebeam",
-    "100:charm",
-    "100:crunch",
-    "100:dig",
-    "100:eerieimpulse",
-    "100:electricterrain",
-    "100:electroball",
-    "100:encore",
-    "100:endure",
-    "100:facade",
-    "100:fling",
-    "100:helpinghand",
-    "100:lowkick",
-    "100:lowsweep",
-    "100:metalclaw",
-    "100:playrough",
-    "100:protect",
-    "100:raindance",
-    "100:rest",
-    "100:sleeptalk",
-    "100:substitute",
-    "100:sunnyday",
-    "100:swift",
-    "100:takedown",
-    "100:terablast",
-    "100:thief",
-    "100:thunder",
-    "100:thunderbolt",
-    "100:thunderfang",
-    "100:thunderpunch",
-    "100:thunderwave",
-    "100:voltswitch",
-    "100:wildcharge"
+    "tm:agility",
+    "tm:batonpass",
+    "tm:chargebeam",
+    "tm:charm",
+    "tm:crunch",
+    "tm:dig",
+    "tm:eerieimpulse",
+    "tm:electricterrain",
+    "tm:electroball",
+    "tm:encore",
+    "tm:endure",
+    "tm:facade",
+    "tm:fling",
+    "tm:helpinghand",
+    "tm:lowkick",
+    "tm:lowsweep",
+    "tm:metalclaw",
+    "tm:playrough",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:thunder",
+    "tm:thunderbolt",
+    "tm:thunderfang",
+    "tm:thunderpunch",
+    "tm:thunderwave",
+    "tm:voltswitch",
+    "tm:wildcharge"
   ],
   "labels": [
     "gen9"
   ],
   "aspects": [],
-  "baseScale": 0.7,
-  "hitbox": {
-    "width": 0.7,
-    "height": 0.6,
-    "fixed": false
-  },
   "height": 4,
   "weight": 65,
   "preEvolution": "pawmi",
   "evolutions": [
     {
       "id": "pawmo_pawmot",
-      "variant": "item_interact",
+      "variant": "level_up",
       "result": "pawmot",
       "consumeHeldItem": false,
       "learnableMoves": [
         "revivalblessing"
       ],
-      "requirements": [],
-      "requiredContext": "cobblemon:thunder_stone"
+      "requirements": [
+        {
+          "variant": "blocks_traveled",
+          "amount": 1000
+        }
+      ]
     }
   ],
   "cannotDynamax": false,
   "pokedex": [
     "cobblemon.species.pawmo.desc"
-  ]
+  ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 5.0
+      }
+    ]
+  }
 }

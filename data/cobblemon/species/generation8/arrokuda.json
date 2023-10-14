@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Arrokuda",
   "nationalPokedexNumber": 846,
   "primaryType": "water",
@@ -6,6 +7,18 @@
     "swiftswim",
     "h:propellertail"
   ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:salmon"
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "percentage": 5.0
+      }
+    ]
+  },
   "baseStats": {
     "hp": 41,
     "attack": 63,
@@ -23,6 +36,24 @@
   "eggGroups": [
     "water_2"
   ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "avoidsLand": true
+      },
+      "swim": {
+        "swimSpeed": 0.5,
+        "canSwimInWater": true,
+        "canBreatheUnderwater": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4"
+    }
+  },
   "moves": [
     "1:aquajet",
     "1:peck",
@@ -35,45 +66,45 @@
     "36:crunch",
     "42:liquidation",
     "48:doubleedge",
-    "100:acupressure",
-    "100:nightslash",
-    "100:slash",
-    "100:thrash",
-    "100:agility",
-    "100:assurance",
-    "100:attract",
-    "100:bounce",
-    "100:brickbreak",
-    "100:chillingwater",
-    "100:closecombat",
-    "100:crunch",
-    "100:dive",
-    "100:drillrun",
-    "100:endure",
-    "100:facade",
-    "100:focusenergy",
-    "100:hydropump",
-    "100:icefang",
-    "100:liquidation",
-    "100:poisonjab",
-    "100:protect",
-    "100:psychicfangs",
-    "100:raindance",
-    "100:rest",
-    "100:round",
-    "100:scald",
-    "100:sleeptalk",
-    "100:snore",
-    "100:substitute",
-    "100:surf",
-    "100:swift",
-    "100:takedown",
-    "100:terablast",
-    "100:throatchop",
-    "100:waterfall",
-    "100:waterpulse",
-    "100:whirlpool",
-    "100:scaleshot"
+    "egg:acupressure",
+    "egg:nightslash",
+    "egg:slash",
+    "egg:thrash",
+    "tm:agility",
+    "tm:assurance",
+    "tm:attract",
+    "tm:bounce",
+    "tm:brickbreak",
+    "tm:chillingwater",
+    "tm:closecombat",
+    "tm:crunch",
+    "tm:dive",
+    "tm:drillrun",
+    "tm:endure",
+    "tm:facade",
+    "tm:focusenergy",
+    "tm:hydropump",
+    "tm:icefang",
+    "tm:liquidation",
+    "tm:poisonjab",
+    "tm:protect",
+    "tm:psychicfangs",
+    "tm:raindance",
+    "tm:rest",
+    "tm:round",
+    "tm:scald",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:substitute",
+    "tm:surf",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:throatchop",
+    "tm:waterfall",
+    "tm:waterpulse",
+    "tm:whirlpool",
+    "tutor:scaleshot"
   ],
   "labels": [
     "gen8"
@@ -96,10 +127,10 @@
       ]
     }
   ],
-  "baseScale": 1,
+  "baseScale": 0.65,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 0.7,
+    "height": 0.5,
     "fixed": false
   },
   "baseFriendship": 50,

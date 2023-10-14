@@ -17,7 +17,7 @@
   },
   "catchRate": 45,
   "maleRatio": 0.5,
-  "shoulderMountable": true,
+  "shoulderMountable": false,
   "baseExperienceYield": 60,
   "experienceGroup": "slow",
   "eggCycles": 40,
@@ -25,20 +25,20 @@
     "dragon"
   ],
   "moves": [
+    "1:absorb",
     "1:bubble",
     "1:tackle",
-    "5:absorb",
     "5:watergun",
-    "9:protect",
+    "10:dragonbreath",
     "13:bide",
-    "18:dragonbreath",
-    "25:raindance",
+    "15:protect",
+    "20:flail",
     "25:waterpulse",
-    "28:flail",
-    "32:bodyslam",
-    "38:muddywater",
+    "30:raindance",
+    "35:dragonpulse",
     "41:curse",
-    "42:dragonpulse",
+    "45:bodyslam",
+    "50:muddywater",
     "egg:acidarmor",
     "egg:counter",
     "egg:curse",
@@ -101,7 +101,7 @@
   ],
   "evolutions": [
     {
-      "id": "goomy_sliggoo_lvl",
+      "id": "goomy_sliggoo",
       "variant": "level_up",
       "result": "sliggoo",
       "consumeHeldItem": false,
@@ -116,9 +116,9 @@
       ]
     },
     {
-      "id": "goomy_sliggoo_hisuian",
-      "variant": "item_interact",
-      "result": "sliggoo hisuian",
+      "id": "goomy_sliggoo",
+      "variant": "level_up",
+      "result": "sliggoo form=hisui",
       "consumeHeldItem": false,
       "learnableMoves": [
         "shelter"
@@ -128,14 +128,13 @@
           "variant": "level",
           "minLevel": 40
         }
-      ],
-      "requiredContext": "minecraft:mangrove_roots"
+      ]
     }
   ],
   "baseScale": 1,
   "hitbox": {
-    "width": 0.5,
-    "height": 0.5,
+    "width": 1,
+    "height": 1,
     "fixed": false
   },
   "baseFriendship": 35,
@@ -151,19 +150,17 @@
   "weight": 28,
   "aspects": [],
   "cannotDynamax": false,
-  "behaviour": {
-    "resting": {
-      "canSleep": true,
-      "times": "night",
-      "willSleepOnBed": "true"
-    },
-    "moving": {
-      "canLook": true,
-      "swim": {
-        "swimSpeed": 0.2,
-        "canSwimInWater": true,
-        "canBreatheUnderwater": true
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:slime_ball",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:haban_berry",
+        "percentage": 2.5
       }
-    }
+    ]
   }
 }

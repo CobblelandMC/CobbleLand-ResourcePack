@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Rookidee",
   "nationalPokedexNumber": 821,
   "primaryType": "flying",
@@ -7,6 +8,22 @@
     "unnerve",
     "h:bigpecks"
   ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:feather",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:wacan_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "baseStats": {
     "hp": 38,
     "attack": 47,
@@ -17,13 +34,26 @@
   },
   "catchRate": 255,
   "maleRatio": 0.5,
-  "shoulderMountable": false,
+  "shoulderMountable": true,
   "baseExperienceYield": 49,
   "experienceGroup": "medium_slow",
   "eggCycles": 15,
   "eggGroups": [
     "flying"
   ],
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4"
+    }
+  },
   "moves": [
     "1:leer",
     "1:peck",
@@ -36,46 +66,46 @@
     "28:drillpeck",
     "32:swagger",
     "36:bravebird",
-    "100:defog",
-    "100:rocksmash",
-    "100:roost",
-    "100:sandattack",
-    "100:skyattack",
-    "100:spite",
-    "100:tailwind",
-    "100:aerialace",
-    "100:agility",
-    "100:aircutter",
-    "100:airslash",
-    "100:assurance",
-    "100:attract",
-    "100:bravebird",
-    "100:endure",
-    "100:facade",
-    "100:faketears",
-    "100:fly",
-    "100:focusenergy",
-    "100:nastyplot",
-    "100:payback",
-    "100:protect",
-    "100:rest",
-    "100:retaliate",
-    "100:revenge",
-    "100:reversal",
-    "100:round",
-    "100:scaryface",
-    "100:sleeptalk",
-    "100:snore",
-    "100:substitute",
-    "100:swift",
-    "100:tailwind",
-    "100:takedown",
-    "100:taunt",
-    "100:terablast",
-    "100:thief",
-    "100:uturn",
-    "100:workup",
-    "100:dualwingbeat"
+    "egg:defog",
+    "egg:rocksmash",
+    "egg:roost",
+    "egg:sandattack",
+    "egg:skyattack",
+    "egg:spite",
+    "egg:tailwind",
+    "tm:aerialace",
+    "tm:agility",
+    "tm:aircutter",
+    "tm:airslash",
+    "tm:assurance",
+    "tm:attract",
+    "tm:bravebird",
+    "tm:endure",
+    "tm:facade",
+    "tm:faketears",
+    "tm:fly",
+    "tm:focusenergy",
+    "tm:nastyplot",
+    "tm:payback",
+    "tm:protect",
+    "tm:rest",
+    "tm:retaliate",
+    "tm:revenge",
+    "tm:reversal",
+    "tm:round",
+    "tm:scaryface",
+    "tm:sleeptalk",
+    "tm:snore",
+    "tm:substitute",
+    "tm:swift",
+    "tm:tailwind",
+    "tm:takedown",
+    "tm:taunt",
+    "tm:terablast",
+    "tm:thief",
+    "tm:uturn",
+    "tm:workup",
+    "tutor:dualwingbeat"
   ],
   "labels": [
     "gen8"
@@ -98,10 +128,10 @@
       ]
     }
   ],
-  "baseScale": 1,
+  "baseScale": 0.7,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 0.5,
+    "height": 0.6,
     "fixed": false
   },
   "baseFriendship": 50,

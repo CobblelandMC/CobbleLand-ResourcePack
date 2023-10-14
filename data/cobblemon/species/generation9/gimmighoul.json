@@ -15,7 +15,7 @@
   },
   "catchRate": 45,
   "maleRatio": -1,
-  "baseExperienceYield": 90,
+  "baseExperienceYield": 60,
   "baseFriendship": 50,
   "evYield": {
     "hp": 0,
@@ -25,30 +25,32 @@
     "special_defence": 0,
     "speed": 0
   },
-  "experienceGroup": "medium_slow",
-  "eggCycles": 35,
+  "experienceGroup": "slow",
+  "eggCycles": 50,
   "eggGroups": [
     "undiscovered"
   ],
   "moves": [
     "1:astonish",
     "1:tackle",
-    "100:takedown",
-    "100:protect",
-    "100:confuseray",
-    "100:thief",
-    "100:hex",
-    "100:nightshade",
-    "100:endure",
-    "100:sleeptalk",
-    "100:reflect",
-    "100:lightscreen",
-    "100:rest",
-    "100:powergem",
-    "100:substitute",
-    "100:shadowball",
-    "100:nastyplot",
-    "100:terablast"
+    "tm:confuseray",
+    "tm:endure",
+    "tm:hex",
+    "tm:lightscreen",
+    "tm:nastyplot",
+    "tm:nightshade",
+    "tm:powergem",
+    "tm:protect",
+    "tm:reflect",
+    "tm:rest",
+    "tm:shadowball",
+    "tm:sleeptalk",
+    "tm:substitute",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tutor:astonish",
+    "tutor:tackle"
   ],
   "labels": [
     "gen9"
@@ -59,21 +61,68 @@
   "evolutions": [
     {
       "id": "gimmighoul_gholdengo",
-      "variant": "item_interact",
+      "variant": "level_up",
       "result": "gholdengo",
       "consumeHeldItem": false,
       "learnableMoves": [],
-      "requirements": [],
-      "requiredContext": "minecraft:gold_block"
+      "requirements": []
     }
   ],
-  "baseScale": 1,
-  "hitbox": {
-    "width": 0.7,
-    "height": 0.7,
-    "fixed": false
-  },
   "cannotDynamax": false,
+  "forms": [
+    {
+      "name": "Roaming",
+      "primaryType": "ghost",
+      "abilities": [
+        "runaway"
+      ],
+      "baseStats": {
+        "hp": 45,
+        "attack": 30,
+        "defence": 25,
+        "special_attack": 75,
+        "special_defence": 45,
+        "speed": 80
+      },
+      "catchRate": 45,
+      "maleRatio": -1,
+      "baseFriendship": 50,
+      "evYield": {
+        "hp": 0,
+        "attack": 0,
+        "defence": 0,
+        "special_attack": 1,
+        "special_defence": 0,
+        "speed": 0
+      },
+      "experienceGroup": "slow",
+      "eggCycles": 50,
+      "eggGroups": [
+        "undiscovered"
+      ],
+      "moves": [],
+      "labels": [
+        "gen9"
+      ],
+      "aspects": [
+        "roaming"
+      ],
+      "height": 1,
+      "weight": 1,
+      "evolutions": [
+        {
+          "id": "gimmighoul_gholdengo",
+          "variant": "level_up",
+          "result": "gholdengo",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": []
+        }
+      ],
+      "cannotDynamax": false,
+      "battleOnly": false
+    }
+  ],
   "pokedex": [
     "cobblemon.species.gimmighoul.desc"
   ]

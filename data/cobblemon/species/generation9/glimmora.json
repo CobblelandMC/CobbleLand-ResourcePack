@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Glimmora",
   "nationalPokedexNumber": 970,
   "primaryType": "rock",
@@ -7,6 +8,19 @@
     "toxicdebris",
     "h:corrosion"
   ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:amethyst_shard",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:shuca_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "baseStats": {
     "hp": 83,
     "attack": 55,
@@ -14,6 +28,19 @@
     "special_attack": 130,
     "special_defence": 81,
     "speed": 86
+  },
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4"
+    }
   },
   "catchRate": 25,
   "maleRatio": 0.5,
@@ -38,6 +65,7 @@
     "1:smackdown",
     "1:spikyshield",
     "1:toxicspikes",
+    "1:mortalspin",
     "7:acidspray",
     "11:ancientpower",
     "15:rockpolish",
@@ -49,40 +77,40 @@
     "39:powergem",
     "44:acidarmor",
     "50:sludgewave",
-    "100:acidspray",
-    "100:confuseray",
-    "100:dazzlinggleam",
-    "100:earthpower",
-    "100:endure",
-    "100:energyball",
-    "100:facade",
-    "100:flashcannon",
-    "100:gigaimpact",
-    "100:gunkshot",
-    "100:hyperbeam",
-    "100:irondefense",
-    "100:lightscreen",
-    "100:mudshot",
-    "100:powergem",
-    "100:protect",
-    "100:raindance",
-    "100:reflect",
-    "100:rest",
-    "100:rockblast",
-    "100:rockslide",
-    "100:rocktomb",
-    "100:sandstorm",
-    "100:sleeptalk",
-    "100:sludgebomb",
-    "100:solarbeam",
-    "100:spikes",
-    "100:stealthrock",
-    "100:stoneedge",
-    "100:substitute",
-    "100:sunnyday",
-    "100:terablast",
-    "100:toxicspikes",
-    "100:venoshock"
+    "tm:acidspray",
+    "tm:confuseray",
+    "tm:dazzlinggleam",
+    "tm:earthpower",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:gigaimpact",
+    "tm:gunkshot",
+    "tm:hyperbeam",
+    "tm:irondefense",
+    "tm:lightscreen",
+    "tm:mudshot",
+    "tm:powergem",
+    "tm:protect",
+    "tm:raindance",
+    "tm:reflect",
+    "tm:rest",
+    "tm:rockblast",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:sandstorm",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:solarbeam",
+    "tm:spikes",
+    "tm:stealthrock",
+    "tm:stoneedge",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:terablast",
+    "tm:toxicspikes",
+    "tm:venoshock"
   ],
   "labels": [
     "gen9"
@@ -92,6 +120,12 @@
   "weight": 450,
   "preEvolution": "glimmet",
   "evolutions": [],
+  "baseScale": 1.0,
+  "hitbox": {
+    "width": 1.2,
+    "height": 1.6,
+    "fixed": false
+  },
   "cannotDynamax": false,
   "pokedex": [
     "cobblemon.species.glimmora.desc"

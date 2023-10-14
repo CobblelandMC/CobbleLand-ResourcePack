@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Beldum",
   "nationalPokedexNumber": 374,
   "primaryType": "steel",
@@ -7,6 +8,15 @@
     "clearbody",
     "h:lightmetal"
   ],
+  "drops": {
+    "amount": 1,
+    "entries": [
+      {
+        "item": "cobblemon:metal_coat",
+        "percentage": 2.5
+      }
+    ]
+  },
   "baseStats": {
     "hp": 40,
     "attack": 55,
@@ -24,19 +34,26 @@
   "eggGroups": [
     "mineral"
   ],
+  "behaviour": {
+    "moving": {
+      "fly": {
+        "canFly": true
+      }
+    }
+  },
   "moves": [
     "1:tackle",
     "1:takedown",
-    "100:irondefense",
-    "100:ironhead",
-    "100:zenheadbutt",
-    "100:headbutt",
-    "100:holdback",
-    "100:irondefense",
-    "100:ironhead",
-    "100:steelbeam",
-    "100:takedown",
-    "100:zenheadbutt"
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:zenheadbutt",
+    "tutor:headbutt",
+    "tutor:holdback",
+    "tutor:irondefense",
+    "tutor:ironhead",
+    "tutor:steelbeam",
+    "tutor:takedown",
+    "tutor:zenheadbutt"
   ],
   "labels": [
     "gen3"
@@ -62,10 +79,10 @@
       ]
     }
   ],
-  "baseScale": 1,
+  "baseScale": 0.75,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 0.4,
+    "height": 0.8,
     "fixed": false
   },
   "baseFriendship": 35,

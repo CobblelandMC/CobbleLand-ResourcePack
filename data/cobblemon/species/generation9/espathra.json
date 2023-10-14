@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Espathra",
   "nationalPokedexNumber": 956,
   "primaryType": "psychic",
@@ -7,6 +8,18 @@
     "frisk",
     "h:speedboost"
   ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:chicken"
+      },
+      {
+        "item": "cobblemon:tanga_berry",
+        "percentage": 5.0
+      }
+    ]
+  },
   "baseStats": {
     "hp": 95,
     "attack": 60,
@@ -14,6 +27,19 @@
     "special_attack": 101,
     "special_defence": 60,
     "speed": 105
+  },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.3
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "0-4"
+    }
   },
   "catchRate": 60,
   "maleRatio": 0.5,
@@ -32,11 +58,18 @@
   "eggGroups": [
     "flying"
   ],
+  "baseScale": 0.87,
+  "hitbox": {
+    "width": 1.2,
+    "height": 2.1,
+    "fixed": false
+  },
   "moves": [
     "1:drillpeck",
     "1:featherdance",
     "1:growl",
     "1:peck",
+    "1:luminacrash",
     "5:confusion",
     "8:babydolleyes",
     "11:disarmingvoice",
@@ -48,54 +81,54 @@
     "43:dazzlinggleam",
     "49:psychic",
     "54:lastresort",
-    "100:aerialace",
-    "100:agility",
-    "100:batonpass",
-    "100:bodyslam",
-    "100:bravebird",
-    "100:calmmind",
-    "100:confuseray",
-    "100:dazzlinggleam",
-    "100:disarmingvoice",
-    "100:endure",
-    "100:energyball",
-    "100:facade",
-    "100:flashcannon",
-    "100:foulplay",
-    "100:gigaimpact",
-    "100:helpinghand",
-    "100:hex",
-    "100:hyperbeam",
-    "100:hypervoice",
-    "100:lightscreen",
-    "100:lowkick",
-    "100:mudslap",
-    "100:nightshade",
-    "100:pounce",
-    "100:protect",
-    "100:psybeam",
-    "100:psychic",
-    "100:psychicterrain",
-    "100:psyshock",
-    "100:raindance",
-    "100:reflect",
-    "100:rest",
-    "100:sandstorm",
-    "100:seedbomb",
-    "100:shadowball",
-    "100:skillswap",
-    "100:sleeptalk",
-    "100:storedpower",
-    "100:substitute",
-    "100:sunnyday",
-    "100:swift",
-    "100:takedown",
-    "100:terablast",
-    "100:thief",
-    "100:trick",
-    "100:trickroom",
-    "100:uturn",
-    "100:zenheadbutt"
+    "tm:aerialace",
+    "tm:agility",
+    "tm:batonpass",
+    "tm:bodyslam",
+    "tm:bravebird",
+    "tm:calmmind",
+    "tm:confuseray",
+    "tm:dazzlinggleam",
+    "tm:disarmingvoice",
+    "tm:endure",
+    "tm:energyball",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:foulplay",
+    "tm:gigaimpact",
+    "tm:helpinghand",
+    "tm:hex",
+    "tm:hyperbeam",
+    "tm:hypervoice",
+    "tm:lightscreen",
+    "tm:lowkick",
+    "tm:mudslap",
+    "tm:nightshade",
+    "tm:pounce",
+    "tm:protect",
+    "tm:psybeam",
+    "tm:psychic",
+    "tm:psychicterrain",
+    "tm:psyshock",
+    "tm:raindance",
+    "tm:reflect",
+    "tm:rest",
+    "tm:sandstorm",
+    "tm:seedbomb",
+    "tm:shadowball",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:storedpower",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swift",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thief",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:uturn",
+    "tm:zenheadbutt"
   ],
   "labels": [
     "gen9"

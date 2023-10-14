@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Scatterbug",
   "nationalPokedexNumber": 664,
   "primaryType": "bug",
@@ -7,6 +8,23 @@
     "compoundeyes",
     "h:friendguard"
   ],
+  "drops": {
+    "amount": 3,
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:bright_powder",
+        "percentage": 2.5
+      },
+      {
+        "item": "cobblemon:cheri_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "baseStats": {
     "hp": 38,
     "attack": 35,
@@ -24,18 +42,25 @@
   "eggGroups": [
     "bug"
   ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.26
+      }
+    }
+  },
   "moves": [
     "1:stringshot",
     "1:tackle",
     "6:stunspore",
     "15:bugbite",
-    "100:poisonpowder",
-    "100:ragepowder",
-    "100:stunspore",
-    "100:pounce",
-    "100:strugglebug",
-    "100:terablast",
-    "100:bugbite"
+    "egg:poisonpowder",
+    "egg:ragepowder",
+    "egg:stunspore",
+    "tm:pounce",
+    "tm:strugglebug",
+    "tm:terablast",
+    "tutor:bugbite"
   ],
   "labels": [
     "gen6"
@@ -60,10 +85,10 @@
       ]
     }
   ],
-  "baseScale": 1,
+  "baseScale": 0.5,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 0.7,
+    "height": 0.6,
     "fixed": false
   },
   "baseFriendship": 70,

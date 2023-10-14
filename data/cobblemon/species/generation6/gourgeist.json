@@ -17,12 +17,29 @@
     "special_defence": 75,
     "speed": 84
   },
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.2
+      },
+      "fly": {
+        "canFly": true
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": false,
+      "depth": "normal",
+      "light": "11-15"
+    }
+  },
   "catchRate": 60,
   "maleRatio": 0.5,
   "shoulderMountable": false,
   "forms": [
     {
       "name": "Small",
+      "baseScale": 0.43,
       "primaryType": "ghost",
       "secondaryType": "grass",
       "abilities": [
@@ -55,7 +72,6 @@
       "eggGroups": [
         "amorphous"
       ],
-      "moves": [],
       "labels": [
         "gen6"
       ],
@@ -64,13 +80,14 @@
       ],
       "height": 7,
       "weight": 95,
-      "preEvolution": "pumpkaboo pumpkin_size=small",
+      "preEvolution": "pumpkaboo form=small",
       "evolutions": [],
       "cannotDynamax": false,
       "battleOnly": false
     },
     {
       "name": "Large",
+      "baseScale": 0.7,
       "primaryType": "ghost",
       "secondaryType": "grass",
       "abilities": [
@@ -103,7 +120,6 @@
       "eggGroups": [
         "amorphous"
       ],
-      "moves": [],
       "labels": [
         "gen6"
       ],
@@ -112,13 +128,14 @@
       ],
       "height": 11,
       "weight": 140,
-      "preEvolution": "pumpkaboo pumpkin_size=large",
+      "preEvolution": "pumpkaboo form=large",
       "evolutions": [],
       "cannotDynamax": false,
       "battleOnly": false
     },
     {
       "name": "Super",
+      "baseScale": 1,
       "primaryType": "ghost",
       "secondaryType": "grass",
       "abilities": [
@@ -151,7 +168,6 @@
       "eggGroups": [
         "amorphous"
       ],
-      "moves": [],
       "labels": [
         "gen6"
       ],
@@ -160,7 +176,7 @@
       ],
       "height": 17,
       "weight": 390,
-      "preEvolution": "pumpkaboo pumpkin_size=super",
+      "preEvolution": "pumpkaboo form=super",
       "evolutions": [],
       "cannotDynamax": false,
       "battleOnly": false
@@ -173,16 +189,19 @@
     "amorphous"
   ],
   "drops": {
-    "amount": "2",
+    "amount": 4,
     "entries": [
       {
         "item": "minecraft:pumpkin_seeds",
-        "quantityRange": "1-3",
-        "percentage": 75
+        "quantityRange": "0-2"
       },
       {
         "item": "cobblemon:miracle_seed",
-        "percentage": 10
+        "percentage": 5.0
+      },
+      {
+        "item": "cobblemon:kasib_berry",
+        "percentage": 5.0
       }
     ]
   },
@@ -191,94 +210,94 @@
     "1:confuseray",
     "1:explosion",
     "1:moonblast",
-    "1:phantomforce",
-    "1:trick",
-    "4:scaryface",
-    "6:trickortreat",
-    "11:worryseed",
-    "16:razorleaf",
-    "20:leechseed",
-    "26:bulletseed",
-    "30:shadowsneak",
+    "1:shadowsneak",
+    "1:trickortreat",
+    "12:razorleaf",
+    "16:leechseed",
+    "20:bulletseed",
+    "24:scaryface",
+    "28:worryseed",
+    "32:seedbomb",
     "36:shadowball",
-    "42:painsplit",
-    "48:seedbomb",
-    "100:allyswitch",
-    "100:attract",
-    "100:brutalswing",
-    "100:bulletseed",
-    "100:chargebeam",
-    "100:confide",
-    "100:darkpulse",
-    "100:doubleteam",
-    "100:dreameater",
-    "100:endure",
-    "100:energyball",
-    "100:explosion",
-    "100:facade",
-    "100:fireblast",
-    "100:flamecharge",
-    "100:flamethrower",
-    "100:flash",
-    "100:focusblast",
-    "100:foulplay",
-    "100:frustration",
-    "100:gigadrain",
-    "100:gigaimpact",
-    "100:grassknot",
-    "100:gyroball",
-    "100:hex",
-    "100:hiddenpower",
-    "100:hyperbeam",
-    "100:imprison",
-    "100:incinerate",
-    "100:lightscreen",
-    "100:mysticalfire",
-    "100:nastyplot",
-    "100:naturepower",
-    "100:phantomforce",
-    "100:powerwhip",
-    "100:protect",
-    "100:psychic",
-    "100:rest",
-    "100:return",
-    "100:rockslide",
-    "100:rocksmash",
-    "100:round",
-    "100:safeguard",
-    "100:scaryface",
-    "100:secretpower",
-    "100:seedbomb",
-    "100:shadowball",
-    "100:skillswap",
-    "100:sleeptalk",
-    "100:sludgebomb",
-    "100:snore",
-    "100:solarbeam",
-    "100:substitute",
-    "100:sunnyday",
-    "100:swagger",
-    "100:thief",
-    "100:toxic",
-    "100:trick",
-    "100:trickroom",
-    "100:willowisp",
-    "100:allyswitch",
-    "100:foulplay",
-    "100:gigadrain",
-    "100:grassyglide",
-    "100:magiccoat",
-    "100:painsplit",
-    "100:poltergeist",
-    "100:roleplay",
-    "100:seedbomb",
-    "100:skillswap",
-    "100:skittersmack",
-    "100:spite",
-    "100:synthesis",
-    "100:telekinesis",
-    "100:trick",
-    "100:worryseed"
+    "40:trick",
+    "44:painsplit",
+    "48:phantomforce",
+    "tm:allyswitch",
+    "tm:attract",
+    "tm:brutalswing",
+    "tm:bulletseed",
+    "tm:chargebeam",
+    "tm:confide",
+    "tm:darkpulse",
+    "tm:doubleteam",
+    "tm:dreameater",
+    "tm:endure",
+    "tm:energyball",
+    "tm:explosion",
+    "tm:facade",
+    "tm:fireblast",
+    "tm:flamecharge",
+    "tm:flamethrower",
+    "tm:flash",
+    "tm:focusblast",
+    "tm:foulplay",
+    "tm:frustration",
+    "tm:gigadrain",
+    "tm:gigaimpact",
+    "tm:grassknot",
+    "tm:gyroball",
+    "tm:hex",
+    "tm:hiddenpower",
+    "tm:hyperbeam",
+    "tm:imprison",
+    "tm:incinerate",
+    "tm:lightscreen",
+    "tm:mysticalfire",
+    "tm:nastyplot",
+    "tm:naturepower",
+    "tm:phantomforce",
+    "tm:powerwhip",
+    "tm:protect",
+    "tm:psychic",
+    "tm:rest",
+    "tm:return",
+    "tm:rockslide",
+    "tm:rocksmash",
+    "tm:round",
+    "tm:safeguard",
+    "tm:scaryface",
+    "tm:secretpower",
+    "tm:seedbomb",
+    "tm:shadowball",
+    "tm:skillswap",
+    "tm:sleeptalk",
+    "tm:sludgebomb",
+    "tm:snore",
+    "tm:solarbeam",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:swagger",
+    "tm:thief",
+    "tm:toxic",
+    "tm:trick",
+    "tm:trickroom",
+    "tm:willowisp",
+    "tutor:allyswitch",
+    "tutor:foulplay",
+    "tutor:gigadrain",
+    "tutor:grassyglide",
+    "tutor:magiccoat",
+    "tutor:painsplit",
+    "tutor:poltergeist",
+    "tutor:roleplay",
+    "tutor:seedbomb",
+    "tutor:skillswap",
+    "tutor:skittersmack",
+    "tutor:spite",
+    "tutor:synthesis",
+    "tutor:telekinesis",
+    "tutor:trick",
+    "tutor:worryseed"
   ],
   "labels": [
     "gen6"
@@ -286,12 +305,12 @@
   "pokedex": [
     "cobblemon.species.gourgeist.desc"
   ],
-  "preEvolution": "pumpkaboo pumpkin_size=average",
+  "preEvolution": "pumpkaboo",
   "evolutions": [],
-  "baseScale": 1,
+  "baseScale": 0.57,
   "hitbox": {
-    "width": 1,
-    "height": 1,
+    "width": 0.9,
+    "height": 1.6,
     "fixed": false
   },
   "baseFriendship": 50,

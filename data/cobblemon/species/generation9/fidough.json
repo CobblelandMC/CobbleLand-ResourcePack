@@ -1,4 +1,5 @@
 {
+  "implemented": true,
   "name": "Fidough",
   "nationalPokedexNumber": 926,
   "primaryType": "fairy",
@@ -6,6 +7,19 @@
     "owntempo",
     "h:klutz"
   ],
+  "drops": {
+    "amount": 2,
+    "entries": [
+      {
+        "item": "minecraft:bread",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:nanab_berry",
+        "percentage": 2.5
+      }
+    ]
+  },
   "baseStats": {
     "hp": 37,
     "attack": 55,
@@ -48,41 +62,60 @@
     "36:charm",
     "40:crunch",
     "45:lastresort",
-    "100:copycat",
-    "100:howl",
-    "100:sweetscent",
-    "100:wish",
-    "100:yawn",
-    "100:agility",
-    "100:batonpass",
-    "100:bodyslam",
-    "100:charm",
-    "100:crunch",
-    "100:dazzlinggleam",
-    "100:dig",
-    "100:endure",
-    "100:facade",
-    "100:firefang",
-    "100:helpinghand",
-    "100:icefang",
-    "100:mistyterrain",
-    "100:mudshot",
-    "100:mudslap",
-    "100:playrough",
-    "100:protect",
-    "100:psychicfangs",
-    "100:raindance",
-    "100:rest",
-    "100:sleeptalk",
-    "100:snarl",
-    "100:stompingtantrum",
-    "100:substitute",
-    "100:sunnyday",
-    "100:takedown",
-    "100:terablast",
-    "100:thunderfang",
-    "100:trailblaze"
+    "egg:copycat",
+    "egg:howl",
+    "egg:sweetscent",
+    "egg:wish",
+    "egg:yawn",
+    "tm:agility",
+    "tm:batonpass",
+    "tm:bodyslam",
+    "tm:charm",
+    "tm:crunch",
+    "tm:dazzlinggleam",
+    "tm:dig",
+    "tm:endure",
+    "tm:facade",
+    "tm:firefang",
+    "tm:helpinghand",
+    "tm:icefang",
+    "tm:mistyterrain",
+    "tm:mudshot",
+    "tm:mudslap",
+    "tm:playrough",
+    "tm:protect",
+    "tm:psychicfangs",
+    "tm:raindance",
+    "tm:rest",
+    "tm:sleeptalk",
+    "tm:snarl",
+    "tm:stompingtantrum",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:thunderfang",
+    "tm:trailblaze"
   ],
+  "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.3
+      }
+    },
+    "resting": {
+      "canSleep": true,
+      "willSleepOnBed": true,
+      "depth": "normal",
+      "light": "0-4"
+    }
+  },
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 1.1,
+    "height": 1,
+    "fixed": false
+  },
   "labels": [
     "gen9"
   ],

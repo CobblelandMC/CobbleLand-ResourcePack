@@ -17,6 +17,11 @@
     "speed": 25
   },
   "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.125
+      }
+    },
     "resting": {
       "canSleep": true,
       "willSleepOnBed": false,
@@ -42,11 +47,15 @@
     "mineral"
   ],
   "drops": {
-    "amount": "1",
+    "amount": 2,
     "entries": [
       {
-        "item": "minecraft:flint",
-        "percentage": 50
+        "item": "minecraft:nether_quartz",
+        "quantityRange": "0-1"
+      },
+      {
+        "item": "cobblemon:passho_berry",
+        "percentage": 2.5
       }
     ]
   },
@@ -65,38 +74,38 @@
     "35:heavyslam",
     "40:earthquake",
     "45:stoneedge",
-    "100:ancientpower",
-    "100:curse",
-    "100:fissure",
-    "100:powergem",
-    "100:bodyslam",
-    "100:bulldoze",
-    "100:dig",
-    "100:earthpower",
-    "100:earthquake",
-    "100:endure",
-    "100:facade",
-    "100:flashcannon",
-    "100:heavyslam",
-    "100:helpinghand",
-    "100:irondefense",
-    "100:ironhead",
-    "100:mudshot",
-    "100:powergem",
-    "100:protect",
-    "100:raindance",
-    "100:rest",
-    "100:rockslide",
-    "100:sandstorm",
-    "100:sleeptalk",
-    "100:stealthrock",
-    "100:stompingtantrum",
-    "100:stoneedge",
-    "100:substitute",
-    "100:sunnyday",
-    "100:takedown",
-    "100:terablast",
-    "100:zenheadbutt"
+    "egg:ancientpower",
+    "egg:curse",
+    "egg:fissure",
+    "egg:powergem",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:dig",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:mudshot",
+    "tm:powergem",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:sandstorm",
+    "tm:sleeptalk",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:zenheadbutt"
   ],
   "labels": [
     "gen9"
@@ -121,6 +130,12 @@
       ]
     }
   ],
+  "baseScale": 1,
+  "hitbox": {
+    "width": 0.5,
+    "height": 0.5,
+    "fixed": false
+  },
   "cannotDynamax": false,
   "pokedex": [
     "cobblemon.species.nacli.desc"

@@ -17,6 +17,11 @@
     "speed": 35
   },
   "behaviour": {
+    "moving": {
+      "walk": {
+        "walkSpeed": 0.15
+      }
+    },
     "resting": {
       "canSleep": true,
       "willSleepOnBed": false,
@@ -42,18 +47,22 @@
     "mineral"
   ],
   "drops": {
-    "amount": "1",
+    "amount": 3,
     "entries": [
       {
-        "item": "minecraft:flint",
-        "quantityRange": "1-2",
-        "percentage": 66
+        "item": "minecraft:nether_quartz",
+        "quantityRange": "0-2"
+      },
+      {
+        "item": "cobblemon:passho_berry",
+        "percentage": 5.0
       }
     ]
   },
   "moves": [
     "1:harden",
     "1:tackle",
+    "1:saltcure",
     "5:rockthrow",
     "7:mudshot",
     "10:smackdown",
@@ -66,37 +75,37 @@
     "41:heavyslam",
     "45:earthquake",
     "51:stoneedge",
-    "100:bodypress",
-    "100:bodyslam",
-    "100:bulldoze",
-    "100:dig",
-    "100:earthpower",
-    "100:earthquake",
-    "100:endure",
-    "100:facade",
-    "100:flashcannon",
-    "100:gigaimpact",
-    "100:heavyslam",
-    "100:helpinghand",
-    "100:hyperbeam",
-    "100:irondefense",
-    "100:ironhead",
-    "100:mudshot",
-    "100:powergem",
-    "100:protect",
-    "100:raindance",
-    "100:rest",
-    "100:rockslide",
-    "100:sandstorm",
-    "100:sleeptalk",
-    "100:stealthrock",
-    "100:stompingtantrum",
-    "100:stoneedge",
-    "100:substitute",
-    "100:sunnyday",
-    "100:takedown",
-    "100:terablast",
-    "100:zenheadbutt"
+    "tm:bodypress",
+    "tm:bodyslam",
+    "tm:bulldoze",
+    "tm:dig",
+    "tm:earthpower",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:gigaimpact",
+    "tm:heavyslam",
+    "tm:helpinghand",
+    "tm:hyperbeam",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:mudshot",
+    "tm:powergem",
+    "tm:protect",
+    "tm:raindance",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:sandstorm",
+    "tm:sleeptalk",
+    "tm:stealthrock",
+    "tm:stompingtantrum",
+    "tm:stoneedge",
+    "tm:substitute",
+    "tm:sunnyday",
+    "tm:takedown",
+    "tm:terablast",
+    "tm:zenheadbutt"
   ],
   "labels": [
     "gen9"
@@ -122,6 +131,12 @@
       ]
     }
   ],
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 0.8,
+    "fixed": false
+  },
   "cannotDynamax": false,
   "pokedex": [
     "cobblemon.species.naclstack.desc"
