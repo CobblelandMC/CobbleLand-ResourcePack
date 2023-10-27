@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.applin.ground_idle": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"body": {
+					"rotation": ["0+math.sin(query.anim_time*90*2-0)*0.5", "0+math.sin(query.anim_time*90*1-0)*0.5", "0+math.sin(query.anim_time*90*1-0)*0.5"]
+				}
+			}
+		},
+		"animation.applin.ground_walk": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"body": {
+					"rotation": ["0-math.clamp(math.sin(query.anim_time*90*4+90)*6+0,0,6)", 0, 0],
+					"position": [0, "0+math.clamp(math.sin(query.anim_time*90*4+90)*0.5+0,0,0.5)", "0-math.sin(query.anim_time*90*4-0)*1"]
+				}
+			}
+		},
+		"animation.applin.sleep": {
+			"loop": true,
+			"animation_length": 4
+		},
+		"animation.applin.blink": {
+			"animation_length": 0.16667
+		}
+	}
+}
