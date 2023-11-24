@@ -1,0 +1,88 @@
+{
+    "head": "head",
+    "portraitScale": 1.2,
+    "portraitTranslation": [ -0.3, 1.9, 0 ],
+    "profileScale": 0.4,
+    "profileTranslation": [ 0, 1.2, 0 ],
+    "cry":  "bedrock(typhlosionhisui, cry)",
+    "poses": {
+
+      "battle-idle": {
+        "poseName": "battle-idle",
+        "transformTicks": 10,
+        "poseTypes": [ "STAND" ],
+        "isBattle": true,
+        "transformedParts": [
+         {
+           "part": "fire",
+           "position": [0, 1, 0],
+           "rotation": [0, 0, 0],
+           "isVisible": true
+         },
+         {
+           "part": "fire2",
+           "position": [0, 1, 0],
+           "rotation": [0, 0, 0],
+           "isVisible": true
+         }
+       ],
+        "animations": [
+          "bedrock(typhlosionhisui, battle_idle)"
+        ],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(typhlosionhisui, blink)"]
+          }
+        ]
+      },
+
+      "standing": {
+        "poseName": "standing",
+        "transformTicks": 10,
+        "poseTypes": [
+          "STAND",
+          "NONE",
+          "PORTRAIT",
+          "PROFILE"
+        ],
+        "isBattle": false,
+        "animations": [
+          "bedrock(typhlosionhisui, ground_idle)"
+        ],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(typhlosionhisui, blink)"]
+          }
+        ]
+      },
+
+      "walking": {
+        "poseName": "walking",
+        "transformTicks": 10,
+        "poseTypes": [ "WALK" ],
+        "animations": [ 
+          "look",
+          "bedrock(typhlosionhisui, ground_walk)"
+        ],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(typhlosionhisui, blink)"]
+          }
+        ]
+      },
+
+      "sleeping": {
+        "poseName": "sleeping",
+        "transformTicks": 10,
+        "poseTypes": [
+          "SLEEP"
+        ],
+        "animations": [
+          "bedrock(typhlosionhisui, sleep)"
+        ]
+      }
+    }
+  }
