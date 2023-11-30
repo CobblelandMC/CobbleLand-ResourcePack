@@ -1,7 +1,7 @@
  # How to add textures to a PolymerItem
  
 ### Example on adding the Dynamax Candy
-Let's first assume `MOD_ID` is equal to `misccobblemonfixes`<br>
+Let's first assume `MOD_ID` is equal to `cobbletransformations`<br>
 We need to declare a PolymerModelData we will use later.<br>
 In the main class of the mod (the one with the `initialize()` method) let's declare 
 `lateinit var candyModelData: PolymerModelData` as well as the item itself 
@@ -24,18 +24,18 @@ Then, in the custom item's class (`DynamaxCandy` in this case), let's declare a 
 ```java
 @Override
     public int getPolymerCustomModelData(ItemStack itemStack, @Nullable ServerPlayerEntity player){
-        this.modelData = MiscCobblemonFixes.candyModelData;
+        this.modelData = cobbletransformations.candyModelData;
         return this.modelData.value();
     }
 ```
 
-Then, in the `resources/assets` folder, let's create a new folder called exactly like the `MOD_ID` (`misccobblemonfixes`).
+Then, in the `resources/assets` folder, let's create a new folder called exactly like the `MOD_ID` (`cobbletransformations`).
 <br>Inside of it, let's create 3 folders called `lang`, `models` and `textures`
 
 In the `lang` folder, let's create a file called `en_us.json` and inside of it, we will have to give the displayed name of the item
 ```json5
 {
-  "item.misccobblemonfixes.dynamaxcandy": "Dynamax Candy"
+  "item.cobbletransformations.dynamaxcandy": "Dynamax Candy"
 }
 ```
 
@@ -46,7 +46,7 @@ exactly as the item name
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "misccobblemonfixes:item/dynamaxcandy"
+    "layer0": "cobbletransformations:item/dynamaxcandy"
   }
 }
 ```
