@@ -16,18 +16,18 @@
 					"pivot": [0, 0, 0]
 				},
 				{
-					"name": "rabsca_1",
+					"name": "body",
 					"parent": "rabsca",
 					"pivot": [0, 0, 0]
 				},
 				{
-					"name": "body",
-					"parent": "rabsca_1",
+					"name": "torso",
+					"parent": "body",
 					"pivot": [0, 0, 0]
 				},
 				{
 					"name": "head",
-					"parent": "body",
+					"parent": "torso",
 					"pivot": [0, 11.59419, -0.9168],
 					"cubes": [
 						{"origin": [-5, 4, -2.5], "size": [10, 14, 5], "uv": [137, 99]},
@@ -125,7 +125,7 @@
 				},
 				{
 					"name": "leg_right",
-					"parent": "body",
+					"parent": "torso",
 					"pivot": [5.04186, 12.53405, 0],
 					"cubes": [
 						{"origin": [8.225, 14.075, -0.5], "size": [2, 5, 1], "pivot": [8, 21, -0.5], "rotation": [0, 0, 33], "uv": [80, 103]},
@@ -143,7 +143,7 @@
 				},
 				{
 					"name": "leg_left",
-					"parent": "body",
+					"parent": "torso",
 					"pivot": [-5.04186, 12.53405, 0],
 					"cubes": [
 						{"origin": [-10.15, 14.075, -0.5], "size": [2, 5, 1], "pivot": [-8, 21, -0.5], "rotation": [0, 0, -33.5], "uv": [43, 98]},
@@ -161,7 +161,7 @@
 				},
 				{
 					"name": "arm_right",
-					"parent": "body",
+					"parent": "torso",
 					"pivot": [5.04186, 8.46595, 0],
 					"cubes": [
 						{"origin": [8.15, 1.925, -0.5], "size": [2, 5, 1], "pivot": [8, 0, -0.5], "rotation": [0, 0, -33.75], "uv": [95, 75]},
@@ -180,7 +180,7 @@
 				},
 				{
 					"name": "arm_left",
-					"parent": "body",
+					"parent": "torso",
 					"pivot": [-5.04186, 8.46595, 0],
 					"cubes": [
 						{"origin": [-10.175, 1.925, -0.5], "size": [2, 5, 1], "pivot": [-8, 0, -0.5], "rotation": [0, 0, 33.75], "uv": [0, 63]},
@@ -199,7 +199,7 @@
 				},
 				{
 					"name": "ball",
-					"parent": "rabsca_1",
+					"parent": "body",
 					"pivot": [0, 40, 0],
 					"cubes": [
 						{"origin": [-8, 48.125, -11], "size": [19, 2, 22], "uv": [0, 0]},
@@ -210,7 +210,6 @@
 						{"origin": [10.975, 28, -11.025], "size": [0, 21, 4], "uv": [0, 139]},
 						{"origin": [-11, 28.15, -7], "size": [3, 22, 18], "uv": [0, 53]},
 						{"origin": [-8, 28.125, -11], "size": [17, 5, 22], "uv": [0, 25]},
-						{"origin": [-6, 33, -7], "size": [12, 10, 10], "uv": [74, 82]},
 						{"origin": [7, 39, -10], "size": [7, 12, 10], "uv": [35, 121]},
 						{"origin": [9.025, 31, -5], "size": [7, 12, 10], "uv": [115, 119]},
 						{"origin": [5, 27, -12], "size": [8, 7, 10], "uv": [119, 81]},
@@ -225,6 +224,14 @@
 						{"origin": [-16, 31, -5], "size": [7, 12, 10], "uv": [0, 116]},
 						{"origin": [-13.975, 43, -12], "size": [6, 8, 10], "uv": [135, 0]},
 						{"origin": [-13, 26, -12], "size": [4, 8, 12], "uv": [131, 45]}
+					]
+				},
+				{
+					"name": "ball2",
+					"parent": "ball",
+					"pivot": [0, 40, 0],
+					"cubes": [
+						{"origin": [-6, 33, -7], "size": [12, 10, 10], "uv": [74, 82]}
 					]
 				}
 			]

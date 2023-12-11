@@ -1,11 +1,125 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"render": {
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"3.0": [0, -360, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				}
+			}
+		},
 		"animation.terrakion.ground_idle": {
-			"loop": true
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"body": {
+					"position": [0, "-0.5+math.cos(query.anim_time*90*2-0)*0.30", 0]
+				},
+				"chest": {
+					"rotation": ["math.sin(query.anim_time*90*2-0)*0.5", "math.sin(query.anim_time*90*2-0)*0.5", 0]
+				},
+				"neck": {
+					"rotation": ["math.sin(query.anim_time*90*2-40)*1", "math.sin(query.anim_time*90*2-40)*0.5", 0]
+				},
+				"head": {
+					"rotation": ["math.sin(query.anim_time*90*2-80)*1", 0, 0]
+				},
+				"body2": {
+					"rotation": ["-math.sin(query.anim_time*90*2-0)*1", "-math.sin(query.anim_time*90*2-0)*1", 0]
+				},
+				"tail": {
+					"rotation": ["math.sin(query.anim_time*90*2-40)*2", "math.sin(query.anim_time*90*2-40)*2", 0]
+				},
+				"leg_left": {
+					"position": [0, "-math.cos(query.anim_time*90*2-0)*0.15+0.15", 0]
+				},
+				"leg_left_front": {
+					"position": [0, "-math.cos(query.anim_time*90*2-0)*0.15+0.15", 0]
+				},
+				"leg_right": {
+					"position": [0, "-math.cos(query.anim_time*90*2-0)*0.15+0.15", 0]
+				},
+				"leg_right_front": {
+					"position": [0, "-math.cos(query.anim_time*90*2-0)*0.15+0.15", 0]
+				},
+				"leg_left_back": {
+					"position": [0, "-math.cos(query.anim_time*90*2-0)*0.15+0.15", 0]
+				},
+				"leg_left4": {
+					"position": [0, "-math.cos(query.anim_time*90*2-0)*0.15+0.15", 0]
+				},
+				"leg_right_back": {
+					"position": [0, "-math.cos(query.anim_time*90*2-0)*0.15+0.15", 0]
+				},
+				"leg_right4": {
+					"position": [0, "-math.cos(query.anim_time*90*2-0)*0.15+0.15", 0]
+				}
+			}
 		},
 		"animation.terrakion.ground_walk": {
-			"loop": true
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"chest": {
+					"rotation": ["math.sin(query.anim_time*90*8-0)*0.5", "math.sin(query.anim_time*90*4-0)*1", 0],
+					"position": [0, "math.sin(query.anim_time*90*8-0)*0.25", 0]
+				},
+				"neck": {
+					"rotation": ["math.sin(query.anim_time*90*8-40)*1", "math.sin(query.anim_time*90*4-40)*0.5", 0]
+				},
+				"head": {
+					"rotation": ["math.sin(query.anim_time*90*8-80)*1", "-math.sin(query.anim_time*90*4-80)*1", 0]
+				},
+				"body2": {
+					"rotation": ["-math.sin(query.anim_time*90*8-0)*1", "-math.sin(query.anim_time*90*4-0)*2", 0]
+				},
+				"tail": {
+					"rotation": ["math.sin(query.anim_time*90*8-40)*2", "math.sin(query.anim_time*90*4-40)*2", 0]
+				},
+				"leg_left": {
+					"rotation": ["-math.sin(query.anim_time*90*4-0)*12", 0, 0],
+					"position": [0, "math.clamp(-math.cos(query.anim_time*90*4+180)*2,0,2)", 0]
+				},
+				"leg_left_front": {
+					"rotation": ["math.sin(query.anim_time*90*4-0)*10+math.clamp(-math.cos(query.anim_time*90*4+180)*25+0,0,25)", 0, 0],
+					"position": [0, "math.clamp(-math.cos(query.anim_time*90*4+180)*0.5,0,0.5)", 0]
+				},
+				"leg_right": {
+					"rotation": ["math.sin(query.anim_time*90*4-0)*12", 0, 0],
+					"position": [0, "math.clamp(-math.cos(query.anim_time*90*4+0)*2,0,2)", 0]
+				},
+				"leg_right_front": {
+					"rotation": ["-math.sin(query.anim_time*90*4-0)*10+math.clamp(-math.cos(query.anim_time*90*4+0)*25+0,0,25)", 0, 0],
+					"position": [0, "math.clamp(-math.cos(query.anim_time*90*4+0)*1,0,1)", 0]
+				},
+				"leg_left_back": {
+					"rotation": ["math.sin(query.anim_time*90*4+0)*15", 0, 0],
+					"position": [0, "math.clamp(-math.cos(query.anim_time*90*4+0)*1.5,0,1.5)", 0]
+				},
+				"leg_left4": {
+					"rotation": [0, 0, 0]
+				},
+				"leg_right_back": {
+					"rotation": ["-math.sin(query.anim_time*90*4-0)*15", 0, 0],
+					"position": [0, "math.clamp(-math.cos(query.anim_time*90*4+225)*1.5,0,1.5)-math.clamp(-math.cos(query.anim_time*90*4+95)*1+1,0,2)", 0]
+				}
+			}
+		},
+		"animation.terrakion.walktest": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [0, 0, "-query.anim_time*90*0.3"]
+				}
+			}
 		}
 	}
 }
