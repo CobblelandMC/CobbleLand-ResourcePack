@@ -1,0 +1,86 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.tynamo",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "tynamo",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "bone2",
+					"parent": "tynamo",
+					"pivot": [0, 1, 0],
+					"cubes": [
+						{"origin": [-1.5, 3, -6], "size": [3, 4, 4], "inflate": 0.1, "uv": [12, 22]}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "bone2",
+					"pivot": [0, 5, -2.2],
+					"cubes": [
+						{"origin": [0, 0.5, -2.75], "size": [0, 9, 5], "uv": [0, 12]},
+						{"origin": [-1.5, 3, -2.25], "size": [3, 4, 4], "inflate": -0.1, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "bone3",
+					"pivot": [0, 5, 1.5],
+					"cubes": [
+						{"origin": [0, 0, 2.25], "size": [0, 10, 8], "uv": [0, 0]},
+						{"origin": [-1, 3.5, 0.75], "size": [2, 3, 4], "inflate": 0.1, "uv": [14, 0]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "bone4",
+					"pivot": [0, 5, 1.5],
+					"cubes": [
+						{"origin": [0, 4.5, 10.25], "size": [0, 1, 1], "uv": [24, 11]}
+					]
+				},
+				{
+					"name": "face",
+					"parent": "bone2",
+					"pivot": [0, 1, 0],
+					"cubes": [
+						{"origin": [-0.5, 3.5, -6.12], "size": [1, 3, 0], "pivot": [0, 5, -7], "rotation": [0, 0, 45], "uv": [12, 0]},
+						{"origin": [-0.5, 3.5, -6.125], "size": [1, 3, 0], "pivot": [0, 5, -7], "rotation": [0, 0, -45], "uv": [10, 0]}
+					]
+				},
+				{
+					"name": "left_eye",
+					"parent": "face",
+					"pivot": [-0.75, 1, 0],
+					"cubes": [
+						{"origin": [1.64, 4, -5], "size": [0, 2, 1], "uv": [2, 0]},
+						{"origin": [1.6405, 5.5, -5.5], "size": [0, 1, 1], "uv": [14, 1]},
+						{"origin": [1.6407, 6, -5.5], "size": [0, 1, 1], "uv": [14, 0]},
+						{"origin": [1.6406, 5.5, -6], "size": [0, 1, 1], "uv": [12, 2]}
+					]
+				},
+				{
+					"name": "right_eye",
+					"parent": "face",
+					"pivot": [-4.05, 1, 0],
+					"cubes": [
+						{"origin": [-1.6, 4, -5], "size": [0, 2, 1], "uv": [0, 0]},
+						{"origin": [-1.605, 5.5, -5.5], "size": [0, 1, 1], "uv": [10, 2]},
+						{"origin": [-1.606, 6, -5.5], "size": [0, 1, 1], "uv": [2, 2]},
+						{"origin": [-1.607, 5.5, -6], "size": [0, 1, 1], "uv": [0, 2]}
+					]
+				}
+			]
+		}
+	]
+}
