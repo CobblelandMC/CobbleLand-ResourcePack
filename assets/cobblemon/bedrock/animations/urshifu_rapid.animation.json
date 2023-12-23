@@ -1,249 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.urshifu.single_strike": {
-			"loop": true,
-			"animation_length": 8,
-			"bones": {
-				"torso": {
-					"rotation": ["5-math.sin(query.anim_time*90*1-0)*1", "5-math.sin(query.anim_time*90*1/2-0)*2", 0.5],
-					"position": [0, 0, -0.5]
-				},
-				"right_arm1": {
-					"rotation": [0, 12.5, "-15+math.sin(query.anim_time*90*1-60)*1"]
-				},
-				"right_arm2": {
-					"rotation": [0, -35, 0]
-				},
-				"right_arm3": {
-					"rotation": [0, "-75+math.sin(query.anim_time*90*1-120)*1", 0]
-				},
-				"right_fist": {
-					"rotation": [-27.29887, -3.45533, -6.66067]
-				},
-				"right_thumb": {
-					"rotation": [17.5, 0, 0]
-				},
-				"right_thumb2": {
-					"rotation": [62.5, 0, 0]
-				},
-				"right_indexfinger": {
-					"rotation": [-40, 0, 0]
-				},
-				"right_indexfinger2": {
-					"rotation": [-67.5, 0, 0]
-				},
-				"right_middlefinger": {
-					"rotation": [35, 0, 0]
-				},
-				"right_middlefinger2": {
-					"rotation": [72.5, 0, 0]
-				},
-				"right_ringfinger": {
-					"rotation": [40, 0, 0]
-				},
-				"right_ringfinger2": {
-					"rotation": [67.5, 0, 0]
-				},
-				"right_pinkyfinger": {
-					"rotation": [45, 0, 0]
-				},
-				"right_pinkyfinger2": {
-					"rotation": [55, 0, 0]
-				},
-				"left_arm1": {
-					"rotation": [0, 2.5, "32.5-math.sin(query.anim_time*90*1-60)*1"]
-				},
-				"left_arm2": {
-					"rotation": [0, 50, 0]
-				},
-				"left_arm3": {
-					"rotation": [-102.25294, 38.3808, "-19.279-math.sin(query.anim_time*90*1-120)*1"]
-				},
-				"left_fist": {
-					"rotation": [16.69335, 3.51643, 24.40838]
-				},
-				"left_thumb": {
-					"rotation": [22.5, 0, 0]
-				},
-				"left_thumb2": {
-					"rotation": [60, 0, 0]
-				},
-				"left_indexfinger": {
-					"rotation": [-47.5, 0, 0]
-				},
-				"left_indexfinger2": {
-					"rotation": [-60, 0, 0]
-				},
-				"left_middlefinger": {
-					"rotation": [55, 0, 0]
-				},
-				"left_middlefinger2": {
-					"rotation": [50, 0, 0]
-				},
-				"left_ringfinger": {
-					"rotation": [-50, 0, 0]
-				},
-				"left_ringfinger2": {
-					"rotation": [-55, 0, 0]
-				},
-				"left_pinkyfinger": {
-					"rotation": [55, 0, 0]
-				},
-				"left_pinkyfinger2": {
-					"rotation": [45, 0, 0]
-				},
-				"front_hair1": {
-					"rotation": ["-7.5+math.sin(query.anim_time*90*2-30)*0.5", 0, 0]
-				},
-				"front_hair2": {
-					"rotation": ["-5+math.sin(query.anim_time*90*2-60)*0.5", 0, 0]
-				},
-				"front_hair3": {
-					"rotation": ["-5+math.sin(query.anim_time*90*2-90)*1", 0, 0]
-				},
-				"front_hair4": {
-					"rotation": ["-5+math.sin(query.anim_time*90*2-120)*1", 0, 0]
-				},
-				"back_hair1": {
-					"rotation": ["2.5-math.sin(query.anim_time*90*2-60)*0.5", 0, 0]
-				},
-				"back_hair2": {
-					"rotation": ["2.5-math.sin(query.anim_time*90*2-90)*0.5", 0, 0]
-				},
-				"back_hair3": {
-					"rotation": ["7.5-math.sin(query.anim_time*90*2-120)*1", 0, 0]
-				},
-				"back_hair4": {
-					"rotation": ["10-math.sin(query.anim_time*90*2-150)*1", 0, 0]
-				},
-				"head": {
-					"rotation": ["math.sin(query.anim_time*90*1-60)*1", "-5+math.sin(query.anim_time*90*1/2-60)*1", -5]
-				},
-				"right_frontheadband": {
-					"rotation": ["-95-math.sin(query.anim_time*90*1-120)*2", 0, 0]
-				},
-				"right_sideheadband1": {
-					"rotation": [0, 0, "80+math.sin(query.anim_time*90*1-130)*2"]
-				},
-				"right_sideheadband2": {
-					"rotation": [0, 0, "80+math.sin(query.anim_time*90*1-140)*2"]
-				},
-				"right_backheadband": {
-					"rotation": ["75+math.sin(query.anim_time*90*1-150)*2", 0, 0]
-				},
-				"right_ribbon": {
-					"rotation": [
-						"5+math.sin(query.anim_time*90*1*2-140)*8",
-						"-5+math.sin(query.anim_time*90*1*2-140)*4",
-						"-5+math.sin(query.anim_time*90*1*2-140)*6"
-					]
-				},
-				"right_ribbon2": {
-					"rotation": ["5+math.sin(query.anim_time*90*1*2-200)*10", 0, 0]
-				},
-				"right_ribbon3": {
-					"rotation": ["5+math.sin(query.anim_time*90*1*2-260)*12", 0, 0]
-				},
-				"right_ribbon4": {
-					"rotation": ["10+math.sin(query.anim_time*90*1*2-320)*14", 0, 0]
-				},
-				"left_frontheadband": {
-					"rotation": ["-95-math.sin(query.anim_time*90*1-120)*2", 0, 0]
-				},
-				"left_sideheadband1": {
-					"rotation": [0, 0, "-80-math.sin(query.anim_time*90*1-130)*2"]
-				},
-				"left_sideheadband2": {
-					"rotation": [0, 0, "-80-math.sin(query.anim_time*90*1-140)*2"]
-				},
-				"left_backheadband": {
-					"rotation": ["75+math.sin(query.anim_time*90*1-150)*2", 0, 0]
-				},
-				"left_ribbon": {
-					"rotation": [
-						"5+math.sin(query.anim_time*90*1*2-120)*8",
-						"5+math.sin(query.anim_time*90*1*2-120)*4",
-						"5+math.sin(query.anim_time*90*1*2-120)*6"
-					]
-				},
-				"left_ribbon2": {
-					"rotation": ["5+math.sin(query.anim_time*90*1*2-180)*10", 0, 0]
-				},
-				"left_ribbon3": {
-					"rotation": ["5+math.sin(query.anim_time*90*1*2-240)*12", 0, 0]
-				},
-				"left_ribbon4": {
-					"rotation": ["10+math.sin(query.anim_time*90*1*2-300)*14", 0, 0]
-				},
-				"right_leg1": {
-					"rotation": [-74.26776, "-5.9173+math.cos(query.anim_time*90*1-60)*1-1", "20.3145-math.cos(query.anim_time*90*1-60)*3+3"],
-					"position": ["0+math.cos(query.anim_time*90*1-60)*0.3-0.3", 0, 0]
-				},
-				"right_leg2": {
-					"rotation": [0, "19.1565-math.cos(query.anim_time*90*1-60)*6+6", 0]
-				},
-				"right_foot": {
-					"rotation": [0, "2.5+math.cos(query.anim_time*90*1-60)*3-3", 0]
-				},
-				"right_hair": {
-					"rotation": [0, "-55+math.sin(query.anim_time*90*1-60)*1", 0]
-				},
-				"left_leg1": {
-					"rotation": [-39.82037, "18.0125-math.cos(query.anim_time*90*1-60)*1+1", "-15.3799+math.cos(query.anim_time*90*1-60)*1-1"],
-					"position": [0.2, 0, 0]
-				},
-				"left_leg2": {
-					"rotation": [0, "-21.6565+math.cos(query.anim_time*90*1-60)*3-3", 0]
-				},
-				"left_foot": {
-					"rotation": [0, "-math.cos(query.anim_time*90*1-60)*2+0", 0]
-				},
-				"left_hair": {
-					"rotation": [0, "55-math.sin(query.anim_time*90*1-60)*1", 0]
-				},
-				"body": {
-					"position": [0, "-2.9+math.cos(query.anim_time*90*1-60)*0.4-0.4", 0]
-				},
-				"right_thumb_claw": {
-					"rotation": [20, 0, 0]
-				},
-				"right_indexfinger_claw": {
-					"rotation": [-12.5, 0, 0]
-				},
-				"right_middlefinger_claw": {
-					"rotation": [22.5, 0, 0]
-				},
-				"right_ringfinger_claw": {
-					"rotation": [20, 0, 0]
-				},
-				"right_pinkyfinger_claw": {
-					"rotation": [20, 0, 0]
-				},
-				"left_thumb_claw": {
-					"rotation": [12.5, 0, 0]
-				},
-				"left_indexfinger_claw": {
-					"rotation": [-17.5, 0, 0]
-				},
-				"left_middlefinger_claw": {
-					"rotation": [22.5, 0, 0]
-				},
-				"left_ringfinger_claw": {
-					"rotation": [-22.5, 0, 0]
-				},
-				"left_pinkyfinger_claw": {
-					"rotation": [17.5, 0, 0]
-				},
-				"hairbun1": {
-					"rotation": ["-10-math.sin(query.anim_time*90*1-120)*1", 0, 0]
-				},
-				"hairbun2": {
-					"rotation": ["-7.5-math.sin(query.anim_time*90*1-140)*1", 0, 0]
-				}
-			}
-		},
-		"animation.urshifu.rapid_strike": {
+		"animation.urshifu_rapid.battle_idle": {
 			"loop": true,
 			"animation_length": 2,
 			"bones": {
@@ -500,7 +258,7 @@
 				}
 			}
 		},
-		"animation.urshifu.ground_idle": {
+		"animation.urshifu_rapid.ground_idle": {
 			"loop": true,
 			"animation_length": 4,
 			"bones": {
@@ -748,7 +506,7 @@
 				}
 			}
 		},
-		"animation.urshifu.ground_walk": {
+		"animation.urshifu_rapid.ground_walk": {
 			"loop": true,
 			"animation_length": 1.33333,
 			"bones": {
@@ -1019,7 +777,7 @@
 				}
 			}
 		},
-		"animation.urshifu.blink": {
+		"animation.urshifu_rapid.blink": {
 			"animation_length": 0.16667,
 			"bones": {
 				"right_eye": {
@@ -1038,7 +796,7 @@
 				}
 			}
 		},
-		"animation.urshifu.cry": {
+		"animation.urshifu_rapid.cry": {
 			"animation_length": 1,
 			"bones": {
 				"neck": {
@@ -1100,14 +858,6 @@
 							"lerp_mode": "catmullrom"
 						}
 					}
-				}
-			}
-		},
-		"animation.model.movetest": {
-			"loop": true,
-			"bones": {
-				"body": {
-					"position": [0, 0, "0-query.anim_time*90*0.3"]
 				}
 			}
 		}
