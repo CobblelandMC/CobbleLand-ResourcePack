@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.zorua.ground_idle": {
+		"animation.zorua_hisuian.ground_idle": {
 			"loop": true,
 			"bones": {
 				"tail": {
@@ -29,10 +29,28 @@
 				},
 				"ear_left3": {
 					"rotation": [0, 0, "-1+Math.cos((query.anim_time) * 90 * 2 + 90) * 3"]
+				},
+				"bone3": {
+					"rotation": [0, 0, 0]
+				},
+				"bone4": {
+					"rotation": [0, "-15+math.cos(query.anim_time*90*3)*20", 0]
+				},
+				"bone5": {
+					"rotation": [0, "52.5+math.cos((query.anim_time)*90*3-90)*20", 0]
+				},
+				"bone6": {
+					"rotation": [0, "-22.5+math.cos((query.anim_time)*90*3-120)*20", 0]
+				},
+				"hair4": {
+					"rotation": [0, "math.cos(q.anim_time*90*2)*50", 0]
+				},
+				"hair5": {
+					"rotation": [0, "math.cos(q.anim_time*90*2-90)*50", 0]
 				}
 			}
 		},
-		"animation.zorua.ground_walk": {
+		"animation.zorua_hisuian.ground_walk": {
 			"loop": true,
 			"animation_length": 1,
 			"bones": {
@@ -51,9 +69,6 @@
 				},
 				"torso2": {
 					"rotation": [0, "0+Math.cos((query.anim_time) * 90 * 4 - 90) * -2", "0+Math.cos((query.anim_time) * 90 * 4 - 90) * -2"]
-				},
-				"hair2": {
-					"rotation": ["-1+Math.cos((query.anim_time) * 90 * 4*2 - 40) * 6", 0, 0]
 				},
 				"leg_front_left2": {
 					"rotation": {
@@ -277,10 +292,25 @@
 				},
 				"ear_left3": {
 					"rotation": [0, 0, "0+Math.cos((query.anim_time) * 90 * 4 - 40) * 4"]
+				},
+				"bone4": {
+					"rotation": [0, "0+Math.cos((query.anim_time) * 90 * 4 - 90) * 40", 0]
+				},
+				"bone5": {
+					"rotation": [0, "0+Math.cos((query.anim_time) * 90 * 4 - 180) * 40", 0]
+				},
+				"bone6": {
+					"rotation": [0, "0+Math.cos((query.anim_time) * 90 * 4 - 270) * 40", 0]
+				},
+				"hair4": {
+					"rotation": [0, "0+Math.cos((query.anim_time) * 90 * 4 - 90) * 50", 0]
+				},
+				"hair5": {
+					"rotation": [0, "0+Math.cos((query.anim_time) * 90 * 4 - 180) * 50", 0]
 				}
 			}
 		},
-		"animation.zorua.battle_idle": {
+		"animation.zorua_hisuian.battle_idle": {
 			"loop": true,
 			"bones": {
 				"tail": {
@@ -305,7 +335,7 @@
 				}
 			}
 		},
-		"animation.zorua.blink": {
+		"animation.zorua_hisuian.blink": {
 			"animation_length": 0.625,
 			"bones": {
 				"eye_right2": {
@@ -332,7 +362,7 @@
 				}
 			}
 		},
-		"animation.zorua.cry": {
+		"animation.zorua_hisuian.cry": {
 			"animation_length": 1.1667,
 			"bones": {
 				"torso": {
