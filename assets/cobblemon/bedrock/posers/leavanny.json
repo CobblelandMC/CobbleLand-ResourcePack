@@ -1,0 +1,58 @@
+{
+  "head": "head",
+  "portraitScale": 1.00,
+  "portraitTranslation": [ 0, 0.4, 0 ],
+  "profileScale": 1.00,
+  "profileTranslation": [ 0, 0.6, 0 ],
+  "cry":  "bedrock(leavanny, cry)",
+  "poses": {
+  "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+      "STAND",
+      "NONE",
+      "PORTRAIT",
+      "PROFILE",
+      "FLOAT"
+      ],
+      "animations": [
+        "look",
+        "bedrock(leavanny, ground_idle)"
+      ]
+    },
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [ "WALK" ],
+      "isTouchingWater": false,
+      "animations": [
+        "look",
+        "bedrock(leavanny, ground_walk)"
+      ]
+    },
+    "battle-idle": {
+      "poseName": "battle-idle",
+      "transformTicks": 10,
+      "isBattle": true,
+      "poseTypes": [ "STAND" ],
+      "animations": [
+        "look",
+        "bedrock(leavanny, battle_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(leavanny, blink)"]
+        }
+      ]
+    },
+    "sleeping": {
+      "poseName": "sleeping",
+      "transformTicks": 10,
+      "poseTypes": [ "SLEEP" ],
+      "animations": [   
+        "bedrock(leavanny, sleep)" ]
+    }
+  }
+}
