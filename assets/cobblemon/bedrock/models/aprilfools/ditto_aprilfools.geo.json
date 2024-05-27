@@ -1,0 +1,71 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "ditto",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "ditto",
+					"pivot": [-1.5, 8, -1.515],
+					"cubes": [
+						{"origin": [-8, 0, -8], "size": [16, 16, 16], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "face",
+					"parent": "body",
+					"pivot": [-1, 9, 4.485]
+				},
+				{
+					"name": "mouth",
+					"parent": "face",
+					"pivot": [-1, 8.25, 4.485]
+				},
+				{
+					"name": "mouth_closed",
+					"parent": "mouth",
+					"pivot": [-1, 8.25, 4.485],
+					"cubes": [
+						{"origin": [-5.5, 5.5, -8.015], "size": [11, 2, 0], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "mouth_open",
+					"parent": "mouth",
+					"pivot": [-1, 8.25, 4.485],
+					"cubes": [
+						{"origin": [-4.5, 4.5, -7.915], "size": [9, 3, 0], "uv": [20, 32]}
+					]
+				},
+				{
+					"name": "eye_left",
+					"parent": "face",
+					"pivot": [1, 9, 4.485],
+					"cubes": [
+						{"origin": [4, 8.5, -8.015], "size": [1, 1, 0], "uv": [0, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "eye_right",
+					"parent": "face",
+					"pivot": [-4, 9, 4.485],
+					"cubes": [
+						{"origin": [-5, 8.5, -8.015], "size": [1, 1, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}
