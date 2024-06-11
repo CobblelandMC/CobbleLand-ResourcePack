@@ -1,0 +1,165 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.chewtle.ground_idle": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"torso": {
+					"position": [0, "math.cos((query.anim_time-0.1)*180)*0.2", 0]
+				},
+				"tail": {
+					"rotation": ["-27.5+math.cos((query.anim_time-0.1)*180)*4", "math.cos((query.anim_time-0.1)*90)*13", 0]
+				},
+				"tail2": {
+					"rotation": [32.5, 0, 0]
+				},
+				"neck": {
+					"rotation": ["-17.5+math.cos((query.anim_time-0.1)*180)*-3", 0, 0]
+				},
+				"neck2": {
+					"rotation": [-25, 0, 0]
+				},
+				"head": {
+					"rotation": ["-22.5+math.cos((query.anim_time-0.1)*180)*4", 0, 0]
+				},
+				"legg3": {
+					"rotation": [0, -17.5, 0]
+				},
+				"legg4": {
+					"rotation": [0, 17.5, 0]
+				}
+			}
+		},
+		"animation.chewtle.ground_walk": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"torso": {
+					"rotation": ["0+math.cos(q.anim_time*90*3*2)*1", "0-math.cos(q.anim_time*90*3)*1", "0+math.cos(q.anim_time*90*3+30)*2"],
+					"position": [0, "0.2*math.sin(q.anim_time*90*3*2)", 0]
+				},
+				"tail": {
+					"rotation": ["-27.5+math.cos((query.anim_time-0.1)*180)*4", "math.cos((query.anim_time-0.1)*270)*13", 0]
+				},
+				"tail2": {
+					"rotation": [32.5, 0, 0]
+				},
+				"neck": {
+					"rotation": ["-12.5+math.cos((query.anim_time-0.1)*180)*-3", 0, 0]
+				},
+				"neck2": {
+					"rotation": [-22.5, 0, 0]
+				},
+				"head": {
+					"rotation": ["-17.5+math.cos((query.anim_time-0.1)*180)*4", 0, 0]
+				},
+				"legg3": {
+					"rotation": ["0+math.sin(q.anim_time*90*3)*10", 0, 0],
+					"position": [0.25, "0+math.clamp(math.cos(q.anim_time*90*3-180)*1,0,1)", "0.5+math.sin(q.anim_time*90*3)*1/2"]
+				},
+				"legg4": {
+					"rotation": ["0-math.sin(q.anim_time*90*3)*10", 0, 0],
+					"position": [-0.25, "0+math.clamp(math.cos(q.anim_time*90*3)*1,0,1)", "0.5-math.sin(q.anim_time*90*3)*1/2"]
+				},
+				"mouth": {
+					"position": [0, 0, 0]
+				},
+				"legg": {
+					"rotation": ["0+math.sin(q.anim_time*90*3)*10", 0, 0],
+					"position": [-0.25, "0+math.clamp(math.cos(q.anim_time*90*3-180)*1,0,1)", "-0.25+math.sin(q.anim_time*90*3)*1/2"]
+				},
+				"legg2": {
+					"rotation": ["0-math.sin(q.anim_time*90*3)*10", 0, 0],
+					"position": [0.25, "0+math.clamp(math.cos(q.anim_time*90*3)*1,0,1)", "-0.25-math.sin(q.anim_time*90*3)*1/2"]
+				}
+			}
+		},
+		"animation.chewtle.battle_idle": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"torso": {
+					"position": [0, "math.cos((query.anim_time-0.1)*180)*0.2", 0]
+				},
+				"tail": {
+					"rotation": ["-27.5+math.cos((query.anim_time-0.1)*180)*4", "math.cos((query.anim_time-0.1)*90)*13", 0]
+				},
+				"tail2": {
+					"rotation": [32.5, 0, 0]
+				},
+				"neck": {
+					"rotation": ["-17.5+math.cos((query.anim_time-0.1)*180)*-3", 0, 0]
+				},
+				"neck2": {
+					"rotation": [-25, 0, 0]
+				},
+				"head": {
+					"rotation": ["-22.5+math.cos((query.anim_time-0.1)*180)*4", 0, 0]
+				},
+				"legg3": {
+					"rotation": [0, -17.5, 0]
+				},
+				"legg4": {
+					"rotation": [0, 17.5, 0]
+				},
+				"mouth": {
+					"position": [0, -0.75, 0]
+				}
+			}
+		},
+		"animation.chewtle.sleep": {
+			"loop": true,
+			"bones": {
+				"torso": {
+					"position": [0, "math.cos((query.anim_time-0.1)*180)*0", 0]
+				},
+				"tail": {
+					"rotation": ["-12.5+math.cos((query.anim_time-0.1)*180)*2", "math.cos((query.anim_time-0.1)*90)*5", 0]
+				},
+				"tail2": {
+					"rotation": [0, 0, 0]
+				},
+				"neck": {
+					"rotation": ["math.cos((query.anim_time-0.1)*180)*1", 0, 0]
+				},
+				"neck2": {
+					"rotation": [-0.03866, -0.80326, 0.29513]
+				},
+				"head": {
+					"rotation": ["14.9033+math.cos((query.anim_time-0.1)*180)*1", 0.31033, -0.91514]
+				},
+				"legg3": {
+					"rotation": [-30.06255, -1.50179, -85.23032],
+					"scale": [0.7, 1, 1]
+				},
+				"legg4": {
+					"rotation": [-37.5, 0, 90]
+				},
+				"chewtle": {
+					"position": [0, -2, 0]
+				},
+				"legg": {
+					"rotation": [0, 0, 90]
+				},
+				"legg2": {
+					"rotation": [0, 0, -90]
+				}
+			}
+		},
+		"animation.chewtle.blink": {
+			"loop": true,
+			"bones": {
+				"eyes": {
+					"position": [0, 0, 0]
+				},
+				"left_eye": {
+					"position": [0, 1, 0]
+				},
+				"right_eye": {
+					"position": [0, 1, 0]
+				}
+			}
+		}
+	}
+}
