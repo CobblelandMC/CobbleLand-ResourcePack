@@ -1,33 +1,48 @@
 {
-    "head": "head",
-    "portraitScale": 1.5,
-    "portraitTranslation": [ -0.2, 1.5, 0 ],
-    "profileScale": 0.6,
-    "profileTranslation": [ 0, 1.2, 0 ],
-    "poses": {
-      "standing": {
-        "poseName": "standing",
-        "transformTicks": 10,
-        "poseTypes": [
-          "STAND",
-          "NONE",
-          "PORTRAIT",
-          "PROFILE"
-        ],
-        "animations": [
-          "look",
-          "bedrock(hooh, ground_idle)"
-        ]
-      },
+  "head": "head",
+  "portraitScale": 1.0,
+  "portraitTranslation": [ -0.9, 3.2, 0.0 ],
+  "profileScale": 0.225,
+  "profileTranslation": [ -0.05, 1.4, -5.0 ],
+  "cry": "bedrock(hooh, cry, true)",
+  "poses": {
 
-      "walking": {
-        "poseName": "walking",
-        "transformTicks": 10,
-        "poseTypes": [ "WALK" ],
-        "animations": [ 
-          "look",
-          "bedrock(hooh, ground_walk)"
-        ]
-      }
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE"
+      ],
+      "animations": [
+        "look",
+        "bedrock(hooh, ground_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(hooh, blink)"]
+        }
+      ]
+    },
+
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [ "WALK" ],
+      "animations": [ 
+        "look",
+        "bedrock(hooh, ground_walk)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(hooh, blink)"]
+        }
+      ]
     }
+
   }
+}

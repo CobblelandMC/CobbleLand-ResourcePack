@@ -1,18 +1,29 @@
 {
-  "portraitScale": 3.5,
-  "portraitTranslation": [
-    0.1,
-    -2.1,
-    0
-  ],
-  "profileScale": 1.1,
-  "profileTranslation": [
-    -0.05,
-    0.25,
-    0
-  ],
-  "faint": "bedrock(diancie, sleep)",
+  "head": "head",
+  "portraitScale": 1.8,
+  "portraitTranslation": [ 0.0, 1.65, 0.0 ],
+  "profileScale": 0.65,
+  "profileTranslation": [ 0.0, 1.0, 0.0 ],
   "poses": {
+
+    "battle-idle": {
+      "poseName": "battle-idle",
+      "transformTicks": 10,
+      "poseTypes": [ "STAND" ],
+      "isBattle": true,
+	    "isTouchingWater": false,
+      "animations": [
+        "look",
+		    "bedrock(diancie, battle_idle)"
+	    ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(diancie, blink)"]
+        }
+      ]
+    },
+
     "standing": {
       "poseName": "standing",
       "transformTicks": 10,
@@ -23,54 +34,43 @@
         "PROFILE"
       ],
       "animations": [
+        "look",
         "bedrock(diancie, ground_idle)"
       ],
       "quirks": [
         {
           "name": "blink",
-          "animations": [
-            "bedrock(diancie, blink)"
-          ]
-        },
-        {
-          "name": "quirk1",
-          "animations": [
-            "bedrock(diancie, blink)"
-          ]
-        },
-        {
-          "name": "qurik2",
-          "animations": [
-            "bedrock(diancie, qurik2)"
-          ]
+          "animations": ["bedrock(diancie, blink)"]
         }
       ]
     },
-    "battle-standing": {
-      "poseName": "battle-standing",
-      "poseTypes": ["STAND"],
-      "isBattle": true,
-      "animations":[
-        "bedrock(diancie, battle_idle)"
+
+    "sleeping": {
+      "poseName": "sleeping",
+      "transformTicks": 10,
+      "poseTypes": [
+        "SLEEP"
+      ],
+      "animations": [
+        "bedrock(diancie, sleep)"
       ]
     },
+
     "walking": {
       "poseName": "walking",
       "transformTicks": 10,
-      "poseTypes": [
-        "WALK"
-      ],
-      "animations": [
+      "poseTypes": [ "WALK" ],
+      "animations": [ 
+        "look",
         "bedrock(diancie, ground_walk)"
       ],
       "quirks": [
         {
           "name": "blink",
-          "animations": [
-            "bedrock(diancie, blink)"
-          ]
+          "animations": ["bedrock(diancie, blink)"]
         }
       ]
     }
+
   }
 }

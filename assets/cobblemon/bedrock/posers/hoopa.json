@@ -1,32 +1,66 @@
 {
-    "head": "head",
-    "portraitScale": 1.5,
-    "portraitTranslation": [ 0, 0.3, 0 ],
-    "profileScale": 1.0,
-    "profileTranslation": [ 0, 0.6, 0 ],
-    "poses": {
-      "standing": {
-        "poseName": "standing",
-        "transformTicks": 10,
-        "poseTypes": [
-          "STAND",
-          "NONE",
-          "PORTRAIT",
-          "PROFILE"
-        ],
-        "animations": [
-          "look",
-          "bedrock(hoopa, ground_idle)"
-        ]
-      },
-      "walking": {
-        "poseName": "walking",
-        "transformTicks": 10,
-        "poseTypes": [ "WALK" ],
-        "animations": [ 
-          "look",
-          "bedrock(hoopa, ground_walk)"
-        ]
-      }
+  "head": "head",
+  "portraitScale": 1.75,
+  "portraitTranslation": [ -0.2, 0.3, 0.0 ],
+  "profileScale": 0.7,
+  "profileTranslation": [ 0.0, 0.75, 0.0 ],
+  "cry": "bedrock(hoopa, cry, true)",
+  "poses": {
+
+    "battle-idle": {
+      "poseName": "battle-idle",
+      "transformTicks": 10,
+      "poseTypes": [ "STAND" ],
+      "isBattle": true,
+	    "isTouchingWater": false,
+      "animations": [
+        "look",
+		    "bedrock(hoopa, battle_idle)"
+	    ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(hoopa, blink)"]
+        }
+      ]
+    },
+
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE"
+      ],
+      "animations": [
+        "look",
+        "bedrock(hoopa, ground_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(hoopa, blink)"]
+        }
+      ]
+    },
+
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [ "WALK" ],
+      "animations": [ 
+        "look",
+        "bedrock(hoopa, ground_walk)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(hoopa, blink)"]
+        }
+      ]
     }
+
   }
+}
