@@ -16,6 +16,7 @@
     "standing": {
       "poseName": "standing",
       "transformTicks": 10,
+      "isBattle":false,
       "poseTypes": [
         "STAND",
         "NONE",
@@ -26,6 +27,47 @@
         "look",
         "bedrock(meloetta_sonic, ground_idle)"
       ]
-    }
+    },
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [ "WALK" ],
+      "isTouchingWater": false,
+      "animations": [
+        "look",
+        "bedrock(meloetta_sonic, ground_walk)"
+      ]
+    },
+    "hovering": {
+      "poseName": "hovering",
+      "transformTicks": 10,
+      "poseTypes": [
+        "HOVER"
+      ],
+      "animations": [
+      "look",
+      "bedrock(meloetta_sonic, air_idle)"
+      ]
+    },
+    "flying": {
+  "poseName": "flying",
+  "transformTicks": 10,
+  "poseTypes": [
+    "FLY"
+  ],
+  "animations": [
+  "look",
+  "bedrock(meloetta_sonic, air_fly)"
+  ]
+},
+"battle-standing": {
+  "poseTypes": ["STAND"],
+  "isBattle": true,
+  "transformTicks": 10,
+  "animations": [
+  "look",
+  "bedrock(meloetta_sonic, battle_idle)"
+  ]
+} 
   }
 }
