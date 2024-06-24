@@ -1,46 +1,66 @@
 {
-    "head": "head",
-    "portraitScale": 1.5,
-    "portraitTranslation": [ -0.2, 0.3, 0 ],
-    "profileScale": 1.2,
-    "profileTranslation": [ 0, 0.1, 0 ],
-    "poses": {
+  "head": "head",
+  "portraitScale": 1.3,
+  "portraitTranslation": [ -0.9, 5.2, 0.0 ],
+  "profileScale": 0.26,
+  "profileTranslation": [ 0.0, 1.4, 0.0 ],
+  "cry": "bedrock(arceus, cry, true)",
+  "poses": {
 
-      "standing": {
-        "poseName": "standing",
-        "transformTicks": 10,
-        "poseTypes": [
-          "STAND",
-          "NONE",
-          "PORTRAIT",
-          "PROFILE"
-        ],
-        "animations": [
-          "look",
-          "bedrock(arceus, ground_idle)"
-        ],
-        "quirks": [
-          {
-            "name": "blink",
-            "animations": ["bedrock(arceus, blink)"]
-          }
-        ]
-      },
+    "battle-idle": {
+      "poseName": "battle-idle",
+      "transformTicks": 10,
+      "poseTypes": [ "STAND" ],
+      "isBattle": true,
+	    "isTouchingWater": false,
+      "animations": [
+        "look",
+		    "bedrock(arceus, battle_idle)"
+	    ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(arceus, blink)"]
+        }
+      ]
+    },
 
-      "walking": {
-        "poseName": "walking",
-        "transformTicks": 10,
-        "poseTypes": [ "WALK" ],
-        "animations": [ 
-          "look",
-          "bedrock(arceus, ground_walk)"
-        ],
-        "quirks": [
-          {
-            "name": "blink",
-            "animations": ["bedrock(arceus, blink)"]
-          }
-        ]
-      }
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE"
+      ],
+      "animations": [
+        "look",
+        "bedrock(arceus, ground_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(arceus, blink)"]
+        }
+      ]
+    },
+
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [ "WALK" ],
+      "animations": [ 
+        "look",
+        "bedrock(arceus, ground_walk)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(arceus, blink)"]
+        }
+      ]
     }
+
   }
+}

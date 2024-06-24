@@ -1,0 +1,60 @@
+{
+    "head": "head",
+    "portraitScale": 2.3,
+    "portraitTranslation": [-0.4, 2.0, 0.0],
+    "profileScale": 0.5,
+    "profileTranslation": [0.1, 1.0, 0.0],
+    "cry":  "bedrock(comfey_sonic, cry)",
+    "poses": {
+      "standing": {
+        "poseName": "standing",
+        "transformTicks": 10,
+        "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE"
+        ],
+        "isTouchingWater": false,
+        "animations": [
+          "look",
+          "bedrock(comfey_sonic, ground_idle)"
+        ],
+        "quirks": [
+          {
+            "name": "blink",
+            "loopTimes": 1,
+            "minSecondsBetweenOccurrences": 8,
+            "maxSecondsBetweenOccurrences": 20,
+            "animations": ["bedrock(comfey_sonic, blink)"]
+          }
+        ]
+          },
+      "walking": {
+        "poseName": "walking",
+        "transformTicks": 10,
+        "poseTypes": [ "WALK" ],
+        "isTouchingWater": false,
+        "animations": [
+          "look",
+          "bedrock(comfey_sonic, ground_walk, true)"
+        ],
+        "quirks": [
+          {
+            "name": "blink",
+            "loopTimes": 1,
+            "minSecondsBetweenOccurrences": 8,
+            "maxSecondsBetweenOccurrences": 20,
+            "animations": ["bedrock(comfey_sonic, blink)"]
+          }
+        ]
+      },
+      "sleeping": {
+        "poseName": "sleeping",
+        "transformTicks": 10,
+        "poseTypes": [ "SLEEP" ],
+        "animations": [   
+          "bedrock(comfey_sonic, sleep)" ]
+        }
+  }
+}
