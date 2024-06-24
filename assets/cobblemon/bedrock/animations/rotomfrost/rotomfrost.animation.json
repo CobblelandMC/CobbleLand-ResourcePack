@@ -2688,6 +2688,139 @@
 					}
 				}
 			}
+		},
+		"animation.rotom_frost.ground_idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"body": {
+					"rotation": [
+						"0+math.sin(query.anim_time*90*variable.idlespeed-0)*0.25",
+						"0+math.sin(query.anim_time*90*variable.idlespeed/2-0)*03",
+						"0+math.sin(query.anim_time*90*variable.idlespeed-0)*0.15"
+					],
+					"position": ["0+math.sin(query.anim_time*90*variable.idlespeed/2-90)*0.5", "5+math.sin(query.anim_time*90*variable.idlespeed-0)*0.25", 0]
+				},
+				"left_arm": {
+					"rotation": [
+						"0-math.sin(query.anim_time*90*variable.idlespeed-0)*1",
+						"0-math.sin(query.anim_time*90*variable.idlespeed-0)*0.25",
+						"0-math.sin(query.anim_time*90*20)*1.5"
+					]
+				},
+				"right_arm": {
+					"rotation": [
+						"0+math.sin(query.anim_time*90*variable.idlespeed-0)*1",
+						"0+math.sin(query.anim_time*90*variable.idlespeed-0)*0.25",
+						"0+math.sin(query.anim_time*90*20)*1.5"
+					]
+				},
+				"doors_upper": {
+					"rotation": [0, 0, 0]
+				},
+				"drawer_lower": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.rotom_frost.ground_walk": {
+			"loop": true,
+			"animation_length": 2.6667,
+			"bones": {
+				"body": {
+					"rotation": [
+						"10+math.sin(query.anim_time*90*variable.walkspeed-0)*0.25",
+						"0+math.sin(query.anim_time*90*variable.walkspeed/2-0)*03",
+						"0+math.sin(query.anim_time*90*variable.walkspeed-0)*0.15"
+					],
+					"position": [
+						"0+math.sin(query.anim_time*90*variable.walkspeed/2-90)*0.5",
+						"5+math.sin(query.anim_time*90*variable.walkspeed-0)*0.25",
+						"0-math.sin(query.anim_time*90*variable.walkspeed-90)*2"
+					]
+				},
+				"left_arm": {
+					"rotation": [
+						"0-math.sin(query.anim_time*90*variable.walkspeed-0)*1",
+						"0-math.sin(query.anim_time*90*variable.walkspeed-0)*8",
+						"0-math.sin(query.anim_time*90*35)*1.5"
+					]
+				},
+				"right_arm": {
+					"rotation": [
+						"0+math.sin(query.anim_time*90*variable.walkspeed-0)*1",
+						"0+math.sin(query.anim_time*90*variable.walkspeed-0)*5",
+						"0+math.sin(query.anim_time*90*35)*1.5"
+					]
+				}
+			}
+		},
+		"animation.rotom_frost.walk_test": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"body": {
+					"position": [0, 0, "0-query.anim_time*90*0.3"]
+				}
+			}
+		},
+		"animation.rotom_frost.cry": {
+			"animation_length": 2,
+			"bones": {
+				"body": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 0],
+						"0.2083": ["0+math.sin(query.anim_time*90*variable.idlespeed*20-0)*0.15", "0+math.sin(query.anim_time*90*variable.idlespeed*20-0)*0.15", 0],
+						"0.75": [0, 0, 0]
+					}
+				},
+				"door_left": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": {
+							"pre": [0, -75, 0],
+							"post": [0, -75, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.75": {
+							"post": [0, -75, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.875": [0, 0, 0]
+					}
+				},
+				"door_right": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": {
+							"pre": [0, 75, 0],
+							"post": [0, 75, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.75": {
+							"post": [0, 75, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.75": [0, 0, 0]
+					}
+				},
+				"drawer_lower": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2917": {
+							"pre": [0, 0, -4],
+							"post": [0, 0, -4],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8333": {
+							"post": [0, 0, -4],
+							"lerp_mode": "catmullrom"
+						},
+						"1.875": [0, 0, 0]
+					}
+				}
+			}
 		}
 	}
 }
