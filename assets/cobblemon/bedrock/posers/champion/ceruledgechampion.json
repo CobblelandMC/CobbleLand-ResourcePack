@@ -1,0 +1,59 @@
+{
+  "head": "head",
+  "portraitScale": 1.5,
+  "portraitTranslation": [ 0, 0, 0 ],
+  "profileScale": 0.7,
+  "profileTranslation": [ 0, 0, 0 ],
+  "faint": "bedrock(ceruledgemasterchief, faint)",
+    "poses": {
+      "standing": {
+        "poseName": "standing",
+        "isBattle": false,
+        "transformTicks": 10,
+        "poseTypes": [
+          "STAND",
+          "NONE",
+          "PORTRAIT",
+          "PROFILE"
+        ],
+        "animations": [
+          "look",
+          "bedrock(ceruledgechampion, ground_idle)"
+        ]
+      },
+      "walking": {
+        "poseName": "walking",
+        "transformTicks": 10,
+        "poseTypes": [ "WALK" ],
+        "animations": [ 
+          "look",
+          "bedrock(ceruledgechampion, ground_walk)"
+        ]
+      },
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "transformTicks": 10,
+        "animations": [
+        "look",
+        "bedrock(ceruledgechampion, battle_idle)"
+         ],
+     "quirks": [
+       {
+      "name": "battle",
+      "animations": [
+        "bedrock(ceruledgechampion, blink)",
+        "bedrock(ceruledgechampion, cry)"
+      ]
+    }
+  ]
+    },
+    "sleep": {
+    "poseTypes": ["SLEEP"],
+    "transformTicks": 10,
+    "animations": [
+        "bedrock(ceruledgechampion, sleep)"
+         ]
+    }       
+}
+}
