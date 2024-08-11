@@ -317,6 +317,7 @@
 					"position": [-0.5, 0, 0]
 				},
 				"portal": {
+					"position": [0, -35, 0],
 					"scale": 0
 				},
 				"wings": {
@@ -632,6 +633,7 @@
 					"rotation": [0, 0, 10]
 				},
 				"portal": {
+					"position": [0, -35, 0],
 					"scale": 0
 				}
 			}
@@ -794,6 +796,9 @@
 				"portal_rotation": {
 					"rotation": [0, "q.anim_time*45", 0],
 					"scale": ["1+math.sin(q.anim_time*45*2-0)*0.2", 1, "1+math.sin(q.anim_time*45*2-0)*0.2"]
+				},
+				"portal_face": {
+					"position": [0, 0, "0+math.sin(q.anim_time*45*2-0)*-1.5"]
 				}
 			}
 		},
@@ -1123,6 +1128,25 @@
 				"portal_rotation": {
 					"rotation": [0, "q.anim_time*45", 0],
 					"scale": ["1+math.sin(q.anim_time*45*2-0)*0.2", 1, "1+math.sin(q.anim_time*45*2-0)*0.2"]
+				}
+			}
+		},
+		"animation.giratwo.blink": {
+			"animation_length": 0.7917,
+			"bones": {
+				"eyelid_left": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": {"pre": [0, 0, 0], "post": [0, 0, -0.1]},
+						"0.5417": {"pre": [0, 0, -0.1], "post": [0, 0, 0]}
+					}
+				},
+				"eyelid_right": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": {"pre": [0, 0, 0], "post": [0, 0, -0.1]},
+						"0.5417": {"pre": [0, 0, -0.1], "post": [0, 0, 0]}
+					}
 				}
 			}
 		}
