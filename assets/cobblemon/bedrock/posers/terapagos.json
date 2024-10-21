@@ -1,7 +1,7 @@
 {
     "head": "body",
-    "portraitScale": 1.5,
-    "portraitTranslation": [ 0, 0.3, 0 ],
+    "portraitScale": 2.2,
+    "portraitTranslation": [ -0.7, -1.02, 0 ],
     "profileScale": 0.55,
     "profileTranslation": [ 0, 0.8, 0 ],
     "poses": {
@@ -15,16 +15,55 @@
           "PROFILE"
         ],
         "animations": [
+          "look",
           "bedrock(terapagos, ground_idle)"
-        ]
+        ],
+        "quirks": [
+          {
+             "name": "blink",
+             "animations": [
+                "bedrock(terapagos, blink)"
+            ]
+         },
+         {
+             "name": "cry",
+             "animations": [
+               "bedrock(terapagos, cry)"
+             ]
+         }
+          ]
       },
       "walking": {
         "poseName": "walking",
         "transformTicks": 10,
         "poseTypes": [ "WALK" ],
         "animations": [ 
+          "look",
           "bedrock(terapagos, ground_walk)"
         ]
+      },
+      "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "transformTicks": 10,
+      "animations": [
+        "look",
+        "bedrock(terapagos, battle_idle)"
+      ],
+      "quirks": [
+       {
+          "name": "blink",
+          "animations": [
+             "bedrock(terapagos, blink)"
+         ]
+      },
+      {
+          "name": "cry",
+          "animations": [
+            "bedrock(terapagos, cry)"
+          ]
+      }
+       ]
       }
     }
   }
