@@ -1,1 +1,57 @@
-{"head":"head","portraitScale":1.25,"portraitTranslation":[0,0.75,0],"profileScale":1.0,"profileTranslation":[0,0.6,0],"poses":{"standing":{"poseName":"standing","transformTicks":10,"poseTypes":["STAND","NONE","PORTRAIT","PROFILE"],"animations":["look","bedrock(darkrai, ground_idle)"]},"walking":{"poseName":"walking","transformTicks":10,"poseTypes":["WALK"],"animations":["look","bedrock(darkrai, ground_walk)"]},"flying":{"poseName":"flying","transformTicks":10,"poseTypes":["FLY"],"animations":["look","bedrock(darkrai, air_fly)"]},"hovering":{"poseName":"hovering","transformTicks":10,"poseTypes":["HOVER"],"animations":["look","bedrock(darkrai, air_idle)"]}}}
+{
+    "portraitScale": 2.1,
+    "portraitTranslation": [-1.11, 2.43, 0],
+    "profileScale": 0.51,
+    "profileTranslation": [0.05, 0.99, -10],
+    "rootBone": "darkrai",
+    "animations": {
+      "cry": "bedrock(darkrai, cry)",
+      "recoil": "bedrock(darkrai, recoil)",
+      "physical": "bedrock(darkrai, physical_attack)",
+      "special": "bedrock(darkrai, special_attack)",
+      "status": "bedrock(darkrai, status)"
+    },
+    "poses": {
+      "portrait": {
+        "poseTypes": ["PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "isTouchingWater": false,
+        "animations": [
+            "bedrock(darkrai, air_idle)"
+        ]
+      },
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": ["bedrock(darkrai, battle_idle)"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "FLOAT"],
+        "isBattle": false,
+        "isTouchingWater": false,
+        "animations": ["bedrock(darkrai, air_idle)"]
+      },
+      "walking": {
+        "poseTypes": ["WALK", "SWIM"],
+        "isTouchingWater": false,
+        "animations": ["bedrock(darkrai, air_fly)"]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "isTouchingWater": false,
+        "animations": ["q.bedrock(darkrai, sleep)"]
+      },
+      "hover": {
+        "poseTypes": ["HOVER"],
+        "isTouchingWater": false,
+        "animations": ["bedrock(darkrai, air_idle)"]
+      },
+      "fly": {
+        "poseTypes": ["FLY"],
+        "isTouchingWater": false,
+        "animations": ["bedrock(darkrai, air_fly)"]
+      }
+    }
+  }
+  
+  
