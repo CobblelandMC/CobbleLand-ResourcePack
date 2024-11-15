@@ -1,0 +1,133 @@
+{
+  "head": "head",
+  "portraitScale": 2.3,
+  "portraitTranslation": [-0.2, 2.8, 0],
+  "profileScale": 0.52,
+  "profileTranslation": [0, 1.05, 0],
+  "faint": "bedrock(lucariocafe, battle_faint)",
+  "cry": "bedrock(lucariocafe, cry)",
+  "poses": {
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "look",
+        "bedrock(lucariocafe, ground_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariocafe, blink)"]
+        },
+        {
+          "name": "senseaura",
+          "loopTimes": 1,
+          "minSecondsBetweenOccurrences": 140,
+          "maxSecondsBetweenOccurrences": 180,
+          "animations": ["bedrock(lucariocafe, senseaura)"]
+        }
+      ]
+    },
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": ["WALK"],
+      "animations": [
+        "look",
+        "bedrock(lucariocafe, ground_walk)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariocafe, blink)"]
+        }
+      ]
+    },    
+      "floating": {
+      "poseName": "floating",
+      "transformTicks": 10,
+      "isTouchingWater": true,
+      "poseTypes": [ "FLOAT" ],
+      "isTouchingWater": true,
+      "animations": [
+        "look",
+        "bedrock(lucariocafe, water_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariocafe, blink)"]
+        }
+      ]
+    },
+    "swimming": {
+      "poseName": "swimming",
+      "transformTicks": 10,
+      "isTouchingWater": true,
+      "poseTypes": [ "SWIM" ],
+      "animations": [
+        "look",
+        "bedrock(lucariocafe, water_swim)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariocafe, blink)"]
+        }
+      ]
+    },
+    "sleeping": {
+      "poseName": "sleeping",
+      "transformTicks": 10,
+      "poseTypes": ["SLEEP"],
+      "animations": [ "bedrock(lucariocafe, sleep)" ]
+    },
+      "battle-idle": {
+        "poseName": "battle-idle",
+        "transformTicks": 10,
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": [
+          "look",
+          "bedrock(lucariocafe, battle_idle)"
+        ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariocafe, blink)"]
+        }
+      ]
+      },
+    "shoulder_left": {
+      "poseName": "shoulder_left",
+      "transformTicks": 10,
+      "poseTypes": ["SHOULDER_LEFT"],
+      "animations": [
+        "look",
+        "bedrock(lucariocafe, shoulder_left)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariocafe, blink)"]
+        }
+      ]
+    },
+    "shoulder_right": {
+      "poseName": "shoulder_right",
+      "transformTicks": 10,
+      "poseTypes": ["SHOULDER_RIGHT"],
+      "animations": [
+        "look",
+        "bedrock(lucariocafe, shoulder_right)"
+      ],      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariocafe, blink)"]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "head": "head",
+  "portraitScale": 2.3,
+  "portraitTranslation": [-0.2, 3.04, 0],
+  "profileScale": 0.52,
+  "profileTranslation": [0, 1.05, 0],
+  "cry": "bedrock(lucariomega, cry)",
+  "poses": {
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "look",
+        "bedrock(lucariomega, ground_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariomega, blink)"]
+        }
+      ]
+    },
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": ["WALK"],
+      "animations": [
+        "look",
+        "bedrock(lucariomega, ground_walk)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariomega, blink)"]
+        }
+      ]
+    },    
+      "floating": {
+      "poseName": "floating",
+      "transformTicks": 10,
+      "isTouchingWater": true,
+      "poseTypes": [ "FLOAT" ],
+      "isTouchingWater": true,
+      "animations": [
+        "look",
+        "bedrock(lucariomega, water_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariomega, blink)"]
+        }
+      ]
+    },
+    "swimming": {
+      "poseName": "swimming",
+      "transformTicks": 10,
+      "isTouchingWater": true,
+      "poseTypes": [ "SWIM" ],
+      "animations": [
+        "look",
+        "bedrock(lucariomega, water_swim)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariomega, blink)"]
+        }
+      ]
+    },
+    "sleeping": {
+      "poseName": "sleeping",
+      "transformTicks": 10,
+      "poseTypes": ["SLEEP"],
+      "animations": [ "bedrock(lucariomega, sleep)" ]
+    },
+      "battle-idle": {
+        "poseName": "battle-idle",
+        "transformTicks": 10,
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": [
+          "look",
+          "bedrock(lucariomega, battle_idle)"
+        ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(lucariomega, blink)"]
+        },
+        {
+          "name": "angerspike",
+          "loopTimes": 1,
+          "minSecondsBetweenOccurrences": 2,
+          "maxSecondsBetweenOccurrences": 2,
+          "animations": ["bedrock(lucariomega, angerspike)"]
+        },
+        {
+          "name": "twitch1",
+          "loopTimes": 1,
+          "minSecondsBetweenOccurrences": 8,
+          "maxSecondsBetweenOccurrences": 20,
+          "animations": ["bedrock(lucariomega, twitch1)"]
+        },
+        {
+          "name": "twitch2",
+          "loopTimes": 1,
+          "minSecondsBetweenOccurrences": 8,
+          "maxSecondsBetweenOccurrences": 20,
+          "animations": ["bedrock(lucariomega, twitch2)"]
+        }
+      ]
+    }
+  }
+}
