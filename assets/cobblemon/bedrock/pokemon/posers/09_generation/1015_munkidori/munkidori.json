@@ -1,0 +1,66 @@
+{
+  "head": "upper_body",
+  "portraitScale": 1.75,
+  "portraitTranslation": [ 0.1, 0.4, 0.0 ],
+  "profileScale": 0.75,
+  "profileTranslation": [ 0.0, 0.6, 0.0 ],
+  "cry": "bedrock(munkidori, cry, true)",
+  "poses": {
+
+    "battle-idle": {
+      "poseName": "battle-idle",
+      "transformTicks": 10,
+      "poseTypes": [ "STAND" ],
+      "isBattle": true,
+	    "isTouchingWater": false,
+      "animations": [
+        "look",
+		    "bedrock(munkidori, battle_idle)"
+	    ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(munkidori, blink)"]
+        }
+      ]
+    },
+
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE"
+      ],
+      "animations": [
+        "look",
+        "bedrock(munkidori, ground_idle)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(munkidori, blink)"]
+        }
+      ]
+    },
+
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [ "WALK" ],
+      "animations": [ 
+        "look",
+        "bedrock(munkidori, ground_walk)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(munkidori, blink)"]
+        }
+      ]
+    }
+
+  }
+}
