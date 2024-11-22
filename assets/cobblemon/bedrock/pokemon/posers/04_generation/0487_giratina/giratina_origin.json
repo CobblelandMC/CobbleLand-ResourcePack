@@ -1,30 +1,28 @@
 {
-    "head": "body",
-    "portraitScale": 1.5,
-    "portraitTranslation": [ 0, 0.3, 0 ],
-    "profileScale": 0.55,
-    "profileTranslation": [ 0, 0.8, 0 ],
-    "poses": {
-      "standing": {
-        "poseName": "standing",
-        "transformTicks": 10,
-        "poseTypes": [
-          "STAND",
-          "NONE",
-          "PORTRAIT",
-          "PROFILE"
-        ],
-        "animations": [
-          "bedrock(giratina_origin, ground_idle)"
-        ]
-      },
-      "walking": {
-        "poseName": "walking",
-        "transformTicks": 10,
-        "poseTypes": [ "WALK" ],
-        "animations": [ 
-          "bedrock(giratina_origin, ground_walk)"
-        ]
-      }
+  "portraitScale": 1,
+  "portraitTranslation": [-1.5, 4.65, 0],
+  "profileScale": 0.225,
+  "profileTranslation": [-0.05, 1.4, 0],
+  "animations": {
+    "cry": "q.bedrock_stateful('giratina_origin', 'cry')",
+    "physical": "q.bedrock_primary('giratina_origin', 'physical_attack', q.curve('symmetrical_wide'))",
+    "special": "q.bedrock_primary('giratina_origin', 'special_attack', q.curve('symmetrical_wide'))"
+  },
+  "poses": {
+    "standing": {
+      "poseName": "standing",
+      "poseTypes": ["STAND", "PROFILE", "PORTRAIT"],
+      "transformTicks": 10,
+      "condition": "!q.in_battle",
+      "quirks": ["q.bedrock_quirk('giratina_origin', 'blink')"],  
+      "animations": ["q.bedrock('giratina_origin', 'ground_idle')", "q.look('head')"]
+    },
+    "walking": {
+      "poseName": "walking",
+      "poseTypes": ["WALK"],
+      "transformTicks": 10,
+      "quirks": ["q.bedrock_quirk('giratina_origin', 'blink')"],  
+      "animations": ["q.bedrock('giratina_origin', 'ground_walk')", "q.look('head')"]
     }
   }
+}
