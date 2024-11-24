@@ -1,29 +1,77 @@
 {
-    "head": "head",
-	"portraitScale": 1.8,
-    "portraitTranslation": [ -0.1, 0.1, 0 ],
-    "profileScale": 0.6,
-    "profileTranslation": [ 0, 0.6, 0 ],
-	"faint": "bedrock(meltan, faint)",
-    "poses": {
-      "standing": {
-        "poseName": "standing",
+  "head": "head",
+  "portraitScale": 1.5,
+  "portraitTranslation": [ 0, 0, 0 ],
+  "profileScale": 0.65,
+  "profileTranslation": [ 0, 0.8, 0 ],
+  "faint": "bedrock(meltan, faint)",
+  "cry": "bedrock(meltan, cry)",
+  "animations": {
+    "recoil": "q.bedrock_stateful('meltan', 'recoil')",
+    "physical": "q.bedrock_primary('meltan', 'physical', q.curve('symmetrical_wide'))",
+    "special": "q.bedrock_primary('meltan', 'special', q.curve('symmetrical_wide'))",
+    "status": "q.bedrock_primary('meltan', 'status', q.curve('symmetrical_wide'))"
+  },
+  "poses": {
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE",
+        "FLOAT"
+      ],
+      "isBattle": false,
+      "animations": [
+        "look",
+        "bedrock(meltan, ground_idle)"
+      ],
+      "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(meltan, blink)"]
+          }
+        ]
+    },
+
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [ "WALK", "SWIM"],
+      "animations": [ 
+        "look",
+        "bedrock(meltan, ground_walk)"
+      ],
+      "quirks": [
+        {
+          "name": "blink",
+          "animations": ["bedrock(meltan, blink)"]
+        }
+      ]
+    },
+     
+    "sleeping": {
+      "poseName": "sleeping",
+      "transformTicks": 10,
+      "poseTypes": [
+        "SLEEP"
+      ],
+      "animations": [
+        "bedrock(meltan, sleep)"
+      ]
+    },
+    "battle-standing": {
+        "poseName": "battle-standing",
         "transformTicks": 10,
         "poseTypes": [
-          "STAND",
-          "NONE",
-          "PORTRAIT",
-          "PROFILE"
+          "STAND"
         ],
+        "isBattle": true,
         "animations": [
-          "bedrock(meltan, ground_idle)"
+          "bedrock(meltan, battle_idle)"
         ]
-      },
-      "walking": {
-        "poseName": "walking",
-        "transformTicks": 10,
-        "poseTypes": [ "WALK" ],
-        "animations": [ "bedrock(meltan, ground_walk)" ]
-		}
-      }
     }
+  }
+}
