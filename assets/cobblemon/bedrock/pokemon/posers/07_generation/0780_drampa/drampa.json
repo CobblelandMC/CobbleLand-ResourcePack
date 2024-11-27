@@ -16,6 +16,7 @@
     "physical": "q.bedrock_primary('drampa', 'physical_attack', q.curve('symmetrical_wide'))"
   },    
   "poses": {
+
     "battle-standing": {
       "poseTypes": ["STAND"],
       "isBattle": true,
@@ -34,7 +35,6 @@
       ],
       "animations": ["bedrock(drampa, ground_idle)"]
     },
-
     "walking": {
       "poseName": "walking",
       "transformTicks": 10,
@@ -42,6 +42,12 @@
         "WALK"
       ],
       "animations": ["bedrock(drampa, ground_walk)"]
+    },
+    "sleeping": {
+    "poseName": "sleeping",
+    "poseTypes": ["SLEEP"],
+    "transformTicks": 10,
+    "animations": ["bedrock(drampa, sleep, true)"]
     }
   }
 }
