@@ -1,22 +1,10 @@
 {
-  "portraitScale": 1.25,
-  "portraitTranslation": [ -0.5, 0.3, 0 ],
-  "profileScale": 1,
-  "profileTranslation": [-0.1, 0.3, 0 ],
-  "rootBone": "Drampa",
-  "animations": {
-    "physical": "q.bedrock_primary('drampa', 'physical_attack', q.curve('symmetrical_wide'))",
-    "recoil": "q.bedrock_stateful('drampa', 'recoil')"
-  },    
+  "head": "head",
+  "portraitScale": 1.9,
+  "portraitTranslation": [ -0.48, -0.7, 0 ],
+  "profileScale": 0.75,
+  "profileTranslation": [ -0.03, 0.35, 0 ],
   "poses": {
-    "battle-standing": {
-      "poseTypes": ["STAND"],
-      "isBattle": true,
-      "transformTicks": 10,
-      "animations": ["bedrock(drampa, battle_idle)"],
-      "quirks": ["q.bedrock_quirk('drampa', 'blink')"]
-    },  
-
     "standing": {
       "poseName": "standing",
       "transformTicks": 10,
@@ -26,23 +14,18 @@
         "PORTRAIT",
         "PROFILE"
       ],
-      "animations": ["bedrock(drampa, ground_idle)"],
-      "quirks": ["q.bedrock_quirk('drampa', 'blink')"]
+      "animations": [
+        "bedrock(drampa, ground_idle)"
+      ]
     },
+
     "walking": {
       "poseName": "walking",
       "transformTicks": 10,
-      "poseTypes": [
-        "WALK"
-      ],
-      "animations": ["bedrock(drampa, ground_walk)"],
-      "quirks": ["q.bedrock_quirk('drampa', 'blink')"]
-    },
-    "sleeping": {
-    "poseName": "sleeping",
-    "poseTypes": ["SLEEP"],
-    "transformTicks": 10,
-    "animations": ["bedrock(drampa, sleep, true)"]
+      "poseTypes": [ "WALK" ],
+      "animations": [ 
+        "bedrock(drampa, ground_idle)"
+      ]
     }
   }
 }
