@@ -1,63 +1,29 @@
 {
-  "portraitScale": 2.18,
-  "portraitTranslation": [-0.37, 3.84, 0],
-  "profileScale": 0.37,
-  "profileTranslation": [0, 1.22, 0],
-  "animations": {
-    "cry": "q.bedrock_stateful('delphox', 'cry_old')"
-  },
+  "head": "head",
+  "portraitScale": 2,
+  "portraitTranslation": [ -0.5, -0.5, 0 ],
+  "profileScale": 0.75,
+  "profileTranslation": [ 0.1, 0.6, 0 ],
+  "faint": "bedrock(delphoxh, faint)",
   "poses": {
-    "battle-standing": {
-      "poseName": "battle-standing",
-      "poseTypes": [
-        "STAND"
-      ],
-      "isBattle": true,
-      "animations": [
-        "q.look('head')",
-        "q.bedrock('delphox', 'battle_idle')"
-      ],
-      "quirks": [
-        "q.bedrock_quirk('delphox', 'blink')"
-      ]
-    },
     "standing": {
       "poseName": "standing",
+      "transformTicks": 10,
       "poseTypes": [
         "STAND",
         "NONE",
         "PORTRAIT",
-        "PROFILE",
-        "FLOAT"
+        "PROFILE"
       ],
-      "isBattle": false,
       "animations": [
-        "q.look('head')",
-        "q.bedrock('delphox', 'ground_idle')"
-      ],
-      "quirks": [
-        "q.bedrock_quirk('delphox', 'blink')"
+        "bedrock(delphoxh, ground_idle)"
       ]
     },
     "walking": {
       "poseName": "walking",
-      "poseTypes": [
-        "WALK",
-        "SWIM"
-      ],
-      "animations": [
-        "q.look('head')",
-        "q.bedrock('delphox', 'ground_idle')"
-      ],
-      "quirks": [
-        "q.bedrock_quirk('delphox', 'blink')"
-      ],
-      "transformedParts": [
-        {
-          "part": "stick_hand",
-          "isVisible": false
-        }
-      ]
+      "transformTicks": 10,
+      "poseTypes": [ "WALK" ],
+      "animations": [ "bedrock(delphoxh, ground_walk)" ]
     }
   }
 }
