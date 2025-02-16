@@ -1,0 +1,85 @@
+{
+  "head": "head",
+  "portraitScale": 1.6,
+  "portraitTranslation": [ 0, 0.1, 0 ],
+  "profileScale": 1.2,
+  "profileTranslation": [ 0, 0.25, 0 ],
+  "cry": "bedrock(togekiss_valentine, cry)",
+  "poses": {
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE"
+      ],
+      "animations": [ "look", "bedrock(togekiss_valentine, air_idle)"],
+		"quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(togekiss_valentine, blink)"]
+          }
+        ]
+    },
+    "walking": {
+        "poseName": "walking",
+        "transformTicks": 10,
+        "poseTypes": [ "WALK" ],
+        "animations": [ "bedrock(togekiss_valentine, air_fly)" 
+		],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(togekiss_valentine, blink)"]
+          }
+        ]
+	},
+	"battle-idle": {
+        "poseName": "battle-idle",
+        "transformTicks": 10,
+        "poseTypes": [ "STAND" ],
+        "animations": [ "bedrock(togekiss_valentine, air_idle)" 
+		],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(togekiss_valentine, blink)"]
+          }
+        ]
+	},
+	"flying": {
+      "poseName": "flying",
+      "transformTicks": 10,
+      "poseTypes": [ "FLY" ],
+      "animations": [ "bedrock(togekiss_valentine, air_fly)" 
+	  ],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(togekiss_valentine, blink)"]
+          }
+        ]
+    },
+	"sleeping": {
+      "poseName": "sleeping",
+      "transformTicks": 10,
+      "poseTypes": [ "SLEEP" ],
+      "animations": [ "bedrock(togekiss_valentine, sleep)" ]
+    },
+	"hovering": {
+      "poseName": "hovering",
+      "transformTicks": 10,
+      "poseTypes": [ "HOVER" ],
+      "animations": [ "bedrock(togekiss_valentine, air_idle)" 
+	  ],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(togekiss_valentine, blink)"]
+          }
+        ]
+      }
+    }
+  }
