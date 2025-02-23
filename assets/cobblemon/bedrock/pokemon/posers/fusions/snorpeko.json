@@ -1,0 +1,41 @@
+{
+    "head": "body",
+    "portraitScale": 1.0,
+    "portraitTranslation": [ 0, 0.5, 0 ],
+    "profileScale": 1.0,
+    "profileTranslation": [ 0, 0.4, 0 ],
+    "poses": {
+      "standing": {
+        "isBattle":false,
+        "poseName": "standing",
+        "transformTicks": 10,
+        "poseTypes": [
+          "STAND",
+          "NONE",
+          "PORTRAIT",
+          "PROFILE"
+        ],
+        "animations": ["bedrock(snorpeko, ground_idle)"],
+        "quirks": ["q.bedrock_quirk('snorpeko', 'blink')"]
+      },      
+      "battle-standing": {
+        "isBattle":true,
+        "poseName": "standing",
+        "transformTicks": 10,
+        "poseTypes": [
+          "STAND",
+          "NONE",
+          "PORTRAIT",
+          "PROFILE"
+        ],
+        "animations": ["bedrock(snorpeko, idle_hangry)"],
+        "quirks": ["q.bedrock_quirk('snorpeko', 'blink')"]
+      },
+
+      "walking": {
+        "poseTypes": ["WALK"],
+        "animations": ["q.look('head')", "q.bedrock('snorpeko', 'ground_walk')"],
+        "quirks": ["q.bedrock_quirk('snorpeko', 'blink')"]
+      }
+    }
+  }

@@ -1,0 +1,154 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.crog.ground_walk": {
+			"loop": true,
+			"animation_length": 2.6667,
+			"bones": {
+				"body": {
+					"rotation": ["4+math.sin(query.anim_time*90*6/2-135)*4", 0, "0+math.sin(query.anim_time*90*6/4-0)*2"],
+					"position": ["0+math.sin(query.anim_time*90*6/4-90)*0.75", "5+math.sin(query.anim_time*90*6/2-90)*0.75", "0+math.sin(query.anim_time*90*6/2-0)*2"]
+				},
+				"ponytail_left": {
+					"rotation": ["-10-math.sin(query.anim_time*90*6/2-180)*6", 0, "0-math.sin(query.anim_time*90*6/2-150)*4"]
+				},
+				"ponytail_left2": {
+					"rotation": ["-5-math.sin(query.anim_time*90*6/2-210)*2", 0, 0]
+				},
+				"ponytail_left3": {
+					"rotation": ["-5-math.sin(query.anim_time*90*6/2-240)*6", 0, 0]
+				},
+				"bone3": {
+					"rotation": [0, 0, "0+math.sin(query.anim_time*90*6-0)*2"],
+					"position": ["0+math.sin(query.anim_time*90*6-45)*0.25", "0+math.sin(query.anim_time*90*6+45)*0.25", "0+math.sin(query.anim_time*90*6/2-0)*0.25"]
+				},
+				"ponytail_right": {
+					"rotation": ["-10-math.sin(query.anim_time*90*6/2-180)*6", 0, "0+math.sin(query.anim_time*90*6/2-150)*4"]
+				},
+				"ponytail_right2": {
+					"rotation": ["-5-math.sin(query.anim_time*90*6/2-210)*2", 0, 0]
+				},
+				"ponytail_right3": {
+					"rotation": ["-5-math.sin(query.anim_time*90*6/2-240)*6", 0, 0]
+				},
+				"bone": {
+					"rotation": [0, 0, "0+math.sin(query.anim_time*90*6-45)*2"],
+					"position": ["0+math.sin(query.anim_time*90*6-0)*0.25", "0+math.sin(query.anim_time*90*6-90)*0.25", "0+math.sin(query.anim_time*90*6/2-45)*0.25"]
+				},
+				"bone2": {
+					"rotation": [0, 0, "0+math.sin(query.anim_time*90*6-180)*2"],
+					"position": ["0+math.sin(query.anim_time*90*6-135)*0.25", "0+math.sin(query.anim_time*90*6-225)*0.25", "0+math.sin(query.anim_time*90*6/2-180)*0.25"]
+				},
+				"mouth_open": {
+					"position": [0, 0, 0.1]
+				}
+			}
+		},
+		"animation.crog.ground_idle": {
+			"loop": true,
+			"bones": {
+				"torso": {
+					"rotation": [-2.5, 0, 0]
+				},
+				"head": {
+					"rotation": [5, 0, 0]
+				},
+				"arm_left": {
+					"rotation": [-20.25153, -52.09977, 13.66341]
+				},
+				"arm_left2": {
+					"rotation": [47.92624, 30.95595, 24.57052]
+				},
+				"hand_left": {
+					"rotation": [7.5, 0, 0]
+				},
+				"claw_inner_left": {
+					"rotation": [0, -7.5, 0]
+				},
+				"claw_outer_left": {
+					"rotation": [0, 7.5, 0]
+				},
+				"leg_front_left": {
+					"rotation": [-0.87038, 4.92385, -5.03743],
+					"position": [0, 0.25, 0]
+				},
+				"leg_front_left2": {
+					"rotation": [0, 0, -22.5]
+				},
+				"leg_middle_left": {
+					"rotation": [0.43439, -2.462, -5.00933]
+				},
+				"leg_middle_left2": {
+					"rotation": [0, 0, -30]
+				},
+				"leg_back_left": {
+					"rotation": [3.03513, -9.53274, -12.75312]
+				},
+				"leg_back_left2": {
+					"rotation": [0, 0, -10]
+				},
+				"leg_front_right": {
+					"rotation": [-0.87038, -4.92385, 5.03743],
+					"position": [0, 0.25, 0]
+				},
+				"leg_front_right2": {
+					"rotation": [0, 0, 22.5]
+				},
+				"leg_middle_right": {
+					"rotation": [0.43439, 2.462, 5.00933]
+				},
+				"leg_middle_right2": {
+					"rotation": [0, 0, 30]
+				},
+				"leg_back_right": {
+					"rotation": [3.03513, 9.53274, 12.75312]
+				},
+				"leg_back_right2": {
+					"rotation": [0, 0, 10]
+				},
+				"arm_right": {
+					"rotation": [-20.25153, 52.09977, -13.66341]
+				},
+				"arm_right2": {
+					"rotation": [47.92624, -30.95595, -24.57052]
+				},
+				"hand_right": {
+					"rotation": [7.5, 0, 0]
+				},
+				"claw_inner_right": {
+					"rotation": [0, 7.5, 0]
+				},
+				"claw_outer_right": {
+					"rotation": [0, -7.5, 0]
+				}
+			}
+		},
+		"animation.crog.blink": {
+			"animation_length": 0.1667,
+			"bones": {
+				"eyelid_left": {
+					"position": {
+						"0.0": [0, 0, -0.1],
+						"0.125": [0, 0, -0.1],
+						"0.1667": [0, 0, 0]
+					}
+				},
+				"eyelid_right": {
+					"position": {
+						"0.0": [0, 0, -0.1],
+						"0.125": [0, 0, -0.1],
+						"0.1667": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.crog.cry": {
+			"animation_length": 1.2,
+			"sound_effects": {
+				"0.0417": {
+					"effect": "pokemon.crog.cry"
+				}
+			}
+		}
+	}
+}
