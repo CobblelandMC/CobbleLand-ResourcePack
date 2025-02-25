@@ -1,42 +1,38 @@
 {
-  "head": "head",
-  "portraitScale": 1.5,
-  "portraitTranslation": [ 0, 0.3, 0 ],
-  "profileScale": 0.55,
-  "profileTranslation": [ 0, 0.8, 0 ],
+  "portraitScale": 2.3,
+  "portraitTranslation": [-0.1, 0.58, 0],
+  "profileScale": 0.75,
+  "profileTranslation": [0, 0.68, 0],
+  "animations": {
+    "cry": "q.bedrock_stateful('reshiram', 'cry')"
+  },
   "poses": {
-    "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
-      "isBattle": false,
-      "animations": [
-        "bedrock(reshiram, ground_idle)"
-      ]
-    },
-    "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [ "WALK" ],
-      "animations": [ 
-        "bedrock(reshiram, ground_walk)"
-      ]
-    },
     "battle-standing": {
-      "poseName": "battle-standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND"
-      ],
+      "poseTypes": ["STAND"],
       "isBattle": true,
       "animations": [
-        "bedrock(reshiram, battle_idle)"
-      ]
-    }
-  }
+        "q.look('head')",
+        "q.bedrock('reshiram', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('reshiram', 'blink')"]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('reshiram', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('reshiram', 'blink')"]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('reshiram', 'ground_walk')",
+        "q.bedrock('reshiram', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('reshiram', 'blink')"]
+     }
+}
 }
