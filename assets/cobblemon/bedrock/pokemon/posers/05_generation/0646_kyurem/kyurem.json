@@ -1,30 +1,34 @@
 {
-    "head": "head",
-    "portraitScale": 1.5,
-    "portraitTranslation": [ 0, 0.3, 0 ],
-    "profileScale": 0.55,
-    "profileTranslation": [ 0, 0.8, 0 ],
-    "poses": {
-      "standing": {
-        "poseName": "standing",
-        "transformTicks": 10,
-        "poseTypes": [
-          "STAND",
-          "NONE",
-          "PORTRAIT",
-          "PROFILE"
-        ],
-        "animations": [
-          "bedrock(kyurem, ground_idle)"
-        ]
-      },
-      "walking": {
-        "poseName": "walking",
-        "transformTicks": 10,
-        "poseTypes": [ "WALK" ],
-        "animations": [ 
-          "bedrock(kyurem, ground_walk)"
-        ]
-      }
-    }
-  }
+  "portraitScale": 2.3,
+  "portraitTranslation": [-0.1, 0.58, 0],
+  "profileScale": 0.75,
+  "profileTranslation": [0, 0.68, 0],
+  "animations": {
+    "cry": "q.bedrock_stateful('kyurem', 'cry')"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('kyurem', 'battle_idle')"
+      ]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('kyurem', 'ground_idle')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('kyurem', 'ground_walk')"
+      ]
+     }
+}
+}
