@@ -1,30 +1,43 @@
 {
-    "head": "body",
-    "portraitScale": 1.5,
-    "portraitTranslation": [ 0, 0.3, 0 ],
-    "profileScale": 0.55,
-    "profileTranslation": [ 0, 0.8, 0 ],
-    "poses": {
-      "standing": {
-        "poseName": "standing",
-        "transformTicks": 10,
-        "poseTypes": [
-          "STAND",
-          "NONE",
-          "PORTRAIT",
-          "PROFILE"
-        ],
-        "animations": [
-          "bedrock(ogerpon, ground_idle)"
-        ]
-      },
-      "walking": {
-        "poseName": "walking",
-        "transformTicks": 10,
-        "poseTypes": [ "WALK" ],
-        "animations": [ 
-          "bedrock(ogerpon, ground_walk)"
-        ]
-      }
+  "portraitScale": 2,
+  "portraitTranslation": [ -0.385, 0.99, 0 ],
+  "profileScale": 0.55,
+  "profileTranslation": [ 0, 0.95, 0 ],
+  "animations": {
+    "recoil": "q.bedrock_stateful('ogerpon', 'recoil')",
+    "cry": "q.bedrock_stateful('ogerpon', 'cry')"
+  },
+  "poses": { 
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.bedrock('ogerpon', 'battle_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('ogerpon', 'blink')"
+      ]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "FLOAT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.bedrock('ogerpon', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('ogerpon', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK", "SWIM"],
+      "animations": [
+        "q.bedrock('ogerpon', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('ogerpon', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('ogerpon', 'sleep')"]
     }
   }
+}
