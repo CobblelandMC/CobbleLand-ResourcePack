@@ -147,6 +147,76 @@
 					"position": [0, 0, 0.2]
 				}
 			}
+		},
+		"animation.victini.ground_walk": {
+			"loop": true,
+			"animation_length": 2.625,
+			"bones": {
+				"leg_left": {
+					"rotation": [0, -15, 0]
+				},
+				"wing_left": {
+					"rotation": [0, 30, 0]
+				},
+				"leg_right": {
+					"rotation": [0, 15, 0]
+				},
+				"wing_right": {
+					"rotation": [0, -30, 0]
+				},
+				"torso": {
+					"rotation": [0, "0+math.sin(query.anim_time*90*variable.idlespeed-50)*2", "0+math.sin(query.anim_time*90*variable.idlespeed-70)*2"],
+					"position": [0, "0+math.sin(query.anim_time*90*variable.idlespeed-25)*0.2", 0]
+				},
+				"torso_up": {
+					"rotation": [0, "0+math.sin(query.anim_time*90*variable.idlespeed-90)*2", "0+math.sin(query.anim_time*90*variable.idlespeed-120)*2"]
+				},
+				"head": {
+					"rotation": [0, "0+math.sin(query.anim_time*90*variable.idlespeed-140)*2", 0]
+				},
+				"arm_right": {
+					"rotation": [0, 0, "-32.5+math.sin(query.anim_time*90*variable.idlespeed-120)*2"]
+				},
+				"elbow_right": {
+					"rotation": [1.7374, 0.1316, "7.2971+math.sin(query.anim_time*90*variable.idlespeed-160)*4"]
+				},
+				"hand_right": {
+					"rotation": [0, 0, "65+math.sin(query.anim_time*90*variable.idlespeed-180)*5"]
+				},
+				"pinky_right": {
+					"rotation": [0, 20, 0],
+					"position": [0.2, 0, 0.1]
+				},
+				"index_right": {
+					"rotation": [0, -20, 0],
+					"position": [0.2, 0, -0.1]
+				},
+				"thumb_right": {
+					"rotation": [0, 20, 0],
+					"position": [0, 0, 0.2]
+				},
+				"arm_left": {
+					"rotation": [0, 0, "32.5+math.sin(query.anim_time*90*variable.idlespeed-120)*2"]
+				},
+				"elbow_left": {
+					"rotation": [1.7374, -0.1316, "-7.2970785864+math.sin(query.anim_time*90*variable.idlespeed-160)*4"]
+				},
+				"hand_left": {
+					"rotation": [0, 0, "-65+math.sin(query.anim_time*90*variable.idlespeed-180)*5"]
+				},
+				"pinky_left": {
+					"rotation": [0, -20, 0],
+					"position": [-0.2, 0, 0.1]
+				},
+				"index_left": {
+					"rotation": [0, 20, 0],
+					"position": [-0.2, 0, -0.1]
+				},
+				"thumb_left": {
+					"rotation": [0, -20, 0],
+					"position": [0, 0, 0.2]
+				}
+			}
 		}
 	}
 }
