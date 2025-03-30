@@ -1,0 +1,54 @@
+{
+    "portraitScale": 1,
+    "portraitTranslation": [0, 0, 0],
+    "profileScale": 1,
+    "profileTranslation": [0, 0, 0],
+    "animations": {
+      "faint": "q.bedrock_primary('mantine_aprilfools2025', 'surprised', q.curve('one'))",
+      "cry": "q.bedrock_stateful('mantine_aprilfools2025', 'happy')",
+      "recoil": "q.bedrock_stateful('mantine_aprilfools2025', 'recoil')",
+      "physical": "q.bedrock_primary('mantine_aprilfools2025', 'angry', q.curve('symmetrical_wide'))",
+      "special": "q.bedrock_primary('mantine_aprilfools2025', 'bored', q.curve('symmetrical_wide'))",
+      "status": "q.bedrock_primary('mantine_aprilfools2025', 'sad', q.curve('symmetrical_wide'))"
+    },
+    "poses": {
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('mantine_aprilfools2025', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('mantine_aprilfools2025', 'blink')"
+        ]
+      },
+      "walking": {
+        "poseTypes": ["WALK"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('mantine_aprilfools2025', 'ground_walk')"
+        ],
+        "quirks": ["q.bedrock_quirk('mantine_aprilfools2025', 'blink')"]
+      },
+      "float": {
+        "poseTypes": ["FLOAT"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('mantine_aprilfools2025', 'water_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('mantine_aprilfools2025', 'blink')"]
+      },
+      "swim": {
+        "poseTypes": ["SWIM"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('mantine_aprilfools2025', 'water_swim')"
+        ],
+        "quirks": ["q.bedrock_quirk('mantine_aprilfools2025', 'blink')"]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "animations": ["q.bedrock('mantine_aprilfools2025', 'sleep')"]
+      }
+    }
+   }
