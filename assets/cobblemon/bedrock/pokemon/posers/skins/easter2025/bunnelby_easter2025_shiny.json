@@ -1,0 +1,49 @@
+{
+    "portraitScale": 1,
+    "portraitTranslation": [0, 0, 0],
+    "profileScale": 1,
+    "profileTranslation": [0, 0, 0],
+    "animations": {
+      "cry": "q.bedrock_stateful('bunnelby_easter2025', 'cry')"
+    },
+    "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('bunnelby_easter2025', 'demon')",
+          "q.bedrock('bunnelby_easter2025', 'battle_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('bunnelby_easter2025', 'blink')"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('bunnelby_easter2025', 'demon')",
+          "q.bedrock('bunnelby_easter2025', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('bunnelby_easter2025', 'blink')"
+        ]
+      },
+      "walking": {
+        "poseTypes": ["WALK"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('bunnelby_easter2025', 'demon')",
+          "q.bedrock('bunnelby_easter2025', 'ground_walk')"
+        ],
+        "quirks": ["q.bedrock_quirk('bunnelby_easter2025', 'blink')"]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "animations": ["q.bedrock('bunnelby_easter2025', 'sleep')","q.bedrock('bunnelby_easter2025', 'demon')"],
+        "quirks": ["q.bedrock_quirk('bunnelby_easter2025', 'quirk_sleep')",
+    "q.bedrock_quirk('bunnelby_easter2025', 'quirk_sleep2')"
+    ]
+      }
+    }
+   }
