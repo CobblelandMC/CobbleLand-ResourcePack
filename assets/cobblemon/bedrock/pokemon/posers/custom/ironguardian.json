@@ -1,9 +1,8 @@
   {
-    "head": "head",
-    "portraitScale": 1.5,
-    "portraitTranslation": [ 0, 0.3, 0 ],
-    "profileScale": 0.55,
-    "profileTranslation": [ 0, 0.8, 0 ],
+    "portraitScale": 1,
+    "portraitTranslation": [ 0, 2.3, 0 ],
+    "profileScale": 0.5,
+    "profileTranslation": [ 0, 1.2, 0 ],
     "animations": {
       "faint": "q.bedrock_primary('ironguardian', 'faint', q.curve('one'))",
       "cry": "q.bedrock_stateful('ironguardian', 'cry')",
@@ -30,9 +29,27 @@
         ],
         "quirks": ["q.bedrock_quirk('ironguardian', 'blink')"]
       },
+      "float": {
+        "poseTypes": ["FLOAT"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('ironguardian', 'ground_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('ironguardian', 'blink')"]
+      },
+      "swim": {
+        "poseTypes": ["SWIM"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('ironguardian', 'ground_walk')"
+        ],
+        "quirks": ["q.bedrock_quirk('ironguardian', 'blink')"]
+      },
       "sleep": {
         "poseTypes": ["SLEEP"],
-        "animations": ["q.bedrock('ironguardian', 'sleep')"]
+        "animations": [
+            "q.bedrock('ironguardian', 'sleep', q.curve('symmetrical_wide'))"
+        ]
       }
     }
-  }
+   }
