@@ -1,0 +1,51 @@
+{
+    "portraitScale": 1.6,
+    "portraitTranslation": [0, 0, 0],
+    "profileScale": 1,
+    "profileTranslation": [0, 0, 0],
+    "animations": {
+      "cry": "q.bedrock_stateful('meowth_galarian', 'cry')"
+    },
+    "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('meowth_galarian', 'battle_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('meowth_galarian', 'blink')"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('meowth_galarian', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('meowth_galarian', 'blink')"
+        ]
+      },
+      "walking": {
+        "poseTypes": ["WALK"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('meowth_galarian', 'ground_walk')"
+        ],
+        "quirks": ["q.bedrock_quirk('meowth_galarian', 'blink')"]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "animations": ["q.bedrock('meowth_galarian', 'sleep')"]
+      },
+      "shoulder_left": {
+        "poseTypes": ["SHOULDER_LEFT"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('meowth_galarian', 'shoulder_left')"
+        ],
+        "quirks": ["q.bedrock_quirk('meowth_galarian', 'blink')"]
+      }
+    }
+   }
