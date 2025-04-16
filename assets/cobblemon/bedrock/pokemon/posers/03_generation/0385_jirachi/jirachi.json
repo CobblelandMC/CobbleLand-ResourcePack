@@ -1,41 +1,60 @@
 {
-  "head": "head",
-  "portraitScale": 1.25,
-  "portraitTranslation": [
-    0,
-    0.5,
-    0
-  ],
-  "profileScale": 0.8,
-  "profileTranslation": [
-    0,
-    0.4,
-    0
-  ],
-  "poses": {
-    "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
-      "animations": [
-        "look",
-        "bedrock(jirachi, ground_idle)"
-      ]
-    },
-    "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [
-        "WALK"
-      ],
-      "animations": [
-        "bedrock(jirachi, ground_walk)"
-      ]
-    }
-  }
+ "portraitScale": 1,
+ "portraitTranslation": [0, 0, 0],
+ "profileScale": 1,
+ "profileTranslation": [0, 0, 0],
+ "animations": {
+   "faint": "q.bedrock_primary('jirachi', 'faint', q.curve('one'))",
+   "cry": "q.bedrock_stateful('jirachi', 'cry')"
+ },
+ "poses": {
+   "battle-standing": {
+     "poseTypes": ["STAND"],
+     "isBattle": true,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('jirachi', 'battle_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('jirachi', 'blink')"]
+   },
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "isBattle": false,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('jirachi', 'air_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('jirachi', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('jirachi', 'air_fly')"
+     ],
+     "quirks": ["q.bedrock_quirk('jirachi', 'blink')"]
+   },
+   "hover": {
+     "poseTypes": ["HOVER"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('jirachi', 'air_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('jirachi', 'blink')"]
+   },
+   "fly": {
+     "poseTypes": ["FLY"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('jirachi', 'air_fly')"
+     ],
+     "quirks": ["q.bedrock_quirk('jirachi', 'blink')"]
+   },
+   "sleep": {
+     "poseTypes": ["SLEEP"],
+     "animations": ["q.bedrock('jirachi', 'sleep')"]
+   }
+ }
 }

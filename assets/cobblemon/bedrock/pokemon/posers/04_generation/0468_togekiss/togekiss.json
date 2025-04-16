@@ -1,59 +1,59 @@
 {
-  "head": "head",
-  "portraitScale": 1.75,
-  "portraitTranslation": [
-    -0.35,
-    0.55,
-    0
-  ],
+  "portraitScale": 1,
+  "portraitTranslation": [0, 1, 0],
   "profileScale": 0.6,
-  "profileTranslation": [
-    0,
-    1,
-    0
-  ],
-  "faint": "bedrock(togekiss, sleep)",
+  "profileTranslation": [0, 1, 0],
+  "animations": {
+    "cry": "q.bedrock_stateful('togekiss', 'cry')"
+  },
   "poses": {
-    "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
       "animations": [
-        "look",
-        "bedrock(togekiss, ground_idle)"
+        "q.look('head')",
+        "q.bedrock('togekiss', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('togekiss', 'blink')"]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('togekiss', 'air_idle')"
       ],
       "quirks": [
-        {
-          "name": "blink",
-          "animations": [
-            "bedrock(togekiss, blink)"
-          ]
-        }
+        "q.bedrock_quirk('togekiss', 'blink')"
       ]
     },
     "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [
-        "WALK"
-      ],
+      "poseTypes": ["WALK"],
       "animations": [
-        "look",
-        "bedrock(togekiss, ground_walk)"
+        "q.look('head')",
+        "q.bedrock('togekiss', 'air_fly')"
       ],
-      "quirks": [
-        {
-          "name": "blink",
-          "animations": [
-            "bedrock(togekiss, blink)"
-          ]
-        }
-      ]
+      "quirks": ["q.bedrock_quirk('togekiss', 'blink')"]
+    },
+    "hover": {
+      "poseTypes": ["HOVER"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('togekiss', 'air_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('togekiss', 'blink')"]
+    },
+    "fly": {
+      "poseTypes": ["FLY"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('togekiss', 'air_fly')"
+      ],
+      "quirks": ["q.bedrock_quirk('togekiss', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('togekiss', 'sleep')"]
     }
   }
-}
+ }
