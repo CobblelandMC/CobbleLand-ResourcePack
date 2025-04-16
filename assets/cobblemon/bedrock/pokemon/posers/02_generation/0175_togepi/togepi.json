@@ -1,56 +1,47 @@
 {
-  "portraitScale": 3,
-  "portraitTranslation": [
-    0,
-    -1.6,
-    0
-  ],
-  "profileScale": 1.25,
-  "profileTranslation": [
-    0,
-    -0.15,
-    0
-  ],
-  "faint": "bedrock(togepi, sleep)",
+  "portraitScale": 1,
+  "portraitTranslation": [0, 0, 0],
+  "profileScale": 1,
+  "profileTranslation": [0, 0, 0],
+  "animations": {
+    "faint": "q.bedrock_primary('togepi', 'faint', q.curve('one'))",
+    "cry": "q.bedrock_stateful('togepi', 'cry')",
+    "physical": "q.bedrock_primary('togepi', 'wizard', q.curve('symmetrical_wide'))",
+    "special": "q.bedrock_primary('togepi', 'wizard', q.curve('symmetrical_wide'))",
+    "status": "q.bedrock_primary('togepi', 'wizard', q.curve('symmetrical_wide'))"
+  },
   "poses": {
-    "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
       "animations": [
-        "bedrock(togepi, ground_idle)"
+        "q.look('head')",
+        "q.bedrock('togepi', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('togepi', 'blink')"]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('togepi', 'ground_idle')"
       ],
       "quirks": [
-        {
-          "name": "blink",
-          "animations": [
-            "bedrock(togepi, blink)"
-          ]
-        }
+        "q.bedrock_quirk('togepi', 'blink')"
       ]
     },
     "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [
-        "WALK"
-      ],
+      "poseTypes": ["WALK"],
       "animations": [
-        "bedrock(togepi, ground_walk)"
+        "q.look('head')",
+        "q.bedrock('togepi', 'ground_walk')"
       ],
-      "quirks": [
-        {
-          "name": "blink",
-          "animations": [
-            "bedrock(togepi, blink)"
-          ]
-        }
-      ]
+      "quirks": ["q.bedrock_quirk('togepi', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('togepi', 'sleep')"]
     }
   }
-}
+ }
