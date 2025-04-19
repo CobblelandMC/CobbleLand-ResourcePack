@@ -1,0 +1,52 @@
+{
+    "portraitScale": 1,
+    "portraitTranslation": [0, 0, 0],
+    "profileScale": 1,
+    "profileTranslation": [0, 0, 0],
+    "animations": {
+        "faint": "q.bedrock_primary('umbrabuzz','faint_WIP',q.curve('one'))"
+    },
+    "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('umbrabuzz', 'battle_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('umbrabuzz', 'blink')"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('umbrabuzz', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('umbrabuzz', 'blink')"
+        ]
+      },
+      "walking": {
+        "poseTypes": ["WALK"],
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('umbrabuzz', 'ground_walk')"
+        ],
+        "quirks": ["q.bedrock_quirk('umbrabuzz', 'blink')"]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "isBattle": true,
+        "animations": ["q.bedrock('umbrabuzz', 'sleep')"]
+      },
+      "ambientsleep": {
+        "poseTypes": ["SLEEP"],
+        "isBattle": false,
+        "animations": ["q.bedrock('umbrabuzz', 'ambient_sleep')"]
+      }
+    }
+   }

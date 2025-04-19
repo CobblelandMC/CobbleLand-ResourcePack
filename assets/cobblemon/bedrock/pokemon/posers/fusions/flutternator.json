@@ -1,0 +1,36 @@
+{
+    "portraitScale": 1,
+    "portraitTranslation": [0, 0, 0],
+    "profileScale": 1,
+    "profileTranslation": [0, 0, 0],
+    "animations": {
+      "cry": "q.bedrock_stateful('flutternator', 'cry')"
+    },
+    "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('flutternator', 'battle_idle')"
+        ],
+        "namedAnimations": {
+        "cry": "q.bedrock_primary('flutternator', 'battle_cry', q.curve('one'))"
+        },
+        "quirks": ["q.bedrock_quirk('flutternator', 'blink')"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('flutternator', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('flutternator', 'blink')"
+        ]
+      }
+    }
+   }

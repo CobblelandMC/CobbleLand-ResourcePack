@@ -1,0 +1,47 @@
+{
+    "portraitScale": 1,
+    "portraitTranslation": [0, 0, 0],
+    "profileScale": 1,
+    "profileTranslation": [0, 0, 0],
+    "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('goodranite', 'ground_idle')",
+          "q.bedrock('goodranite', 'pose')"
+        ],
+        "quirks": ["q.bedrock_quirk('goodranite', 'blink')"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('goodranite', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('goodranite', 'blink')"
+        ]
+      },
+      "hover": {
+        "poseTypes": ["HOVER"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('goodranite', 'air_fly')"
+        ],
+        "quirks": ["q.bedrock_quirk('goodranite', 'blink')"]
+      },
+      "fly": {
+        "poseTypes": ["FLY"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('goodranite', 'air_fly')"
+        ],
+        "quirks": ["q.bedrock_quirk('goodranite', 'blink')"]
+      }
+   }
+}
