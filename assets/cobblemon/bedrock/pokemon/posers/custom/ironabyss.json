@@ -1,0 +1,113 @@
+{
+ "portraitScale": 1,
+ "portraitTranslation": [ 0, 1.9, 0 ],
+ "profileScale": 0.5,
+ "profileTranslation": [ 0, 1.2, 0 ],
+ "animations": {
+   "faint": "q.bedrock_primary('ironabyss', 'faint', q.curve('one'))",
+   "cry": "q.bedrock_primary('ironabyss', 'cry')",
+   "physical": "q.bedrock_primary('ironabyss', 'physical', q.curve('one'))",
+   "special": "q.bedrock_primary('ironabyss', 'special', q.curve('symmetrical_wide'))",
+   "status": "q.bedrock_primary('ironabyss', 'status', q.curve('symmetrical_wide'))"
+ },
+ "poses": {
+   "battle-standing": {
+     "poseTypes": ["STAND"],
+     "isBattle": true,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('ironabyss', 'battle_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('ironabyss', q.array('quirk', 'blink'))"]
+   },
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "isBattle": false,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('ironabyss', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('ironabyss', q.array('quirk', 'blink'))"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('ironabyss', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('ironabyss', q.array('quirk', 'blink'))"]
+   },
+   "hover": {
+     "poseTypes": ["HOVER"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('ironabyss', 'air_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('ironabyss', q.array('quirk', 'blink'))"]
+   },
+   "fly": {
+     "poseTypes": ["FLY"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('ironabyss', 'air_fly')"
+     ],
+     "quirks": ["q.bedrock_quirk('ironabyss', q.array('quirk', 'blink'))"]
+   },
+   "float": {
+     "poseTypes": ["FLOAT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('ironabyss', 'water_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('ironabyss', q.array('quirk', 'blink'))"]
+   },
+   "swim": {
+     "poseTypes": ["SWIM"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('ironabyss', 'water_swim')"
+     ],
+     "quirks": ["q.bedrock_quirk('ironabyss', q.array('quirk', 'blink'))"]
+   },
+   "sleep": {
+     "poseTypes": ["SLEEP"],
+     "animations": [
+         "q.bedrock('ironabyss', 'sleep', q.curve('symmetrical_wide'))"
+     ]
+   },
+   "shoulder_left": {
+     "poseTypes": ["SHOULDER_LEFT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('ironabyss', 'left_shoulder')"
+     ],
+     "quirks": ["q.bedrock_quirk('ironabyss', q.array('quirk', 'blink'))"],
+     "transformedParts": [
+         {
+           "part": "body",
+           "position": [-4.251, 16.001, 10.001],
+           "rotation": [0, 180, 0],
+           "isVisible": true
+         }
+        ]
+   },
+   "shoulder_right": {
+     "poseTypes": ["SHOULDER_RIGHT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('ironabyss', 'left_shoulder')"
+     ],
+     "quirks": ["q.bedrock_quirk('ironabyss', q.array('quirk', 'blink'))"],
+     "transformedParts": [
+         {
+           "part": "body",
+           "position": [4.251, 16, 10],
+           "rotation": [0, 180, 0],
+           "isVisible": true
+         }
+        ]
+   }
+ }
+}

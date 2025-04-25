@@ -1,0 +1,68 @@
+{
+ "portraitScale": 1.5,
+ "portraitTranslation": [ 0.1, 1.3, 0 ],
+ "profileScale": 0.7,
+ "profileTranslation": [ 0.1, 1, 0 ],
+ "animations": {
+   "faint": "q.bedrock_primary('teradiancie', 'faint', q.curve('one'))",
+   "cry": "q.bedrock_stateful('teradiancie', 'cry')"
+ },
+ "poses": {
+   "battle-standing": {
+     "poseTypes": ["STAND"],
+     "isBattle": true,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teradiancie', 'battle_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('teradiancie', q.array('quirk', 'blink'))",
+"q.bedrock_quirk('teradiancie', q.array('qurik2', 'blink'))"]
+   },
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "isBattle": false,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teradiancie', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('teradiancie', q.array('quirk', 'blink'))",
+"q.bedrock_quirk('teradiancie', q.array('qurik2', 'blink'))"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teradiancie', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('teradiancie', q.array('quirk', 'blink'))",
+"q.bedrock_quirk('teradiancie', q.array('qurik2', 'blink'))"]
+   },
+   "float": {
+     "poseTypes": ["FLOAT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teradiancie', 'ground_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('teradiancie', q.array('quirk', 'blink'))",
+"q.bedrock_quirk('teradiancie', q.array('qurik2', 'blink'))"]
+   },
+   "swim": {
+     "poseTypes": ["SWIM"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teradiancie', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('teradiancie', q.array('quirk', 'blink'))",
+"q.bedrock_quirk('teradiancie', q.array('qurik2', 'blink'))"]
+   },
+   "sleep": {
+     "poseTypes": ["SLEEP"],
+     "animations": [
+         "q.bedrock('teradiancie', 'sleep', q.curve('symmetrical_wide'))"
+     ]
+   }
+ }
+}

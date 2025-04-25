@@ -1,0 +1,46 @@
+{
+ "portraitScale": 2.2,
+ "portraitTranslation": [ -0.2, -1.2, 0 ],
+ "profileScale": 0.8,
+ "profileTranslation": [ 0, 0.45, 0 ],
+ "animations": {
+   "cry": "q.bedrock_stateful('teracorsola', 'cry')"
+ },
+ "poses": {
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "isBattle": false,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teracorsola', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('teracorsola', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teracorsola', 'ground_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('teracorsola', 'blink')"]
+   },
+   "float": {
+     "poseTypes": ["FLOAT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teracorsola', 'ground_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('teracorsola', 'blink')"]
+   },
+   "swim": {
+     "poseTypes": ["SWIM"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teracorsola', 'ground_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('teracorsola', 'blink')"]
+   }
+ }
+}

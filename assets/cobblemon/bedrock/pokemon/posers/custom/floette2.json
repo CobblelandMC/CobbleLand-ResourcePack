@@ -1,0 +1,120 @@
+{
+  "portraitScale": 1.2,
+  "portraitTranslation": [
+    0.2,
+    0.3,
+    0
+  ],
+  "profileScale": 1.1,
+  "profileTranslation": [
+    0,
+    0.2,
+    0
+  ],
+  "animations": {
+    "cry": "q.bedrock_primary('eternalfloette', 'cry', q.curve('symmetrical'))",
+    "faint": "q.bedrock_primary('eternalfloette', 'faint', q.curve('symmetrical'))"
+  },
+  "poses": {
+    "portrait": {
+      "poseTypes": [
+        "PORTRAIT"
+      ],
+      "animations": [
+        "q.bedrock('eternalfloette', 'render')"
+      ]
+    },
+    "profile": {
+      "poseTypes": [
+        "PROFILE"
+      ],
+      "animations": [
+        "q.bedrock('eternalfloette', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('eternalfloette', 'blink', 5, 20, 1)"
+      ]
+    },
+    "standing": {
+      "poseTypes": [
+        "STAND", 
+        "NONE"
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('eternalfloette', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('eternalfloette', 'blink', 5, 20, 1)"
+      ]
+    },
+    "running": {
+      "poseTypes": [
+        "WALK"
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('eternalfloette', 'ground_run')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('eternalfloette', 'blink', 5, 20, 1)"
+      ]
+    },
+    "hovering": {
+      "poseTypes": [
+        "HOVER"
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('eternalfloette', 'air_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('eternalfloette', 'blink', 5, 20, 1)"
+      ]
+    },
+    "flying": {
+      "poseTypes": [
+        "FLY"
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('eternalfloette', 'air_fly')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('eternalfloette', 'blink', 5, 20, 1)"
+      ]
+    },
+    "sleeping": {
+      "poseTypes": [
+        "SLEEP"
+      ],
+      "animations": [
+        "q.bedrock('eternalfloette', 'sleep')"
+      ]
+    },
+    "swimming": {
+      "poseTypes": [
+        "SWIM"
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('eternalfloette', 'air_fly')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('eternalfloette', 'blink', 5, 20, 1)"
+      ]
+    },
+    "floating": {
+      "poseTypes": [
+        "FLOAT"
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('eternalfloette', 'air_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('eternalfloette', 'blink', 5, 20, 1)"
+      ]
+    }
+  }
+}

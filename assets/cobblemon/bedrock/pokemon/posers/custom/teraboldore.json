@@ -1,0 +1,62 @@
+{
+ "portraitScale": 2.2,
+ "portraitTranslation": [ -0.2, -1.2, 0 ],
+ "profileScale": 0.8,
+ "profileTranslation": [ 0, 0.45, 0 ],
+ "animations": {
+   "faint": "q.bedrock_primary('teraboldore', 'faint', q.curve('one'))",
+   "cry": "q.bedrock_stateful('teraboldore', 'cry')"
+ },
+ "poses": {
+   "battle-standing": {
+     "poseTypes": ["STAND"],
+     "isBattle": true,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teraboldore', 'battle_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('teraboldore', 'blink')"]
+   },
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "isBattle": false,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teraboldore', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('teraboldore', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teraboldore', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('teraboldore', 'blink')"]
+   },
+   "float": {
+     "poseTypes": ["FLOAT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teraboldore', 'ground_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('teraboldore', 'blink')"]
+   },
+   "swim": {
+     "poseTypes": ["SWIM"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('teraboldore', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('teraboldore', 'blink')"]
+   },
+   "sleep": {
+     "poseTypes": ["SLEEP"],
+     "animations": [
+         "q.bedrock('teraboldore', 'sleep', q.curve('symmetrical_wide'))"
+     ]
+   }
+ }
+}

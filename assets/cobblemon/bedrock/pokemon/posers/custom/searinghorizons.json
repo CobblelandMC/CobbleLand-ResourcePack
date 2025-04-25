@@ -1,0 +1,70 @@
+{
+ "portraitScale": 1.4,
+ "portraitTranslation": [ -1.1, 1.2, 0 ],
+ "profileScale": 0.5,
+ "profileTranslation": [ 0, 1.2, 0 ],
+ "animations": {
+   "faint": "q.bedrock_primary('searinghorizons', 'faint', q.curve('one'))",
+   "cry": "q.bedrock_primary('searinghorizons', 'cry', q.curve('one'))",
+   "physical": "q.bedrock_primary('searinghorizons', 'physical', q.curve('one'))",
+   "special": "q.bedrock_primary('searinghorizons', 'special', q.curve('symmetrical_wide'))"
+ },
+ "poses": {
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('searinghorizons', 'air_idle2')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('searinghorizons', q.array('quirk', 'blink'))"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('searinghorizons', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('searinghorizons', q.array('quirk', 'blink'))"]
+   },
+   "hover": {
+     "poseTypes": ["HOVER"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('searinghorizons', 'air_idle2')"
+     ],
+     "quirks": ["q.bedrock_quirk('searinghorizons', q.array('quirk', 'blink'))"]
+   },
+   "fly": {
+     "poseTypes": ["FLY"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('searinghorizons', 'air_fly')"
+     ],
+     "quirks": ["q.bedrock_quirk('searinghorizons', q.array('quirk', 'blink'))"]
+   },
+   "float": {
+     "poseTypes": ["FLOAT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('searinghorizons', 'air_idle2')"
+     ],
+     "quirks": ["q.bedrock_quirk('searinghorizons', q.array('quirk', 'blink'))"]
+   },
+   "swim": {
+     "poseTypes": ["SWIM"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('searinghorizons', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('searinghorizons', q.array('quirk', 'blink'))"]
+   },
+   "sleep": {
+     "poseTypes": ["SLEEP"],
+     "animations": [
+         "q.bedrock('searinghorizons', 'sleep', q.curve('symmetrical_wide'))"
+     ]
+   }
+ }
+}
