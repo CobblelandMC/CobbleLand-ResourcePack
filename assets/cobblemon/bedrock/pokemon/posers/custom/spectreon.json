@@ -1,30 +1,31 @@
 {
-  "head": "head",
   "portraitScale": 1.85,
-  "portraitTranslation": [ -0.4, -0.2, 0 ],
+  "portraitTranslation": [-0.5, 0, 0],
   "profileScale": 0.8,
-  "profileTranslation": [ 0, 0.4, 0 ],
-  "faint": "bedrock(spectreon, faint)",
+  "profileTranslation": [0, 0.68, 0],
+  "animations": {
+    "faint": "q.bedrock_primary('spectreon', 'faint', q.curve('one'))",
+    "cry": "q.bedrock_stateful('spectreon', 'cry')"
+  },
   "poses": {
     "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
       "animations": [
-        "look",
-        "bedrock(spectreon, ground_idle)"
+        "q.look('head')",
+        "q.bedrock('spectreon', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('spectreon', 'blink')"
       ]
     },
     "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [ "WALK" ],
-      "animations": [ "bedrock(spectreon, ground_run)" ]
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('spectreon', 'ground_run')"
+      ],
+      "quirks": ["q.bedrock_quirk('spectreon', 'blink')"]
     }
   }
-}
+ }

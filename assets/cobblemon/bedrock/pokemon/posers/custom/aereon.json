@@ -1,42 +1,47 @@
 {
-  "head": "head",
   "portraitScale": 1.85,
-  "portraitTranslation": [ -0.4, -0.2, 0 ],
+  "portraitTranslation": [-0.5, 0, 0],
   "profileScale": 0.8,
-  "profileTranslation": [ 0, 0.4, 0 ],
-  "faint": "bedrock(aereon, faint)",
+  "profileTranslation": [0, 0.68, 0],
+  "animations": {
+    "faint": "q.bedrock_primary('aereon', 'faint', q.curve('one'))",
+    "cry": "q.bedrock_stateful('aereon', 'cry')"
+  },
   "poses": {
     "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
       "animations": [
-        "look",
-        "bedrock(aereon, ground_idle)"
+        "q.look('head')",
+        "q.bedrock('aereon', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('aereon', 'blink')"
       ]
     },
     "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [ "WALK" ],
-      "animations": [ "bedrock(aereon, ground_run)" ]
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('aereon', 'ground_run')"
+      ],
+      "quirks": ["q.bedrock_quirk('aereon', 'blink')"]
     },
-      "flying": {
-        "poseName": "flying",
-        "transformTicks": 10,
-        "poseTypes": [ "FLY" ],
-        "animations": [ "bedrock(aereon, air_fly)" ]
+    "hover": {
+      "poseTypes": ["HOVER"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('aereon', 'air_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('aereon', 'blink')"]
     },
-      "hovering": {
-        "poseName": "hovering",
-        "transformTicks": 10,
-        "poseTypes": [ "HOVER" ],
-        "animations": [ "bedrock(aereon, air_idle)" ]
+    "fly": {
+      "poseTypes": ["FLY"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('aereon', 'air_fly')"
+      ],
+      "quirks": ["q.bedrock_quirk('aereon', 'blink')"]
+    }
   }
-  }
-}
+ }
