@@ -4,6 +4,9 @@
     "portraitTranslation": [ 0, 0.3, 0 ],
     "profileScale": 0.55,
     "profileTranslation": [ 0, 0.8, 0 ],
+    "animations": {
+      "cry": "q.bedrock_stateful('zarude', 'cry')"
+    },  
     "poses": {
       "standing": {
         "poseName": "standing",
@@ -15,16 +18,21 @@
           "PROFILE"
         ],
         "animations": [
+          "q.look('head')",
           "bedrock(zarudechampion, ground_idle)"
-        ]
+        ],
+        "quirks": ["q.bedrock_quirk('zarude', 'blink')"]
       },
       "walking": {
         "poseName": "walking",
         "transformTicks": 10,
         "poseTypes": [ "WALK" ],
         "animations": [ 
-          "bedrock(zarudechampion, ground_walk)"
-        ]
+          "bedrock(zarudechampion, ground_walk)",
+          "q.biped_walk(0.56, 0.5, 'leg_left', 'leg_right')",
+          "q.bimanual_swing(0.36, 0.3, 'arm_left', 'arm_right')"
+        ],
+        "quirks": ["q.bedrock_quirk('zarude', 'blink')"]
+      }  
       }
     }
-  }
