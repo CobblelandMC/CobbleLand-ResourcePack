@@ -1,0 +1,38 @@
+{
+    "head": "body",
+    "portraitScale": 1.5,
+    "portraitTranslation": [ 0, 0.3, 0 ],
+    "profileScale": 0.55,
+    "profileTranslation": [ 0, 0.8, 0 ],
+    "animations": {
+      "cry": "q.bedrock_stateful('sceptile_pride2025', 'cry')"
+    },  
+    "poses": {
+      "standing": {
+        "poseName": "standing",
+        "transformTicks": 10,
+        "poseTypes": [
+          "STAND",
+          "NONE",
+          "PORTRAIT",
+          "PROFILE"
+        ],
+        "animations": [
+          "q.look('head')",
+          "bedrock(sceptile_pride2025, ground_idle)"
+        ],
+        "quirks": ["q.bedrock_quirk('sceptile_pride2025', 'blink')"]
+      },
+      "walking": {
+        "poseName": "walking",
+        "transformTicks": 10,
+        "poseTypes": [ "WALK" ],
+        "animations": [ 
+          "bedrock(sceptile_pride2025, ground_idle)",
+          "q.biped_walk(0.56, 0.5, 'leg_left', 'leg_right')",
+          "q.bimanual_swing(0.56, 0.75, 'arm_left', 'arm_right')"
+        ],
+        "quirks": ["q.bedrock_quirk('sceptile_pride2025', 'blink')"]
+      }  
+      }
+    }
