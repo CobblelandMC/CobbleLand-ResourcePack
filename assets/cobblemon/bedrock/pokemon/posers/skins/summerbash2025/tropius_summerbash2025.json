@@ -1,0 +1,67 @@
+{
+ "portraitScale": 1,
+ "portraitTranslation": [0, 0, 0],
+ "profileScale": 1,
+ "profileTranslation": [0, 0, 0],
+ "animations": {
+   "faint": "q.bedrock_primary('tropius_summerbash2025', 'faint', q.curve('one'))",
+   "cry": "q.bedrock_stateful('tropius_summerbash2025', 'cry')",
+   "recoil": "q.bedrock_stateful('tropius_summerbash2025', 'recoil')"
+ },
+ "poses": {
+   "battle-standing": {
+     "poseTypes": ["STAND"],
+     "isBattle": true,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('tropius_summerbash2025', 'battle_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('tropius_summerbash2025', 'blink')"]
+   },
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "isBattle": false,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('tropius_summerbash2025', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('tropius_summerbash2025', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('tropius_summerbash2025', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('tropius_summerbash2025', 'blink')"]
+   },
+   "hover": {
+     "poseTypes": ["HOVER"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('tropius_summerbash2025', 'air_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('tropius_summerbash2025', 'blink')"]
+   },
+   "fly": {
+     "poseTypes": ["FLY"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('tropius_summerbash2025', 'air_fly')"
+     ],
+     "quirks": ["q.bedrock_quirk('tropius_summerbash2025', 'blink')"]
+   },
+   "ground-sleep": {
+     "poseTypes": ["SLEEP"],
+     "isBattle": false,
+     "animations": ["q.bedrock('tropius_summerbash2025', 'sleep')"]
+   },
+   "battle-sleep": {
+     "poseTypes": ["SLEEP"],
+     "isBattle": true,
+     "animations": ["q.bedrock('tropius_summerbash2025', 'battle_sleep')"]
+   }
+ }
+}

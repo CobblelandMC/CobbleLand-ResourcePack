@@ -1,0 +1,40 @@
+{
+ "portraitScale": 1,
+ "portraitTranslation": [0, 0, 0],
+ "profileScale": 1,
+ "profileTranslation": [0, 0, 0],
+ "animations": {
+   "cry": "q.bedrock_stateful('toxapex_summerbash2025', 'happy')",
+   "recoil": "q.bedrock_stateful('toxapex_summerbash2025', 'recoil')"
+ },
+ "poses": {
+   "battle-standing": {
+     "poseTypes": ["STAND"],
+     "isBattle": true,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('toxapex_summerbash2025', 'ground_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('toxapex_summerbash2025', 'blink')"]
+   },
+  "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "isBattle": false,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('toxapex', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('toxapex_summerbash2025', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('toxapex', 'ground_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('toxapex_summerbash2025', 'blink')"]
+   }
+ }
+}
