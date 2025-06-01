@@ -1,0 +1,58 @@
+{
+    "portraitScale": 1.5,
+    "portraitTranslation": [-0.13, 2.74, 0],
+    "profileScale": 0.37,
+    "profileTranslation": [0, 1.22, 0],
+    "rootBone": "cinderace",
+    "animations": {
+      "faint": "q.bedrock_primary('cinderace_pride', math.random(0, 1) < 0.25 ? 'faint2' : 'faint', q.curve('one'))",
+      "cry": "q.bedrock_stateful('cinderace_pride', 'cry')",
+      "recoil": "q.bedrock_stateful('cinderace_pride', 'recoil')",
+      "physical": "q.bedrock_primary('cinderace_pride', 'physical', q.curve('symmetrical'))",
+      "special": "q.bedrock_primary('cinderace_pride', 'special', q.curve('symmetrical'))",
+      "status": "q.bedrock_primary('cinderace_pride', 'status', q.curve('symmetrical'))"
+    },
+    "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('cinderace_pride', 'battle_idle')"
+        ],
+        "namedAnimations": {
+            "cry": "q.bedrock_primary('cinderace_pride', 'battle_cry', q.curve('one'))"
+          },
+        "quirks": ["q.bedrock_quirk('cinderace_pride', 'blink')"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('cinderace_pride', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('cinderace_pride', 'blink')"
+        ],
+        "transitions": {
+          "battle-standing": "q.bedrock_primary('cinderace_pride', 'battle_intro'), q.curve('symmetrical'))"
+        }
+      },
+      "walking": {
+        "poseTypes": ["WALK"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('cinderace_pride', 'ground_walk')"
+        ],
+        "quirks": ["q.bedrock_quirk('cinderace_pride', 'blink')"]
+      },
+    "sleeping": {
+      "poseTypes": ["SLEEP"],
+      "namedAnimations": {
+        "cry": "q.bedrock_stateful('dummy', 'cry')"
+      },
+        "animations": ["q.bedrock('cinderace_pride', 'sleep')"]
+      }
+    }
+   }
