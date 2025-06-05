@@ -5,7 +5,7 @@
   "profileScale": 0.7,
   "profileTranslation": [ 0, 0.7, 0 ],
     "animations": {
-      "faint": "q.bedrock_primary('greninja_champion', math.random(0, 1) < 0.25 ? 'faint2' : 'faint', q.curve('one'))",
+      "faint": "q.bedrock_primary('greninja_champion', 'faint', q.curve('one'))",
       "cry": "q.bedrock_stateful('greninja_champion', 'cry')"
     },
 
@@ -66,11 +66,9 @@
           }
         ]
     },
-    "sleeping": {
-      "poseTypes": ["SLEEP"],
-      "namedAnimations": {
-        "animations": ["q.bedrock('greninja_champion', 'sleep')"]
-      }
+   "sleep": {
+     "poseTypes": ["SLEEP"],
+     "animations": ["q.bedrock('greninja_champion', 'sleep')"]
+   }
   }
-}
 }
