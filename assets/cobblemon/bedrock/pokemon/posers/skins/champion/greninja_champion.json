@@ -1,0 +1,76 @@
+{
+  "head": "head",
+  "portraitScale": 2,
+  "portraitTranslation": [ -0.2, -0.2, 0 ],
+  "profileScale": 0.7,
+  "profileTranslation": [ 0, 0.7, 0 ],
+    "animations": {
+      "faint": "q.bedrock_primary('greninja_champion', math.random(0, 1) < 0.25 ? 'faint2' : 'faint', q.curve('one'))",
+      "cry": "q.bedrock_stateful('greninja_champion', 'cry')"
+    },
+
+  "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('greninja_champion', 'battle_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('greninja_champion', 'blink')"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('greninja_champion', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('greninja_champion', 'blink')"
+        ]
+      },
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [ "WALK" ],
+      "animations": [ "bedrock(greninja_champion, ground_walk)" ],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(greninja_champion, blink)"]
+          }
+        ]
+    },
+    "floating": {
+      "poseName": "floating",
+      "transformTicks": 10,
+      "poseTypes": [ "FLOAT" ],
+      "animations": [ "bedrock(greninja_champion, water_idle)" ],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(greninja_champion, blink)"]
+          }
+        ]
+    },
+    "swimming": {
+      "poseName": "swimming",
+      "transformTicks": 10,
+      "poseTypes": [ "SWIM" ],
+      "animations": [ "bedrock(greninja_champion, water_swim)" ],
+        "quirks": [
+          {
+            "name": "blink",
+            "animations": ["bedrock(greninja_champion, blink)"]
+          }
+        ]
+    },
+    "sleeping": {
+      "poseTypes": ["SLEEP"],
+      "namedAnimations": {
+        "animations": ["q.bedrock('greninja_champion', 'sleep')"]
+      }
+  }
+}
+}
