@@ -5,32 +5,28 @@
   "profileScale": 0.55,
   "profileTranslation": [ 0, 0.8, 0 ],
   "poses": {
-    "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
-      "animations": [
-        "bedrock(throh, ground_idle)"
-      ]
-    },
-  "walking": {
-    "poseName": "walking",
-    "transformTicks": 10,
-    "poseTypes": [ "WALK" ],
-    "animations": [ "bedrock(throh, ground_walk)" ]
-},
-  "battle-standing": {
-   "poseTypes": ["STAND"],
+  "battle_idle": {
     "isBattle": true,
-    "transformTicks": 10,
-   "animations": [
-   "bedrock(throh, battle_idle)"
-   ]
-  }
-}
+     "poseTypes": ["STAND"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('throh', 'battle_idle')"
+     ]
+    },
+   "standing": {
+    "isBattle": false,
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('throh', 'ground_idle')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('throh', 'ground_walk')"
+     ]
+   }
+ }
 }

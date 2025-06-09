@@ -4,19 +4,29 @@
     "portraitTranslation": [ 0.12, 0.60, 0 ],
     "profileScale": 0.96,
     "profileTranslation": [ 0.06, 0.56, 0 ],
-    "poses": {
-      "standing": {
-        "poseName": "standing",
-        "transformTicks": 10,
-        "poseTypes": [
-          "STAND",
-          "NONE",
-          "PORTRAIT",
-          "PROFILE"
-        ],
-        "animations": [
-          "bedrock(grapploct, ground_idle)"
-        ]
-      }
-    }
+ "poses": {
+  "battle_idle": {
+    "isBattle": true,
+     "poseTypes": ["STAND"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('grapploct', 'battle_idle')"
+     ]
+    },
+   "standing": {
+    "isBattle": false,
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('grapploct', 'ground_idle')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('grapploct', 'ground_walk')"
+     ]
+   }
+ }
   }

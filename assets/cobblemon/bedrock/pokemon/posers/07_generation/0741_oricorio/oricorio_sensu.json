@@ -4,19 +4,29 @@
     "portraitTranslation": [ 0.32, -0.88, 0 ],
     "profileScale": 1.2,
     "profileTranslation": [ 0.11, -0.23, 0 ],
-    "poses": {
-      "standing": {
-        "poseName": "standing",
-        "transformTicks": 10,
-        "poseTypes": [
-          "STAND",
-          "NONE",
-          "PORTRAIT",
-          "PROFILE"
-        ],
-        "animations": [
-          "bedrock(oricorio_sensu, ground_idle)"
-        ]
-      }
-    }
+  "poses": {
+  "battle_idle": {
+    "isBattle": true,
+     "poseTypes": ["STAND"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('oricorio_sensu', 'battle_idle')"
+     ]
+    },
+   "standing": {
+    "isBattle": false,
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('oricorio_sensu', 'ground_idle')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('oricorio_sensu', 'ground_walk')"
+     ]
+   }
+ }
   }
