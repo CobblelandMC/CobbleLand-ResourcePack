@@ -1,0 +1,31 @@
+name: Zip and release on push
+
+on: [push]
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - name: Set release tag
+      id: tag
+      run: echo "tag_name=$(date +%b %d, %Y %H:%M:%S)" >> $GITHUB_OUTPUT
+
+    - name: Prepare release ZIP (excluding files)
+      run: |
+        zip -r CobbleLandResources.zip . -x@.releaseignore -x ".git/*" -x ".github/*"
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: ${{ steps.tag.outputs.tag_name }}
+        name: Release ${{ steps.tag.outputs.tag_name }}
+        files: CobbleLandResources.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
