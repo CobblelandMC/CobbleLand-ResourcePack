@@ -20,7 +20,7 @@ jobs:
 
     - name: Prepare release ZIP (excluding files)
       run: |
-        zip -r CobbleLandResources.zip . -x@.releaseignore -x ".git/*"
+        zip -r CobbleLandResources.zip . -x@.releaseignore -x ".git/*" -x ".github/*"
 
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v2
