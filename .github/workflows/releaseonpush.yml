@@ -16,7 +16,7 @@ jobs:
 
     - name: Set release tag
       id: tag
-      run: echo "tag_name=$(date +%b-%d-%Y_%H:%M:%S)" >> $GITHUB_OUTPUT
+      run: echo "tag_name=update-$(date +%b-%d-%Y_%H:%M:%S)" >> $GITHUB_OUTPUT
 
     - name: Prepare release ZIP (excluding files)
       run: |
