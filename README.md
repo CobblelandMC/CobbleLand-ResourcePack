@@ -1,4 +1,4 @@
-# Cobbleland Datapack & Resource Pack
+# Cobbleland Resource Pack
 
 The Datapack and Resource Pack are split into separate branches, both [main-resourcepack] and [main-datapack]. Union's datapack and resource pack are named separately to avoid confusion.
 
