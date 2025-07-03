@@ -11,4 +11,4 @@ Ideally merges are done via a [pull request](https://github.com/CobblelandMC/Cob
 # Before making any commits, please test them locally.
 To test a change, add the `assets` folder with the `pack.png` and `pack.mcmeta` files into an archive. Data folder is for the datapack, assets folder is for the resource pack. You can add the datapack archive to a world file in Minecraft, and the Resource Pack can be applied like any other resource pack. Please ensure that you have checked **any and all changes** prior to making a commit or merge.
 
-### If you are unsure about your commits, please receive confirmation from somebody who has prior knowledge and experience with updates. This can be done with using the "pull requests" function. It does not hurt to ask questions.
+### If you are unsure about your commits, please receive confirmation from somebody who has prior knowledge and experience with updates. It does not hurt to ask questions.
