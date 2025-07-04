@@ -1,0 +1,63 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.castform",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "castform",
+					"pivot": [0, 0, -2]
+				},
+				{
+					"name": "body",
+					"parent": "castform",
+					"pivot": [0, 7.875, -0.46461],
+					"cubes": [
+						{"origin": [-2.5, 1.5, -2.5], "size": [5, 5, 5], "uv": [0, 19]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 4.5, 0],
+					"cubes": [
+						{"origin": [-4.5, 4.5, -4.5], "size": [9, 9, 9], "uv": [0, 0]},
+						{"origin": [-4.52, 10, -4], "size": [0, 1, 1], "uv": [2, 36], "mirror": true},
+						{"origin": [-4.52, 6, -4], "size": [0, 1, 1], "uv": [2, 36], "mirror": true}
+					]
+				},
+				{
+					"name": "ball2",
+					"parent": "body",
+					"pivot": [-1.61575, 2.5, -1.96626],
+					"cubes": [
+						{"origin": [-4, 1, -3.5], "size": [3, 3, 3], "inflate": 0.1, "pivot": [-2, 1.5, -3.5], "rotation": [0, 32.5, 0], "uv": [19, 26]}
+					]
+				},
+				{
+					"name": "ball3",
+					"parent": "body",
+					"pivot": [0, 2.5, 2],
+					"cubes": [
+						{"origin": [-1.5, 1, 0.5], "size": [3, 3, 3], "inflate": 0.1, "uv": [1, 29]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [0, 3, 3.5],
+					"cubes": [
+						{"origin": [-0.5, 2.5, 3], "size": [1, 1, 3], "uv": [21, 19]}
+					]
+				}
+			]
+		}
+	]
+}
