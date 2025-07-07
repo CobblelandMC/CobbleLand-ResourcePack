@@ -1,0 +1,49 @@
+{
+ "portraitScale": 1,
+ "portraitTranslation": [0, 0, 0],
+ "profileScale": 1,
+ "profileTranslation": [0, 0, 0],
+ "animations": {
+   "cry": "q.bedrock_stateful('wishiwashi_solo', 'cry')"
+ },
+ "poses": {
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('wishiwashi_solo', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('wishiwashi_solo', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('wishiwashi_solo', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('wishiwashi_solo', 'blink')"]
+   },
+   "float": {
+     "poseTypes": ["FLOAT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('wishiwashi_solo', 'water_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('wishiwashi_solo', 'blink')"]
+   },
+   "swim": {
+     "poseTypes": ["SWIM"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('wishiwashi_solo', 'water_swim')"
+     ],
+     "quirks": ["q.bedrock_quirk('wishiwashi_solo', 'blink')"]
+   },
+   "sleep": {
+     "poseTypes": ["SLEEP"],
+     "animations": ["q.bedrock('wishiwashi_solo', 'water_sleep')"]
+   }
+ }
+}
