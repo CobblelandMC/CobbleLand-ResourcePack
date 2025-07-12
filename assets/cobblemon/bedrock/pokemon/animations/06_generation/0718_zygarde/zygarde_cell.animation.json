@@ -1,0 +1,56 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.zygarde_cell.ground_idle": {
+			"loop": true,
+			"bones": {
+				"ZygardeTen2": {
+					"rotation": ["math.sin(query.anim_time*90)", 0, 0]
+				},
+				"tail": {
+					"position": ["0.125*math.sin(query.anim_time*1205)", 0, 0]
+				}
+			}
+		},
+		"animation.zygarde_cell.ground_walk": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"HandLeft": {
+					"rotation": ["0.125*math.sin(query.anim_time*1125)", 0, 0],
+					"position": [0, "0.5*math.abs(math.sin(query.anim_time*1125))", 0]
+				},
+				"tail": {
+					"position": ["0.125*math.sin(query.anim_time*1125)", 0, 0]
+				}
+			}
+		},
+		"animation.zygarde_cell.battle_idle": {
+			"loop": true,
+			"bones": {
+				"HandLeft": {
+					"position": ["0.125*math.sin(query.anim_time*11250)", 0, 0]
+				}
+			}
+		},
+		"animation.zygarde_cell.blink": {
+			"animation_length": 0.125,
+			"bones": {
+				"left": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.0417": [0, 0, 0],
+						"0.0833": [1, 1, 1]
+					}
+				},
+				"right": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.0417": [0, 0, 0],
+						"0.0833": [1, 1, 1]
+					}
+				}
+			}
+		}
+	}
+}

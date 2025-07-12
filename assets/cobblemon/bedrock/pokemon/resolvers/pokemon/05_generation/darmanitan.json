@@ -3,17 +3,61 @@
   "order": 1,
   "variations": [
     {
-      "aspects": ["galarian"],
+      "aspects": ["galarian", "standard-mode"],
       "poser": "cobblemon:darmanitangalar",
       "model": "cobblemon:darmanitangalar.geo",
-      "texture": "cobblemon:textures/pokemon/05_generation/0555_darmanitan/darmanitan_galar.png"
+      "texture": "cobblemon:textures/pokemon/05_generation/0555_darmanitan/darmanitan_galar.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/plushies/empty_e.png",
+          "emissive": false
+        }
+      ]
+
     },
     {
       "aspects": [
         "shiny",
-        "galarian"
+        "galarian", "standard-mode"
       ],
-      "texture": "cobblemon:textures/pokemon/05_generation/0555_darmanitan/darmanitan_galar_shiny.png"
+      "texture": "cobblemon:textures/pokemon/05_generation/0555_darmanitan/darmanitan_galar_shiny.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/plushies/empty_e.png",
+          "emissive": false
+        }
+      ]
+    },
+    {
+      "aspects": ["galarian", "zen-mode"],
+      "poser": "cobblemon:darmanitan_galarian_zen_mode",
+      "model": "cobblemon:darmanitan_galarian_zen_mode.geo",
+      "texture": "cobblemon:textures/pokemon/05_generation/0555_darmanitan/darmanitan_galarian_zen_mode.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/05_generation/0555_darmanitan/darmanitan_galarian_zen_mode_emissive.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": [
+        "shiny",
+        "galarian", "zen-mode"
+      ],
+      "poser": "cobblemon:darmanitan_galarian_zen_mode",
+      "model": "cobblemon:darmanitan_galarian_zen_mode.geo",
+      "texture": "cobblemon:textures/pokemon/05_generation/0555_darmanitan/darmanitan_galarian_shiny_zen_mode.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": "cobblemon:textures/pokemon/05_generation/0555_darmanitan/darmanitan_galarian_zen_mode_emissive.png",
+          "emissive": true
+        }
+      ]
     }
   ]
 }
