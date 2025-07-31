@@ -1,0 +1,42 @@
+{
+    "portraitScale": 1,
+    "portraitTranslation": [0, 0, 0],
+    "profileScale": 1,
+    "profileTranslation": [0, 0, 0],
+    "animations": {
+      "faint": "q.bedrock_primary('yvellade', 'battle_faint', q.curve('one'))",
+      "cry": "q.bedrock_stateful('yvellade', 'battle_cry')",
+      "recoil": "q.bedrock_stateful('yvellade', 'battle_quirk')",
+      "physical": "q.bedrock_primary('yvellade', 'battle_quirk', q.curve('symmetrical_wide'))",
+      "special": "q.bedrock_primary('yvellade', 'battle_quirk', q.curve('symmetrical_wide'))",
+      "status": "q.bedrock_primary('yvellade', 'battle_quirk', q.curve('symmetrical_wide'))"
+
+    },
+    "poses": {
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('yvellade', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('yvellade', 'blink')"
+        ]
+      },
+      "walking": {
+        "poseTypes": ["WALK"],
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('yvellade', 'ground_walk')"
+        ],
+        "quirks": ["q.bedrock_quirk('yvellade', 'blink')"]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "isTouchingWater": false,
+        "animations": ["q.bedrock('yvellade', 'sleep')"]
+      }
+    }
+   }
