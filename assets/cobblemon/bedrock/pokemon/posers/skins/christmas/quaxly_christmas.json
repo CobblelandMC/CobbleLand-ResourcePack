@@ -1,0 +1,118 @@
+  {
+    "portraitScale": 1,
+    "portraitTranslation": [0, 0, 0],
+    "profileScale": 1,
+    "profileTranslation": [0, 0, 0],
+    "animations": {
+      "faint": "q.bedrock_primary('quaxly', 'faint', q.curve('one'))",
+      "cry": "q.bedrock_stateful('quaxly', 'cry')"
+    },
+    "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('quaxly', 'battle_idle')"
+        ],
+        "namedAnimations": {
+        "cry": "q.bedrock_primary('quaxly', 'battle_cry', q.curve('one'))"
+        },
+        "quirks": ["q.bedrock_quirk('quaxly', 'blink')"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('quaxly', 'ground_idle')"
+        ],
+        "quirks": [
+          "q.bedrock_quirk('quaxly', 'blink')"
+        ]
+      },
+      "walking": {
+        "poseTypes": ["WALK"],
+        "isTouchingWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('quaxly', 'ground_walk')"
+        ],
+        "quirks": ["q.bedrock_quirk('quaxly', 'blink')"]
+      },
+      "float": {
+        "isBattle": false,
+        "isUnderWater": true,
+        "poseTypes": ["FLOAT"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('quaxly', 'water_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('quaxly', 'blink')"]
+      },
+      "battle-float": {
+        "isBattle": true,
+        "isUnderWater": true,
+        "poseTypes": ["FLOAT"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('quaxly', 'water_battle_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('quaxly', 'blink')"]
+      },
+      "swim": {
+        "poseTypes": ["SWIM"],
+        "isUnderWater": true,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('quaxly', 'water_swim')"
+        ],
+        "quirks": ["q.bedrock_quirk('quaxly', 'blink')"]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "isTouchingWater": false,
+        "animations": ["q.bedrock('quaxly', 'sleep')"]
+      },
+      
+      "water_sleep": {
+        "poseTypes": ["SLEEP"],
+        "isTouchingWater": true,
+        "isUnderWater": true,
+        "animations": ["q.bedrock('quaxly', 'water_sleep')"]
+      },
+      "surface_idle": {
+        "poseTypes": ["STAND"],
+        "isTouchingWater": true,
+        "isUnderWater": false,
+        "isBattle": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('quaxly', 'surfacewater_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('quaxly', 'blink')"]
+      },
+      "battle-surface_idle": {
+        "poseTypes": ["STAND"],
+        "isTouchingWater": true,
+        "isUnderWater": false,
+        "isBattle": true,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('quaxly', 'surfacewater_battle_idle')"
+        ],
+        "quirks": ["q.bedrock_quirk('quaxly', 'blink')"]
+      },
+      "surface_swim": {
+        "poseTypes": ["WALK"],
+        "isTouchingWater": true,
+        "isUnderWater": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('quaxly', 'surfacewater_swim')"
+        ]
+      }  
+    }
+   }
