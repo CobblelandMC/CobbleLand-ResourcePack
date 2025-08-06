@@ -1,0 +1,41 @@
+{
+  "portraitScale": 2.18,
+  "portraitTranslation": [-0.37, 3.84, 0],
+  "profileScale": 0.37,
+  "profileTranslation": [0, 1.22, 0],
+  "rootBone": "delphox_champion",
+  "animations": {
+    "cry": "q.bedrock_stateful('delphox_champion', 'cry')"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseName": "battle-standing",
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": ["q.look('head')", "q.bedrock('delphox_champion', 'battle_idle')"],
+      "quirks": ["q.bedrock_quirk('delphox_champion', 'blink')"]
+    },
+    "standing": {
+      "poseName": "standing",
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE", "FLOAT"],
+      "isBattle": false,
+      "animations": ["q.look('head')", "q.bedrock('delphox_champion', 'ground_idle')"],
+      "quirks": ["q.bedrock_quirk('delphox_champion', 'blink')"]
+    },
+    "walking": {
+      "poseName": "walking",
+      "poseTypes": ["WALK", "SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('delphox_champion', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('delphox_champion', 'blink')"],
+      "transformedParts": [
+        {
+          "part": "wand",
+          "isVisible": false
+        }
+      ]
+    }
+  }
+}
