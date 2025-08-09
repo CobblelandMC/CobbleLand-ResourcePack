@@ -1,0 +1,66 @@
+{
+ "portraitScale": 1,
+ "portraitTranslation": [0, 0, 0],
+ "profileScale": 1,
+ "profileTranslation": [0, 0, 0],
+ "animations": {
+   "faint": "q.bedrock_primary('emolga_back2work', 'faint', q.curve('one'))",
+   "cry": "q.bedrock_stateful('emolga_back2work', 'cry')"
+ },
+ "poses": {
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('emolga_back2work', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('emolga_back2work', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('emolga_back2work', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('emolga_back2work', 'blink')"]
+   },
+   "hover": {
+     "poseTypes": ["HOVER"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('emolga_back2work', 'air_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('emolga_back2work', 'blink')"]
+   },
+   "fly": {
+     "poseTypes": ["FLY"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('emolga_back2work', 'air_fly')"
+     ],
+     "quirks": ["q.bedrock_quirk('emolga_back2work', 'blink')"]
+   },
+   "sleep": {
+     "poseTypes": ["SLEEP"],
+     "animations": ["q.bedrock('emolga_back2work', 'sleep')"]
+   },
+   "shoulder_left": {
+     "poseTypes": ["SHOULDER_LEFT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('emolga_back2work', 'shoulder_left')"
+     ],
+     "quirks": ["q.bedrock_quirk('emolga_back2work', 'blink')"]
+   },
+   "shoulder_right": {
+     "poseTypes": ["SHOULDER_RIGHT"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('emolga_back2work', 'shoulder_right')"
+     ],
+     "quirks": ["q.bedrock_quirk('emolga_back2work', 'blink')"]
+   }
+ }
+}
