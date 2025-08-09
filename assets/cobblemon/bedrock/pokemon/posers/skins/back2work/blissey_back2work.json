@@ -1,0 +1,44 @@
+{
+ "portraitScale": 1,
+ "portraitTranslation": [0, 0, 0],
+ "profileScale": 1,
+ "profileTranslation": [0, 0, 0],
+ "animations": {
+   "faint": "q.bedrock_primary('blissey', 'faint', q.curve('one'))",
+   "cry": "q.bedrock_stateful('blissey', 'cry')"
+ },
+ "poses": {
+   "battle-standing": {
+     "poseTypes": ["STAND"],
+     "isBattle": true,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('blissey', 'battle_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('blissey', 'blink')","q.bedrock_quirk('blissey', 'eggadjust_quirk')"]
+   },
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "isBattle": false,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('blissey', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('blissey', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('blissey', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('blissey', 'blink')","q.bedrock_quirk('blissey', 'eggadjust_quirk')"]
+   },
+   "sleep": {
+     "poseTypes": ["SLEEP"],
+     "animations": ["q.bedrock('blissey', 'sleep')"]
+   }
+ }
+}
