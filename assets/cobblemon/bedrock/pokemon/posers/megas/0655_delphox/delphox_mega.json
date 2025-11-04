@@ -1,0 +1,36 @@
+{
+  "portraitScale": 1.9,
+  "portraitTranslation": [0.05, 0.9, 0.0],
+  "profileScale": 0.5,
+  "profileTranslation": [-0.1, 0.9, 0.0],
+  "animations": {
+    "cry": "q.bedrock_stateful('delphoxmega', 'ground_idle')",
+    "recoil": "q.bedrock_stateful('delphoxmega', 'recoil', q.curve('one'))",
+    "physical": "q.bedrock_primary('delphoxmega', 'battle_idle', q.curve('symmetrical_wide'))",
+    "special": "q.bedrock_primary('delphoxmega', 'battle_idle', q.curve('symmetrical_wide'))"
+  },
+  "poses": {
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": ["q.look('head')", "q.bedrock('delphoxmega', 'ground_idle')"]
+    },
+    "battle-standing": {
+      "poseTypes": ["STAND", "FLY", "WALK"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('delphoxmega', 'battle_idle')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "isBattle": false,
+      "animations": ["q.look('head')", "q.bedrock('delphoxmega', 'ground_walk')"]
+    },
+    "sleeping": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('delphoxmega', 'sleep')"]
+    }
+  }
+}
