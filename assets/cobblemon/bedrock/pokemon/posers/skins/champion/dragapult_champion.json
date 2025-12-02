@@ -1,0 +1,136 @@
+{
+  "portraitScale": 1.8,
+  "portraitTranslation": [-0.25, 3.3, 0],
+  "profileScale": 0.45,
+  "profileTranslation": [0.0, 1.25, 0],
+  "rootBone": "dragapult",
+  "firstPersonCameraOffset": {
+    "seat_1": [0, 0.45, 0]
+  },
+  "thirdPersonCameraOffset": {
+    "seat_1": [0, 0.25, 0],
+    "seat_1_reverse": [0, 0.25, 0]
+  },
+  "thirdPersonCameraOffsetNoViewBobbing": {
+    "seat_1": [0, 0.25, 0],
+    "seat_1_reverse": [0, 0.25, 0]
+  },
+  "animations": {
+    "cry": "q.bedrock_stateful('dragapult_champion', 'cry')",
+    "recoil": "q.bedrock_stateful('dragapult_champion', 'recoil')",
+    "physical": "q.bedrock_primary('dragapult_champion', 'physical', q.curve('symmetrical'))",
+    "special": "q.bedrock_primary('dragapult_champion', 'special', q.curve('symmetrical_wide'))"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": ["q.pitch_tilt('body')","q.look('head')", "q.bedrock('dragapult_champion', 'battle_idle')"],
+      "quirks": [
+        "q.bedrock_quirk('dragapult_champion', 'blink')",
+        "q.bedrock_quirk('dragapult_champion', 'blink2')",
+        "q.bedrock_quirk('dragapult_champion', 'blink3')"
+      ]
+    },
+    "water-jump": {
+      "poseTypes": ["FLOAT", "SWIM"],
+      "condition": "q.is_ridden",
+      "isTouchingWater": false,
+      "animations": [
+        "q.pitch_tilt('body')",
+        "q.look('head')",
+        "q.bedrock('dragapult_champion', 'air_glide')"
+      ]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": ["q.pitch_tilt('body')","q.look('head')", "q.bedrock('dragapult_champion', 'ground_idle')"],
+      "quirks": [
+        "q.bedrock_quirk('dragapult_champion', 'blink')",
+        "q.bedrock_quirk('dragapult_champion', 'blink2')",
+        "q.bedrock_quirk('dragapult_champion', 'blink3')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": ["q.pitch_tilt('body')","q.look('head')", "q.bedrock('dragapult_champion', 'ground_walk')"],
+      "quirks": [
+        "q.bedrock_quirk('dragapult_champion', 'blink')",
+        "q.bedrock_quirk('dragapult_champion', 'blink2')",
+        "q.bedrock_quirk('dragapult_champion', 'blink3')"
+      ],
+        "transformTicks": 10
+    },
+    "hover": {
+      "poseTypes": ["HOVER"],
+      "isBattle": false,
+      "animations": [
+        "q.pitch_tilt('body')",
+        "q.look('head')",
+        "q.bedrock('dragapult_champion', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('dragapult_champion', 'blink')",
+        "q.bedrock_quirk('dragapult_champion', 'blink2')",
+        "q.bedrock_quirk('dragapult_champion', 'blink3')"
+      ]
+    },
+    "fly": {
+      "poseTypes": ["FLY"],
+      "isBattle": false,
+      "animations": [
+        "q.pitch_tilt('body')",
+        "q.bedrock('dragapult_champion', 'air_glide')",
+        {
+          "condition": "q.is_ridden",
+          "animation": "q.bedrock('dragapult_champion', 'ride_air_glide')"
+        }
+      ],
+      "quirks": [
+        "q.bedrock_quirk('dragapult_champion', 'blink')",
+        "q.bedrock_quirk('dragapult_champion', 'blink2')",
+        "q.bedrock_quirk('dragapult_champion', 'blink3')"
+      ],
+        "transformTicks": 10
+    },
+    "float": {
+      "poseTypes": ["FLOAT"],
+      "isTouchingWater": true,
+      "isBattle": false,
+      "animations": [
+        "q.pitch_tilt('body')",
+        "q.look('head')",
+        "q.bedrock('dragapult_champion', 'ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('dragapult_champion', 'blink')",
+        "q.bedrock_quirk('dragapult_champion', 'blink2')",
+        "q.bedrock_quirk('dragapult_champion', 'blink3')"
+      ]
+    },
+    "swim": {
+      "poseTypes": ["SWIM"],
+      "isTouchingWater": true,
+      "isBattle": false,
+      "animations": [
+        "q.pitch_tilt('body')",
+        "q.look('head')",
+        "q.bedrock('dragapult_champion', 'air_fly')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('dragapult_champion', 'blink')",
+        "q.bedrock_quirk('dragapult_champion', 'blink2')",
+        "q.bedrock_quirk('dragapult_champion', 'blink3')"
+      ]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "namedAnimations": {
+        "cry": "q.bedrock_stateful('dummy', 'cry')"
+      },
+      "animations": ["q.bedrock('dragapult_champion', 'sleep')"]
+    }
+  }
+}
+
