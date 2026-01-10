@@ -102,34 +102,18 @@
 					"pivot": [0, 33.25, -0.5],
 					"cubes": [
 						{"origin": [-3, 33.25, -4.5], "size": [6, 5, 8], "uv": [32, 91]},
-						{"origin": [-3, 38.25, -1.5], "size": [2, 5, 1], "uv": [36, 106]},
-						{"origin": [-2.5, 38.75, -1.51], "size": [1, 4, 0], "uv": [34, 108]},
-						{"origin": [1.5, 38.75, -1.51], "size": [1, 4, 0], "uv": [34, 108], "mirror": true},
-						{"origin": [1, 38.25, -1.5], "size": [2, 5, 1], "uv": [36, 106], "mirror": true},
 						{"origin": [-2.5, 32.25, -3.5], "size": [5, 1, 7], "inflate": 0.01, "uv": [94, 84]},
 						{"origin": [-2, 32.35, -3.5], "size": [4, 1, 0], "inflate": 0.02, "uv": [48, 110]},
 						{"origin": [-2, 33.25, -7.25], "size": [4, 2, 4], "inflate": 0.02, "uv": [78, 110]},
+						{"origin": [2, 32.90867, -6.90146], "size": [0, 1, 1], "inflate": 0.01, "pivot": [2, 32.90867, -6.15146], "rotation": [-45, 0, 0], "uv": [58, 106]},
+						{"origin": [-2, 32.90867, -6.90146], "size": [0, 1, 1], "inflate": 0.01, "pivot": [-2, 32.90867, -6.15146], "rotation": [-45, 0, 0], "uv": [58, 108]},
+						{"origin": [2.5, 32.40867, -7.40146], "size": [0, 1, 1], "inflate": 0.01, "pivot": [2, 32.90867, -6.40146], "rotation": [0, 90, 0], "uv": [58, 108], "mirror": true},
 						{"origin": [-2.5, 32.40867, -7.40146], "size": [0, 1, 1], "inflate": 0.01, "pivot": [-2, 32.90867, -6.40146], "rotation": [0, -90, 0], "uv": [58, 108]},
-						{"origin": [2.5, 32.40867, -7.40146], "size": [0, 1, 1], "inflate": 0.01, "pivot": [2, 32.90867, -6.40146], "rotation": [0, 90, 0], "uv": [58, 108], "mirror": true}
+						{"origin": [-3, 38.25, -1.5], "size": [2, 5, 1], "uv": [36, 106]},
+						{"origin": [-2.5, 38.75, -1.51], "size": [1, 4, 0], "uv": [34, 108]},
+						{"origin": [1.5, 38.75, -1.51], "size": [1, 4, 0], "uv": [34, 108], "mirror": true},
+						{"origin": [1, 38.25, -1.5], "size": [2, 5, 1], "uv": [36, 106], "mirror": true}
 					]
-				},
-				{
-					"name": "locator_head",
-					"parent": "head",
-					"pivot": [0, 38.25, -2.7],
-					"locators": {
-						"head": [0, 38.25, -2.7],
-						"item_hat": [0, 38.25, -2.7]
-					}
-				},
-				{
-					"name": "locator_face",
-					"parent": "head",
-					"pivot": [0, 35.7, -4.6],
-					"locators": {
-						"face": [0, 35.7, -4.6],
-						"item_face": [0, 35.7, -4.6]
-					}
 				},
 				{
 					"name": "locator_jaw_upper",
@@ -140,13 +124,44 @@
 					}
 				},
 				{
+					"name": "locator_face",
+					"parent": "head",
+					"pivot": [0, 35.2, -7.25],
+					"locators": {
+						"face": [0, 35.2, -7.25]
+					}
+				},
+				{
+					"name": "locator_item_face",
+					"parent": "head",
+					"pivot": [0, 0, 0],
+					"locators": {
+						"item_face": [0, 35.7, -4.6]
+					}
+				},
+				{
+					"name": "locator_head",
+					"parent": "head",
+					"pivot": [0, 38.25, -2.7],
+					"locators": {
+						"head": [0, 38.25, -2.7]
+					}
+				},
+				{
+					"name": "locator_item_hat",
+					"parent": "head",
+					"pivot": [0, 0, 1.75],
+					"locators": {
+						"item_hat": [0, 38.25, -0.95]
+					}
+				},
+				{
 					"name": "locator_mouth",
 					"parent": "head",
 					"pivot": [0, 33.25, -3.5],
 					"locators": {
 						"mouth": [0, 33.25, -3.5],
-						"special": [0, 33.25, -3.5],
-						"item": [0, 33.25, -3.5]
+						"special": [0, 33.25, -3.5]
 					}
 				},
 				{
@@ -164,6 +179,14 @@
 					"pivot": [0, 33.3, -5.95],
 					"locators": {
 						"jaw2": [0, 33.3, -5.95]
+					}
+				},
+				{
+					"name": "locator_item",
+					"parent": "jaw",
+					"pivot": [0, 33.25, -6.25],
+					"locators": {
+						"item": [0, 33.25, -6.25]
 					}
 				},
 				{
@@ -586,7 +609,7 @@
 					"name": "locator_foot_secondary",
 					"parent": "foot_left3",
 					"pivot": [6.5, -4.2, 2],
-					"rotation": [90, 0, 0],
+					"rotation": [165, 0, 0],
 					"locators": {
 						"foot_secondary": [6.5, -4.2, 2]
 					}
@@ -652,7 +675,7 @@
 					"name": "locator_foot_primary",
 					"parent": "foot_right3",
 					"pivot": [-6.5, -4.2, 2],
-					"rotation": [90, 0, 0],
+					"rotation": [165, 0, 0],
 					"locators": {
 						"foot_primary": [-6.5, -4.2, 2]
 					}

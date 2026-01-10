@@ -1,0 +1,48 @@
+{
+  "portraitScale": 1.9,
+  "portraitTranslation": [-1.74, 0.76, 0],
+  "profileScale": 0.6,
+  "profileTranslation": [0, 0.85, 0.0],
+  "rootBone": "fearow",
+  "animations": {"cry": "q.bedrock_stateful('fearow_mario2025', 'cry')"},
+  "poses": {
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('neck', 1, 1, 70, -10, 20, -20)",
+        "q.look('head')",
+        "q.bedrock('fearow_mario2025', 'ground_idle')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK", "SWIM"],
+      "animations": [
+        "q.look('neck', 1, 1, 70, -10, 20, -20)",
+        "q.look('head')",
+        "q.bedrock('fearow_mario2025', 'ground_idle')",
+        "q.biped_walk(1, 1, 'leg_left', 'leg_right')"
+      ]
+    },
+    "hover": {
+      "poseTypes": ["HOVER"],
+      "animations": [
+        "q.pitch_tilt('body')",
+        "q.sine_wing_flap(0.9, 0.9, 25, 'z', 'wing_left', 'wing_right')",
+        "q.look('neck', 1, 1, 70, -10, 20, -20)",
+        "q.look('head')",
+        "q.bedrock('fearow_mario2025', 'ground_idle')"
+      ]
+    },
+    "fly": {
+      "poseTypes": ["FLY"],
+      "animations": [
+        "q.pitch_tilt('body')",
+        "q.sine_wing_flap(0.9, 0.9, 25, 'z', 'wing_left', 'wing_right')",
+        "q.look('neck', 1, 1, 70, -10, 20, -20)",
+        "q.look('head')",
+        "q.bedrock('fearow_mario2025', 'ground_idle')"
+      ]
+    }
+  }
+}
