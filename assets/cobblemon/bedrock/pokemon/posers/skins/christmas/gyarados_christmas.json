@@ -1,0 +1,177 @@
+{
+  "portraitScale": 1.26,
+  "portraitTranslation": [-0.74, 1.88, 0],
+  "profileScale": 0.32,
+  "profileTranslation": [0, 1.26, -10],
+  "rootBone": "gyarados",
+  "firstPersonCameraOffset": {
+    "seat_1": [0, 0.45, 0]
+  },
+  "thirdPersonCameraOffset": {
+    "seat_1": [0, 1, 1],
+    "seat_1_reverse": [0, 1, 1]
+  },
+  "thirdPersonCameraOffsetNoViewBobbing": {
+    "seat_1": [0, 1, 1],
+    "seat_1_reverse": [0, 1, 1]
+  },
+  "animations": {
+    "cry": "q.bedrock_stateful('gyarados', 'cry')",
+    "recoil": "q.bedrock_stateful('gyarados', 'recoil')"
+  },
+  "poses": {
+    "profile": {
+      "poseTypes": ["PROFILE"],
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'ground_idle')"
+      ]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT"],
+      "isBattle": false,
+      "isTouchingWater": false,
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "isTouchingWater": false,
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ]
+    },
+    "float": {
+      "poseTypes": ["FLOAT"],
+      "isUnderWater": true,
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'water_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ]
+    },
+    "swim": {
+      "poseTypes": ["SWIM"],
+      "isUnderWater": true,
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'water_swim')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ]
+    },
+    "mount-surface-idle": {
+      "poseTypes": ["FLOAT"],
+      "condition": "q.is_ridden",
+      "isTouchingWater": true,
+      "isUnderWater": false,
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'surface_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ],
+      "transformedParts": [
+        {
+          "part": "body",
+          "position": [0, 9, 0]
+        }
+      ]
+    },
+    "mount-surface-swim": {
+      "poseTypes": ["SWIM"],
+      "condition": "q.is_ridden",
+      "isTouchingWater": true,
+      "isUnderWater": false,
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'water_swim')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ],
+      "transformToTicks": 2,
+      "transformedParts": [
+        {
+          "part": "body",
+          "position": [0, 9, 0]
+        }
+      ]
+    },
+    "surface-idle": {
+      "poseTypes": ["STAND", "FLOAT"],
+      "condition": "!q.is_ridden",
+      "isTouchingWater": true,
+      "isUnderWater": false,
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'surface_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ],
+      "transformedParts": [
+        {
+          "part": "body",
+          "position": [0, 9, 0]
+        }
+      ]
+    },
+    "surface-swim": {
+      "poseTypes": ["WALK", "SWIM"],
+      "condition": "!q.is_ridden",
+      "isTouchingWater": true,
+      "isUnderWater": false,
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'water_swim')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ],
+      "transformedParts": [
+        {
+          "part": "body",
+          "position": [0, 9, 0]
+        }
+      ]
+    },
+    "hovering": {
+      "poseTypes": ["HOVER"],
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'surface_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ]
+    },
+    "flying": {
+      "poseTypes": ["FLY"],
+      "animations": [
+        "q.look('head', 1, 0.25, 10, -15, 5, -5)",
+        "q.bedrock('gyarados_christmas', 'air_fly')",
+        {
+          "condition": "q.is_ridden",
+          "animation": "q.bedrock('gyarados_christmas', 'water_swim')"
+        }
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gyarados_christmas', 'blink')"
+      ]
+    }
+  }
+}
