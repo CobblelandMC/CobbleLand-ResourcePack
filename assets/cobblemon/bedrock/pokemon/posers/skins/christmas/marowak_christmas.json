@@ -1,0 +1,28 @@
+{
+  "portraitScale": 1.82,
+  "portraitTranslation": [-0.01, 0.64, 0],
+  "profileScale": 0.84,
+  "profileTranslation": [0, 0.51, 0],
+  "animations": {},
+  "poses": {
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PROFILE", "FLOAT", "PORTRAIT"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('marowak_christmas', 'idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('marowak_christmas', 'blink')"]
+    },
+    "walking": {
+      "poseTypes": ["WALK", "SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('marowak_christmas', 'idle')",
+        "q.biped_walk(1, 1, 'leftleg', 'rightleg')",
+        "q.bimanual_swing(1, 1, 'leftarm')"
+      ],
+      "quirks": ["q.bedrock_quirk('marowak_christmas', 'blink')"]
+    }
+  }
+}

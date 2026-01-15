@@ -1,0 +1,45 @@
+{
+ "portraitScale": 1,
+ "portraitTranslation": [0, 0, 0],
+ "profileScale": 1,
+ "profileTranslation": [0, 0, 0],
+ "animations": {
+   "cry": "q.bedrock_stateful('rowlet_christmas', 'cry')"
+ },
+ "poses": {
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('rowlet_christmas', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('rowlet_christmas', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('rowlet_christmas', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('rowlet_christmas', 'blink')"]
+   },
+   "hover": {
+     "poseTypes": ["HOVER"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('rowlet_christmas', 'air_idle')"
+     ],
+     "quirks": ["q.bedrock_quirk('rowlet_christmas', 'blink')"]
+   },
+   "fly": {
+     "poseTypes": ["FLY"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('rowlet_christmas', 'air_fly')"
+     ],
+     "quirks": ["q.bedrock_quirk('rowlet_christmas', 'blink')"]
+   }
+ }
+}
