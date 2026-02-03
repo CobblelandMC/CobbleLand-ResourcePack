@@ -1,50 +1,53 @@
 {
-  "head": "body",
-  "portraitScale": 1.5,
-  "portraitTranslation": [
-    0,
-    0.3,
-    0
-  ],
-  "profileScale": 0.55,
-  "profileTranslation": [
-    0,
-    0.8,
-    0
-  ],
-  "battle-standing": {
-    "poseTypes": [
-      "STAND"
-    ],
-    "isBattle": true,
-    "animations": [
-      "q.look('head')",
-      "q.bedrock('mega_skarmory', 'battle_idle')"
-    ]
+  "portraitScale": 2.49,
+  "portraitTranslation": [-1.05, 1.1, 0],
+  "profileScale": 0.69,
+  "profileTranslation": [0, 0.7, 0],
+  "rootBone": "skarmory",
+  "animations": {
+    "faint": "q.bedrock_primary('mega_skarmory', 'faint', q.curve('one'))",
+    "cry": "q.bedrock_stateful('mega_skarmory', 'cry')",
+    "recoil": "q.bedrock_stateful('mega_skarmory', 'recoil')",
+    "physical": "q.bedrock_primary('mega_skarmory', 'physical', q.curve('symmetrical_wide'))"
   },
   "poses": {
+    "battle-standing": {
+      "poseTypes": ["STAND", "HOVER", "FLOAT"],
+      "isBattle": true,
+      "animations": ["q.look('head')", "q.bedrock('mega_skarmory', 'battle_idle')"],
+      "quirks": ["q.bedrock_quirk('mega_skarmory', 'blink')"]
+    },
     "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
-      "animations": [
-        "bedrock(mega_skarmory, ground_idle)"
-      ]
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": ["q.look('head')", "q.bedrock('mega_skarmory', 'ground_idle')"],
+      "quirks": ["q.bedrock_quirk('mega_skarmory', 'blink')"]
     },
     "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [
-        "WALK"
-      ],
+      "poseTypes": ["WALK"],
       "animations": [
-        "bedrock(mega_skarmory, ground_idle)"
-      ]
+        "q.look('head')",
+        "q.biped_walk(0.86, 0.8, 'left_thigh', 'right_thigh')",
+        "q.bedrock('mega_skarmory', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('mega_skarmory', 'blink')"]
+    },
+    "hover": {
+      "poseTypes": ["HOVER"],
+      "animations": ["q.look('head')", "q.bedrock('mega_skarmory', 'air_idle')"],
+      "quirks": ["q.bedrock_quirk('mega_skarmory', 'blink')"]
+    },
+    "fly": {
+      "poseTypes": ["FLY"],
+      "animations": ["q.look('head')", "q.bedrock('mega_skarmory', 'air_fly')"],
+      "quirks": ["q.bedrock_quirk('mega_skarmory', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "namedAnimations": {
+        "cry": "q.bedrock_stateful('dummy', 'cry')"
+      },
+      "animations": ["q.bedrock('mega_skarmory', 'sleep')"]
     }
   }
 }

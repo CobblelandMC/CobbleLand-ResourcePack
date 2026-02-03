@@ -1,0 +1,57 @@
+{
+  "portraitScale": 1,
+  "portraitTranslation": [ 0, 1.9, 0 ],
+  "profileScale": 0.5,
+  "profileTranslation": [ 0, 1.2, 0 ],
+    "rootBone": "darkrai",
+    "animations": {
+      "faint": "q.bedrock_primary('mega_darkrai', 'faint', q.curve('one'))",
+      "cry": "q.bedrock_stateful('mega_darkrai', 'cry')",
+      "recoil": ["q.bedrock_stateful('mega_darkrai', 'recoil2')"],
+      "physical": "q.bedrock_primary('mega_darkrai', 'physical_attack', q.curve('symmetrical_wide'))",
+      "special": "q.bedrock_primary('mega_darkrai', 'special_attack', q.curve('symmetrical_wide'))",
+      "status": "q.bedrock_primary('mega_darkrai', 'status', q.curve('symmetrical_wide'))"
+    },
+    "poses": {
+      "portrait": {
+        "poseTypes": ["PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "isTouchingWater": false,
+        "animations": [
+            "bedrock(darkrai, air_idle)"
+        ]
+      },
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": ["bedrock(darkrai, battle_idle)"]
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "FLOAT"],
+        "isBattle": false,
+        "isTouchingWater": false,
+        "animations": ["bedrock(darkrai, ground_idle)"]
+      },
+      "walking": {
+        "poseTypes": ["WALK", "SWIM"],
+        "isTouchingWater": false,
+        "animations": ["bedrock(darkrai, ground_walk)"]
+      },
+      "hover": {
+        "poseTypes": ["HOVER"],
+        "isTouchingWater": false,
+        "animations": ["bedrock(darkrai, air_idle)"]
+      },
+      "fly": {
+        "poseTypes": ["FLY"],
+        "isTouchingWater": false,
+        "animations": ["bedrock(darkrai, air_fly)"]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "animations": ["q.bedrock('mega_darkrai', 'sleep')"]
+      }
+    }
+  }
+  
+  

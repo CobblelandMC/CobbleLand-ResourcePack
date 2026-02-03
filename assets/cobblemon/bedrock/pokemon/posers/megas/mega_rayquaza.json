@@ -1,51 +1,37 @@
 {
-  "head": "head",
-  "portraitScale": 2,
-  "portraitTranslation": [ -0.5, 3.15, 0 ],
-  "profileScale": 0.5,
-  "profileTranslation": [ 0, 1.1, 0 ],
+  "portraitScale": 1.11,
+  "portraitTranslation": [-1.26,3.68,0],
+  "profileScale": 0.25,
+  "profileTranslation": [0,1.5,-10],
   "poses": {
-    "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-       "poseTypes": [
-        "STAND",
-		    "PROFILE",
-		    "NONE"
-      ],
-    "animations": [
-    "bedrock(mega_rayquaza, ground_idle)"
-      ]
-  },
-  	 "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [
-        "WALK"
-      ],
-      "animations": [
-      "bedrock(mega_rayquaza, ground_walk)"
-      ]
-  },
-  "hovering": {
-    "poseName": "hovering",
-    "transformTicks": 10,
-    "poseTypes": [
-      "HOVER"
-    ],
-    "animations": [
-    "bedrock(mega_rayquaza, ground_idle)"
-    ]
-},
-"flying": {
-  "poseName": "flying",
-  "transformTicks": 10,
-  "poseTypes": [
-    "FLY"
-  ],
-  "animations": [
-  "bedrock(mega_rayquaza, ground_walk)"
-  ]
-}
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "isBattle": false,
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('mega_rayquaza', 'ground_idle')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('mega_rayquaza', 'ground_walk')"
+     ]
+   },
+   "hover": {
+     "poseTypes": ["HOVER"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('mega_rayquaza', 'ground_idle')"
+     ]
+   },
+   "fly": {
+     "poseTypes": ["FLY"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('mega_rayquaza', 'ground_walk')"
+     ]
+   }
 }
 }
