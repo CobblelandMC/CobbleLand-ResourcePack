@@ -1,50 +1,35 @@
 {
-  "head": "body",
-  "portraitScale": 1.5,
-  "portraitTranslation": [
-    0,
-    0.3,
-    0
-  ],
-  "profileScale": 0.55,
-  "profileTranslation": [
-    0,
-    0.8,
-    0
-  ],
-  "battle-standing": {
-    "poseTypes": [
-      "STAND"
-    ],
-    "isBattle": true,
-    "animations": [
-      "q.look('head')",
-      "q.bedrock('mega_electivire', 'battle_idle')"
-    ]
-  },
-  "poses": {
-    "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
-      "animations": [
-        "bedrock(mega_electivire, ground_idle)"
-      ]
-    },
-    "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [
-        "WALK"
-      ],
-      "animations": [
-        "bedrock(mega_electivire, ground_walk)"
-      ]
+    "head": "body",
+    "portraitScale": 1.35,
+    "portraitTranslation": [ -0.3, 1.9, 0 ],
+    "profileScale": 0.45,
+    "profileTranslation": [ 0, 0.99, 0 ],
+    "poses": {
+      "standing": {
+        "poseName": "standing",
+        "transformTicks": 10,
+        "poseTypes": [
+          "STAND",
+          "NONE",
+          "PORTRAIT",
+          "PROFILE"
+        ],
+        "animations": [
+          "q.look('head')",
+          "bedrock(mega_electivire, ground_idle)"
+        ],
+        "quirks": ["q.bedrock_quirk('mega_electivire', 'blink')"]
+      },
+      "walking": {
+        "poseName": "walking",
+        "transformTicks": 10,
+        "poseTypes": [ "WALK" ],
+        "animations": [ 
+          "bedrock(mega_electivire, ground_walk)",
+          "q.biped_walk(0.56, 0.5, 'leg_left', 'leg_right')",
+          "q.bimanual_swing(0.36, 0.3, 'arm_left', 'arm_right')"
+        ],
+        "quirks": ["q.bedrock_quirk('mega_electivire', 'blink')"]
+      }  
+      }
     }
-  }
-}
