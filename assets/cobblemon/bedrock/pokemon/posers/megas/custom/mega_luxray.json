@@ -1,17 +1,19 @@
 {
     "head": "body",
-    "portraitScale": 1.5,
-    "portraitTranslation": [ 0, 0.3, 0 ],
+    "portraitScale": 1.65,
+    "portraitTranslation": [ -0.7, 1.2, 0 ],
     "profileScale": 0.55,
     "profileTranslation": [ 0, 0.8, 0 ],
+
+    "poses": {
     "battle-standing": {
       "poseTypes": ["STAND"],
       "isBattle": true,
       "animations": ["q.look('head')", "q.bedrock('mega_luxray', 'battle_idle')"]
     },
-    "poses": {
       "standing": {
         "poseName": "standing",
+        "isBattle": false,
         "transformTicks": 10,
         "poseTypes": [
           "STAND",
@@ -28,7 +30,8 @@
         "transformTicks": 10,
         "poseTypes": [ "WALK" ],
         "animations": [ 
-          "bedrock(mega_luxray, ground_walk)"
+          "bedrock(mega_luxray, ground_idle)",
+          "q.quadruped_walk(1.3, 0.8 , 'front_leg_left', 'front_leg_right', 'back_leg_left', 'back_leg_right')"
         ]
       }
     }
