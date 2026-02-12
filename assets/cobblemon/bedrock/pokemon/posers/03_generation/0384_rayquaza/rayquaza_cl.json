@@ -1,30 +1,38 @@
 {
-  "portraitScale": 1.11,
-  "portraitTranslation": [-1.26,4.48,0],
-  "profileScale": 0.25,
-  "profileTranslation": [0,1.5,-10],
-  "rootBone": "rayquaza",
-  "animations": {},
-  "poses": {
-    "standing": {
-      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
-      "animations": [
-        "q.look('head')",
-        "q.bedrock('rayquaza_cl', 'ground_idle')"
-      ],
-      "quirks": [
-        "q.bedrock_quirk('rayquaza_cl', 'blink')"
-      ]
-    },
-    "walking": {
-      "poseTypes": ["WALK", "SWIM"],
-      "animations": [
-        "q.look('head')",
-        "q.bedrock('rayquaza_cl', 'ground_idle')"
-      ],
-      "quirks": [
-        "q.bedrock_quirk('rayquaza_cl', 'blink')"
-      ]
-    }
-  }
+ "portraitScale": 1.11,
+ "portraitTranslation": [-1.26,4.48,0],
+ "profileScale": 0.25,
+ "profileTranslation": [0,1.5,-10],
+ "rootBone": "rayquaza",
+ "animations": {},
+ "poses": {
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('rayquaza_cl', 'ground_idle')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('rayquaza_cl', 'ground_walk')"
+     ]
+   },
+   "hover": {
+     "poseTypes": ["HOVER"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('rayquaza_cl', 'ground_idle')"
+     ]
+   },
+   "fly": {
+     "poseTypes": ["FLY"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('rayquaza_cl', 'ground_walk')"
+     ]
+   }
+ }
 }
