@@ -1,0 +1,58 @@
+{
+    "head": "head",
+    "portraitScale": 2.2,
+    "portraitTranslation": [ -0.4, -0.5, 0 ],
+    "profileScale": 0.9,
+    "profileTranslation": [ 0, 0.4, 0 ],
+    "animations": {
+      "faint": "q.bedrock_primary('litleo_christmas20242', 'faint', q.curve('one'))",
+      "cry": "q.bedrock_stateful('litleo_christmas20242', 'cry')",
+      "recoil": "q.bedrock_stateful('litleo_christmas20242', 'recoil')",
+      "physical": "q.bedrock_primary('litleo_christmas20242', 'physical', q.curve('symmetrical_wide'))",
+      "special": "q.bedrock_primary('litleo_christmas20242', 'special', q.curve('symmetrical_wide'))",
+      "status": "q.bedrock_primary('litleo_christmas20242', 'status', q.curve('symmetrical_wide'))"
+    },  
+    "poses": {
+    "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": [
+            "q.look('head')",
+            "q.bedrock('litleo_christmas20242', 'battle_idle')"
+        ],
+        "quirks": [
+            "q.bedrock_quirk('litleo_christmas20242', 'blink')"
+        ]
+        },
+        "standing": {
+        "poseName": "standing",
+        "transformTicks": 10,
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "animations": [
+            "look",
+            "bedrock(litleo_christmas20242, ground_idle)"
+        ],
+        "quirks": ["q.bedrock_quirk('litleo_christmas20242', 'blink')"]
+        },
+      "walking": {
+        "poseName": "walking",
+        "transformTicks": 10,
+        "poseTypes": [ "WALK" ],
+        "animations": [ "bedrock(litleo_christmas20242, ground_walk)" ],
+        "quirks": ["q.bedrock_quirk('litleo_christmas20242', 'blink')"]
+      },
+    
+      "sleeping": {
+        "poseName": "sleeping",
+        "transformTicks": 10,
+        "poseTypes": [
+          "SLEEP"
+        ],
+        "animations": [
+          "bedrock(litleo_christmas20242, sleep)"
+        ]
+      }
+    }
+  }
+  
