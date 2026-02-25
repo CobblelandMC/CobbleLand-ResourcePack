@@ -1,0 +1,40 @@
+{
+  "head": "head",
+  "portraitScale": 2.4,
+  "portraitTranslation": [-0.6, 2.3, 0],
+  "profileScale": 0.55,
+  "profileTranslation": [0, 0.95, 0],
+  "animations": {
+    "cry": "q.bedrock_stateful('mega_kabutops', 'cry')"
+  },
+  "poses": {
+    "standing": {
+       "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+       "isBattle": false,
+       "animations": ["q.look('head')", "q.bedrock('mega_kabutops', 'ground_idle')"],
+      "quirks": [
+        "q.bedrock_quirk('mega_kabutops', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": ["q.look('head')", "q.bedrock('mega_kabutops', 'ground_walk')"],
+      "quirks": [
+        "q.bedrock_quirk('mega_kabutops', 'blink')"
+      ]
+    },    
+    "sleeping": {
+      "poseTypes": ["SLEEP"],
+      "isTouchingWater": false,
+      "animations": ["q.bedrock('mega_kabutops', 'sleep')"]
+    },
+    "battle-idle": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": ["q.look('head')", "q.bedrock('mega_kabutops', 'battle_idle')"],
+        "quirks": [
+          "q.bedrock_quirk('mega_kabutops', 'blink')"
+        ]
+    }
+  }
+}
