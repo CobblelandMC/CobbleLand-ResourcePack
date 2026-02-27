@@ -16,7 +16,7 @@
           "q.bedrock('flutternator', 'battle_idle')"
         ],
         "namedAnimations": {
-        "cry": "q.bedrock_primary('flutternator', 'battle_cry', q.curve('one'))"
+        "cry": "q.bedrock_primary('flutternator', 'cry', q.curve('one'))"
         },
         "quirks": ["q.bedrock_quirk('flutternator', 'blink')"]
       },
@@ -31,6 +31,18 @@
         "quirks": [
           "q.bedrock_quirk('flutternator', 'blink')"
         ]
+      },
+      "walking": {
+        "poseName": "walking",
+        "transformTicks": 10,
+        "poseTypes": [ "WALK" ],
+        "animations": [ 
+          "bedrock(flutternator, ground_idle)",
+          "q.biped_walk(0.56, 0.5, 'leg_left', 'leg_right')",
+          "q.bimanual_swing(0.36, 0.3, 'arm_left', 'arm_right')"
+        ],
+        "quirks": ["q.bedrock_quirk('flutternator', 'blink')"]
       }
     }
    }
+   
