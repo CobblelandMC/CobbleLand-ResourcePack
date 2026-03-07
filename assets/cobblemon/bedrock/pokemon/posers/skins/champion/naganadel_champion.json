@@ -1,0 +1,45 @@
+{
+  "portraitScale": 2.0,
+  "portraitTranslation": [0, 4.3, 0],
+  "profileScale": 0.45,
+  "profileTranslation": [0.0, 1.25, 0],
+  "rootBone": "naganadel",
+  "poses": {
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "animations": ["q.pitch_tilt('body')","q.look('head')", "q.bedrock('naganadel_champion', 'ground_idle')"],
+      "quirks": [
+        "q.bedrock_quirk('poipole', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": ["q.pitch_tilt('body')","q.look('head')", "q.bedrock('naganadel_champion', 'ground_walk')"],
+      "quirks": [
+        "q.bedrock_quirk('poipole', 'blink')"
+      ]
+    },
+    "hover": {
+      "poseTypes": ["HOVER"],
+      "animations": [
+        "q.pitch_tilt('body')",
+        "q.look('head')",
+        "q.bedrock('naganadel_champion', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('poipole', 'blink')"
+      ]
+    },
+    "fly": {
+      "poseTypes": ["FLY"],
+      "animations": [
+        "q.pitch_tilt('body')",
+        "q.bedrock('naganadel_champion', 'ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('poipole', 'blink')"
+      ]
+    }
+  }
+}
+
