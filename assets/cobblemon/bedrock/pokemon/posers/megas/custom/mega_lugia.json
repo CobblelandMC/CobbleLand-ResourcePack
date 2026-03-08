@@ -1,0 +1,50 @@
+{
+  "head": "head",
+  "portraitScale": 2.4,
+  "portraitTranslation": [-0.6, 2.3, 0],
+  "profileScale": 0.55,
+  "profileTranslation": [0, 0.95, 0],
+  "animations": {
+    "cry": "q.bedrock_stateful('mega_lugia', 'cry')"
+  },
+  "poses": {
+    "standing": {
+       "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+       "isBattle": false,
+       "animations": ["q.look('head')", "q.bedrock('mega_lugia', 'ground_idle')"],
+      "quirks": [
+        "q.bedrock_quirk('mega_lugia', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": ["q.look('head')", "q.bedrock('mega_lugia', 'ground_walk')"],
+      "quirks": [
+        "q.bedrock_quirk('mega_lugia', 'blink')"
+      ]
+    },    
+    "sleeping": {
+      "poseTypes": ["SLEEP"],
+      "isTouchingWater": false,
+      "animations": ["q.bedrock('mega_lugia', 'sleep')"]
+    },
+    "battle-idle": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": ["q.look('head')", "q.bedrock('mega_lugia', 'battle_idle')"],
+        "quirks": [
+          "q.bedrock_quirk('mega_lugia', 'blink')"
+        ]
+    },
+    "flying": {
+      "transformTicks": 5,
+      "poseTypes": ["FLY"],
+      "animations": ["q.look('head')", "q.bedrock('mega_lugia', 'air_fly')"]
+    },
+    "hover": {
+      "transformTicks": 5,
+      "poseTypes": ["HOVER"],
+      "animations": ["q.look('head')", "q.bedrock('mega_lugia', 'air_idle')"]
+    }
+  }
+}
