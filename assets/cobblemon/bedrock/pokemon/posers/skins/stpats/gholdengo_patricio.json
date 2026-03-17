@@ -1,0 +1,146 @@
+{
+  "portraitScale": 2.6,
+  "portraitTranslation": [-0.3, 1.4, 0.0],
+  "profileScale": 0.65,
+  "profileTranslation": [0.0, 0.76, 0.0],
+  "rootBone": "gholdengo",
+  "animations": {
+    "cry": "q.bedrock_stateful('gholdengo_patricio', 'cry')"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isTouchingWater": false,
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('gholdengo_patricio', 'battle_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gholdengo_patricio', 'blink')"
+        ]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "isTouchingWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('gholdengo_patricio', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gholdengo_patricio', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "condition": "!q.is_sprinting",
+      "isTouchingWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('gholdengo_patricio', 'ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gholdengo_patricio', 'blink')"
+        ]
+    },
+    "running": {
+      "poseTypes": ["WALK"],
+      "condition": "q.is_sprinting",
+      "isTouchingWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('gholdengo_patricio', 'ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gholdengo_patricio', 'blink')"
+        ]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "isTouchingWater": false,
+      "namedAnimations": {
+        "cry": "q.bedrock_stateful('dummy', 'cry')"
+      },
+      "animations": ["q.bedrock('gholdengo_patricio', 'sleep')"],
+      "quirks": []
+    },
+    "hover": {
+      "poseTypes": ["HOVER"],
+      "isTouchingWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('gholdengo_patricio', 'surfacewater_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gholdengo_patricio', 'blink')"
+      ]
+    },
+    "fly": {
+      "poseTypes": ["FLY"],
+      "isTouchingWater": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('gholdengo_patricio', 'surfacewater_swim')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gholdengo_patricio', 'blink')"
+      ]
+    },
+    "surfacewater-standing": {
+      "poseTypes": ["STAND", "FLOAT"],
+      "isTouchingWater": true,
+	    "transformedParts": [
+        {
+           "part": "body",
+           "position": [0, -7, 0],
+           "rotation": [0, 0, 0],
+           "isVisible": true
+        }
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('gholdengo_patricio', 'surfacewater_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gholdengo_patricio', 'blink')"
+      ]
+    },
+    "surfacewater-walking": {
+      "poseTypes": ["WALK", "SWIM"],
+      "isTouchingWater": true,
+	    "transformedParts": [
+        {
+           "part": "body",
+           "position": [0, -8, 0],
+           "rotation": [0, 0, 0],
+           "isVisible": true
+        }
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('gholdengo_patricio', 'surfacewater_swim')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('gholdengo_patricio', 'blink')"
+        ]
+    },
+    "surfacewater-sleep": {
+      "poseTypes": ["SLEEP"],
+      "isTouchingWater": true,
+	    "transformedParts": [
+        {
+           "part": "body",
+           "position": [0, -8.5, 0],
+           "rotation": [0, 0, 0],
+           "isVisible": true
+        }
+      ],
+      "namedAnimations": {
+        "cry": "q.bedrock_stateful('dummy', 'cry')"
+      },
+      "animations": ["q.bedrock('gholdengo_patricio', 'surfacewater_sleep')"],
+      "quirks": []
+    }
+  }
+}
