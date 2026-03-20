@@ -1,0 +1,68 @@
+{
+  "portraitScale": 2,
+  "portraitTranslation": [-0.2, -0.7, 0],
+  "profileScale": 0.7,
+  "profileTranslation": [0, 0.7, 0],
+  "rootBone": "sableye",
+  "animations": {},
+  "poses": {
+    "standing": {
+      "poseName": "standing",
+      "poseTypes": ["STAND", "FLOAT", "PROFILE", "PORTRAIT"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('sableye_leprechaun', 'ground_idle')"
+      ]
+    },
+
+    "battle_standing": {
+      "poseName": "battle_standing",
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('sableye_leprechaun', 'battle_idle')"
+      ]
+    },
+
+    "walking": {
+      "poseName": "walking",
+      "poseTypes": ["WALK", "SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('sableye_leprechaun', 'ground_walk')"
+      ]
+    },
+
+    "shoulder_left": {
+      "poseName": "shoulder_left",
+      "poseTypes": ["SHOULDER_LEFT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('sableye_leprechaun', 'shoulder_left')"
+      ],
+      "transformedParts": [
+        {
+          "part": "body",
+          "position": [-2, 2, 3]
+        }
+      ]
+    },
+
+    "shoulder_right": {
+      "poseName": "shoulder_right",
+      "poseTypes": ["SHOULDER_RIGHT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('sableye_leprechaun', 'shoulder_right')"
+      ],
+      "transformedParts": [
+        {
+          "part": "body",
+          "position": [2, 2, 3]
+        }
+      ]
+    }
+  }
+}
