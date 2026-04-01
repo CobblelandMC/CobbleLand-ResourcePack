@@ -1,0 +1,53 @@
+{
+  "portraitScale": 2.14,
+  "portraitTranslation": [-0.38, -0.64, 0],
+  "profileScale": 0.47,
+  "profileTranslation": [0, 1.04, 0],
+  "rootBone": "morpeko",
+  "animations": {
+    "cry": "q.bedrock_stateful('morpeko_minion', 'cry')"
+  },
+  "poses": {
+
+    "standing": {
+      "poseName": "standing",
+      "poseTypes": ["STAND", "PROFILE", "PORTRAIT"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('morpeko_minion', 'ground_idle')"
+      ],
+      "transformTicks": 10,
+      "quirks": [
+        "q.bedrock_quirk('morpeko_minion', 'blink')"
+      ]
+    },
+
+    "battle_standing": {
+      "poseName": "battle_standing",
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('morpeko_minion', 'battle_idle')"
+      ],
+      "transformTicks": 10,
+      "quirks": [
+        "q.bedrock_quirk('morpeko_minion', 'blink')"
+      ]
+    },
+
+    "walking": {
+      "poseName": "walking",
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('morpeko_minion', 'ground_walk')"
+      ],
+      "transformTicks": 10,
+      "quirks": [
+        "q.bedrock_quirk('morpeko_minion', 'blink')"
+      ]
+    }
+  }
+}

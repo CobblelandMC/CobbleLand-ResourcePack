@@ -1,0 +1,71 @@
+{
+  "portraitScale": 1.06,
+  "portraitTranslation": [-0.25, 2.36, 0],
+  "profileScale": 0.41,
+  "profileTranslation": [-0.01, 1.16, 0],
+  "rootBone": "snorlax",
+  "animations": {
+    "faint": "q.bedrock_primary('snorlax_cartman', 'faint', q.curve('one'))",
+    "cry": "q.bedrock_stateful('snorlax_cartman', 'cry')",
+    "physical": "q.bedrock_primary('snorlax_cartman', 'physical', q.curve('symmetrical_wide'))",
+    "recoil": "q.bedrock_stateful('snorlax_cartman', 'recoil', q.curve('symmetrical_wide'))"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('snorlax_cartman', 'battle_idle')"
+      ],
+      "transformedParts": [
+        {
+          "part": "coolhat",
+          "isVisible": false
+        }
+      ],
+      "transitions": {
+        "sleeping": "q.bedrock_primary('snorlax_cartman', 'sleep_intro')"
+      }
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('snorlax_cartman', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('snorlax_cartman', 'quirk_idle')"],
+      "transformedParts": [
+        {
+          "part": "coolhat",
+          "isVisible": false
+        }
+      ],
+      "transitions": {
+        "sleeping": "q.bedrock_primary('snorlax_cartman', 'sleep_intro')"
+      }
+      },
+    "walking": {
+      "poseName": "walking",
+      "poseTypes": ["WALK", "SWIM", "FLY"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('snorlax_cartman', 'ground_walk')"
+      ],
+      "transformedParts": [
+        {
+          "part": "coolhat",
+          "isVisible": false
+        }
+      ],
+      "transitions": {
+        "sleeping": "q.bedrock_primary('snorlax_cartman', 'sleep_intro')"
+      }
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('snorlax_cartman', 'sleep')"]
+    }
+  }
+}
