@@ -1,0 +1,273 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.morpeko_minion.ground_idle": {
+			"loop": true,
+			"bones": {
+				"tail": {
+					"rotation": [12.5, 0, 0]
+				},
+				"tail2": {
+					"rotation": [12.5, 0, 0]
+				},
+				"arm_right": {
+					"rotation": [75, -35, -90],
+					"position": [1, -0.75, -2]
+				},
+				"arm_right2": {
+					"rotation": [0, -25, 0]
+				},
+				"finger_right": {
+					"rotation": [0, 0, -20]
+				},
+				"finger_right2": {
+					"rotation": [20, 0, 0]
+				},
+				"arm_left": {
+					"rotation": [75, 35, 90],
+					"position": [-1, -0.75, -2]
+				},
+				"arm_left2": {
+					"rotation": [0, 25, 0]
+				},
+				"finger_left": {
+					"rotation": [0, 0, 20]
+				},
+				"finger_left2": {
+					"rotation": [20, 0, 0]
+				},
+				"hand_left": {
+					"rotation": [0, 17.5, 0]
+				},
+				"hand_right": {
+					"rotation": [0, -17.5, 0]
+				},
+				"leg_left": {
+					"rotation": [0, -7.5, 0]
+				},
+				"leg_right": {
+					"rotation": [0, 7.5, 0]
+				},
+				"finger_left3": {
+					"rotation": [0, 0, 20]
+				},
+				"finger_right3": {
+					"rotation": [0, 0, -20]
+				},
+				"torso": {
+					"position": [0, "math.sin(q.anim_time*90*5-180)*0.1-0.1", 0]
+				},
+				"thumb_left": {
+					"rotation": [35, -43, -26]
+				},
+				"thumb_right": {
+					"rotation": [35, 43, 26]
+				},
+				"foot_left": {
+					"rotation": [0, -10, 0]
+				},
+				"foot_right": {
+					"rotation": [0, 12.5, 0]
+				},
+				"head": {
+					"rotation": ["2.5+math.sin(q.anim_time*90*5+90-180)*0.3", 0, 0]
+				}
+			}
+		},
+		"animation.morpeko_minion.ground_walk": {
+			"loop": true,
+			"bones": {
+				"tail": {
+					"rotation": [12.5, 0, 0]
+				},
+				"tail2": {
+					"rotation": [12.5, 0, 0]
+				},
+				"arm_right": {
+					"rotation": [75, -35, -90],
+					"position": [1, -0.75, -2]
+				},
+				"arm_right2": {
+					"rotation": [0, -25, 0]
+				},
+				"finger_right": {
+					"rotation": [0, 0, -20]
+				},
+				"finger_right2": {
+					"rotation": [20, 0, 0]
+				},
+				"arm_left": {
+					"rotation": [75, 35, 90],
+					"position": [-1, -0.75, -2]
+				},
+				"arm_left2": {
+					"rotation": [0, 25, 0]
+				},
+				"finger_left": {
+					"rotation": [0, 0, 20]
+				},
+				"finger_left2": {
+					"rotation": [20, 0, 0]
+				},
+				"hand_left": {
+					"rotation": [0, 17.5, 0]
+				},
+				"hand_right": {
+					"rotation": [0, -17.5, 0]
+				},
+				"leg_left": {
+					"rotation": [0, -7.5, 0]
+				},
+				"leg_right": {
+					"rotation": [0, 7.5, 0]
+				},
+				"finger_left3": {
+					"rotation": [0, 0, 20]
+				},
+				"finger_right3": {
+					"rotation": [0, 0, -20]
+				},
+				"torso": {
+					"rotation": ["5+math.cos(Q.anim_time*90*1.5*4)*1", "0+math.cos(Q.anim_time*90*1.5*2)*4", "0-math.sin(Q.anim_time*90*1.5*2)*2"],
+					"position": [0, "0.3+math.sin(Q.anim_time*90*1.5*4-30)*0.2", 0]
+				},
+				"thumb_left": {
+					"rotation": [35, -43, -26]
+				},
+				"thumb_right": {
+					"rotation": [35, 43, 26]
+				},
+				"foot_left": {
+					"rotation": [0, -10, 0]
+				},
+				"foot_right": {
+					"rotation": [0, 12.5, 0]
+				},
+				"head": {
+					"rotation": ["2.5+math.sin(q.anim_time*90*5+90-180)*0.3", 0, 0]
+				}
+			}
+		},
+		"animation.morpeko_minion.blink": {
+			"animation_length": 0.1667,
+			"bones": {
+				"eyelid_left": {
+					"position": {
+						"0.0": [0, 0, -0.1],
+						"0.125": [0, 0, -0.1],
+						"0.1667": [0, 0, 0]
+					}
+				},
+				"eyelid_right": {
+					"position": {
+						"0.0": [0, 0, -0.1],
+						"0.125": [0, 0, -0.1],
+						"0.1667": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.morpeko_minion.cry": {
+			"animation_length": 1,
+			"bones": {
+				"mouth_closed": {
+					"position": {
+						"0.0833": [0, 0, 0],
+						"0.1667": {"pre": [0, 0, 0], "post": [0, 0, 0.1]},
+						"0.9167": [0, 0, 0.1],
+						"1.0": {"pre": [0, 0, 0.1], "post": [0, 0, 0]}
+					}
+				},
+				"mouth_open": {
+					"position": {
+						"0.0833": [0, 0, 0],
+						"0.1667": {"pre": [0, 0, 0], "post": [0, 0, -0.1]},
+						"0.9167": [0, 0, -0.1],
+						"1.0": {"pre": [0, 0, -0.1], "post": [0, 0, 0]}
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0833": [0, 0, 0],
+						"0.1667": [-5, 0, 0],
+						"0.9167": [-5, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.morpeko_minion.battle_idle": {
+			"loop": true,
+			"bones": {
+				"tail": {
+					"rotation": [12.5, 0, 0]
+				},
+				"tail2": {
+					"rotation": [12.5, 0, 0]
+				},
+				"arm_right": {
+					"rotation": [75, -35, -90],
+					"position": [1, -0.75, -2]
+				},
+				"arm_right2": {
+					"rotation": [0, -25, 0]
+				},
+				"finger_right": {
+					"rotation": [0, 0, -20]
+				},
+				"finger_right2": {
+					"rotation": [20, 0, 0]
+				},
+				"arm_left": {
+					"rotation": [75, 35, 90],
+					"position": [-1, -0.75, -2]
+				},
+				"arm_left2": {
+					"rotation": [0, 25, 0]
+				},
+				"finger_left": {
+					"rotation": [0, 0, 20]
+				},
+				"finger_left2": {
+					"rotation": [20, 0, 0]
+				},
+				"hand_left": {
+					"rotation": [0, 17.5, 0]
+				},
+				"hand_right": {
+					"rotation": [0, -17.5, 0]
+				},
+				"leg_left": {
+					"rotation": [0, -7.5, 0]
+				},
+				"leg_right": {
+					"rotation": [0, 7.5, 0]
+				},
+				"finger_left3": {
+					"rotation": [0, 0, 20]
+				},
+				"finger_right3": {
+					"rotation": [0, 0, -20]
+				},
+				"torso": {
+					"position": [0, "math.sin(q.anim_time*90*5-180)*0.1-0.1", 0]
+				},
+				"thumb_left": {
+					"rotation": [35, -43, -26]
+				},
+				"thumb_right": {
+					"rotation": [35, 43, 26]
+				},
+				"foot_left": {
+					"rotation": [0, -10, 0]
+				},
+				"foot_right": {
+					"rotation": [0, 12.5, 0]
+				},
+				"head": {
+					"rotation": ["2.5+math.sin(q.anim_time*90*5+90-180)*0.3", 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+{
+  "portraitScale": 2.11,
+  "portraitTranslation": [-0.21, -0.6, 0],
+  "profileScale": 0.8,
+  "profileTranslation": [0.0, 0.56, 0.0],
+  "rootBone": "ditto",
+  "animations": {
+    "faint": "q.bedrock_primary('ditto_notditto', 'faint', q.curve('one'))",
+    "cry": "q.bedrock_stateful('ditto_notditto', 'cry')"
+  },
+  "poses": {
+
+    "battle-standing": {
+      "poseName": "battle_standing",
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('ditto_notditto', 'battle_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('ditto_notditto', 'blink')"
+      ]
+    },
+
+    "standing": {
+      "poseName": "standing",
+      "poseTypes": ["STAND", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('ditto_notditto', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('ditto_notditto', 'blink')"
+      ]
+    },
+
+    "walking": {
+      "poseName": "walking",
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('ditto_notditto', 'ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('ditto_notditto', 'blink')"
+      ]
+    },
+
+    "sleep": {
+      "poseName": "sleep",
+      "poseTypes": ["SLEEP"],
+      "animations": [
+        "q.bedrock('ditto_notditto', 'sleep')"
+      ]
+    }
+
+  }
+}

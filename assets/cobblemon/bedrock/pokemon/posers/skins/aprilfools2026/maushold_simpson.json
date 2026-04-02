@@ -1,0 +1,96 @@
+{
+  "portraitScale": 2,
+  "portraitTranslation": [-0.2, -0.7, 0],
+  "profileScale": 0.7,
+  "profileTranslation": [0, 0.7, 0],
+  "rootBone": "maushold",
+  "animations": {
+    "faint": "q.bedrock_primary('maushold_simpson', 'faint', q.curve('one'))",
+    "cry": "q.bedrock_stateful('maushold_simpson', 'cry')"
+  },
+  "poses": {
+
+    "standing": {
+      "poseName": "standing",
+      "poseTypes": ["STAND","FLOAT","PROFILE","PORTRAIT"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('maushold_simpson', 'ground_idle')"
+      ],
+      "transformTicks": 10,
+      "quirks": [
+        "q.bedrock_quirk('maushold_simpson', 'blink1')",
+        "q.bedrock_quirk('maushold_simpson', 'blink2')"
+      ]
+    },
+
+
+    "battle_standing": {
+      "poseName": "battle_standing",
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('maushold_simpson', 'battle_idle')"
+      ],
+      "transformTicks": 10,
+      "quirks": [
+        "q.bedrock_quirk('maushold_simpson', 'blink1')",
+        "q.bedrock_quirk('maushold_simpson', 'blink2')"
+      ]
+    },
+
+    "walking": {
+      "poseName": "walking",
+      "poseTypes": ["WALK","SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('maushold_simpson', 'ground_walk')"
+      ],
+      "transformTicks": 10,
+      "quirks": [
+       "q.bedrock_quirk('maushold_simpson', 'blink1')",
+       "q.bedrock_quirk('maushold_simpson', 'blink2')"
+      ]
+    },
+
+    "shoulder_left": {
+      "poseName":"shoulder_left",
+      "poseTypes": ["SHOULDER_LEFT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('maushold_simpson', 'shoulder_left')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('maushold_simpson', 'blink1')",
+        "q.bedrock_quirk('maushold_simpson', 'blink2')"
+      ],
+        "transformedParts": [
+        {
+          "part": "bodies",
+          "position": [-2, 2, 3]
+        }
+      ]
+    },
+
+    "shoulder_right": {
+      "poseName":"shoulder_right",
+      "poseTypes": ["SHOULDER_RIGHT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('maushold_simpson', 'shoulder_right')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('maushold_simpson', 'blink1')",
+        "q.bedrock_quirk('maushold_simpson', 'blink2')"
+       ],
+      "transformedParts": [
+        {
+          "part": "bodies",
+          "position": [2, 2, 3]
+        }
+      ]
+    }
+  }
+}
