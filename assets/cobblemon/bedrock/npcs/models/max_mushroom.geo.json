@@ -4,25 +4,136 @@
 		{
 			"description": {
 				"identifier": "geometry.unknown",
-				"texture_width": 32,
-				"texture_height": 32,
+				"texture_width": 128,
+				"texture_height": 128,
 				"visible_bounds_width": 4,
-				"visible_bounds_height": 6.5,
-				"visible_bounds_offset": [0, 2.75, 0]
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
 			},
 			"bones": [
 				{
-					"name": "pokestop",
+					"name": "gmax_mushrooms",
 					"pivot": [0, 0, 0]
 				},
 				{
-					"name": "body",
-					"parent": "pokestop",
-					"pivot": [0, 2.55, 0],
+					"name": "mushroom",
+					"parent": "gmax_mushrooms",
+					"pivot": [0, 0.05, 0]
+				},
+				{
+					"name": "mushroom_center",
+					"parent": "mushroom",
+					"pivot": [0, 0.05, 0],
+					"rotation": [0, 0, 5.5],
 					"cubes": [
-						{"origin": [-3, 5.55, -2], "size": [3, 9, 4], "inflate": 0.01, "pivot": [1, 5, 0], "rotation": [0, 0, -17.5], "uv": [0, 7]},
-						{"origin": [-1.46447, 7.01447, -2], "size": [3, 9, 4], "inflate": 0.01, "pivot": [-6, 7, 0], "rotation": [0, 0, 12.5], "uv": [14, 7]},
-						{"origin": [-6.79289, 2.22157, -2], "size": [10, 3, 4], "pivot": [-0.29289, 3.72157, 0], "rotation": [0, 0, 90], "uv": [0, 0]}
+						{"origin": [-4.5, 0.55, -4.5], "size": [9, 7, 9], "uv": [61, 60]},
+						{"origin": [-3.5, -0.45, -3.5], "size": [7, 2, 7], "uv": [54, 77]}
+					]
+				},
+				{
+					"name": "mushroom_center_stem",
+					"parent": "mushroom_center",
+					"pivot": [0, 8.05, 0],
+					"rotation": [0, 0, -6.75],
+					"cubes": [
+						{"origin": [-3.5, 5.55, -3.5], "size": [7, 8, 7], "uv": [0, 76]}
+					]
+				},
+				{
+					"name": "mushroom_center_stem2",
+					"parent": "mushroom_center_stem",
+					"pivot": [0, 14.05, 0],
+					"rotation": [4, 0, -3.75],
+					"cubes": [
+						{"origin": [-3, 12.55, -3], "size": [6, 7, 6], "uv": [29, 76]}
+					]
+				},
+				{
+					"name": "mushroom_center_cap",
+					"parent": "mushroom_center_stem2",
+					"pivot": [0, 19.55, 0],
+					"rotation": [-4.23016, -0.43414, 4.26793],
+					"cubes": [
+						{"origin": [-7.5, 18.55, -7.5], "size": [15, 3, 15], "pivot": [0, 22.05, 0], "rotation": [0, 11.25, 0], "uv": [0, 44]},
+						{"origin": [-8, 18.575, -8], "size": [16, 3, 16], "inflate": -0.01, "pivot": [0, 20.575, 0], "rotation": [0, -14.75, 0], "uv": [0, 24]},
+						{"origin": [-10, 21.55, -10], "size": [20, 3, 20], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "mushroom_left",
+					"parent": "mushroom",
+					"pivot": [3.825, 0.625, 0],
+					"rotation": [7, 0, 40],
+					"cubes": [
+						{"origin": [1.325, 1.125, -2.5], "size": [5, 4, 5], "uv": [83, 77]},
+						{"origin": [2.325, 0.125, -1.5], "size": [3, 2, 3], "uv": [88, 87]}
+					]
+				},
+				{
+					"name": "mushroom_left_stem",
+					"parent": "mushroom_left",
+					"pivot": [3.825, 5.625, 0],
+					"rotation": [0, 0, -18.5],
+					"cubes": [
+						{"origin": [1.825, 4.125, -2], "size": [4, 3, 4], "uv": [65, 36]}
+					]
+				},
+				{
+					"name": "mushroom_left_stem2",
+					"parent": "mushroom_left_stem",
+					"pivot": [3.825, 6.625, 0],
+					"cubes": [
+						{"origin": [2.325, 6.125, -1.5], "size": [3, 3, 3], "uv": [75, 87]}
+					]
+				},
+				{
+					"name": "mushroom_center_cap2",
+					"parent": "mushroom_left_stem2",
+					"pivot": [3.825, 9.125, 0],
+					"rotation": [6.80333, -17.13567, -2.01315],
+					"cubes": [
+						{"origin": [0.325, 8.125, -3.5], "size": [7, 2, 7], "pivot": [3.825, 10.125, 0], "rotation": [0, 11.25, 0], "uv": [81, 0]},
+						{"origin": [-1.175, 9.125, -5], "size": [10, 2, 10], "pivot": [3.825, 10.625, 0], "rotation": [0, -14.75, 0], "uv": [-19, -8]},
+						{"origin": [-1.175, 9.625, -5], "size": [10, 2, 10], "uv": [0, 63]}
+					]
+				},
+				{
+					"name": "mushroom_right",
+					"parent": "mushroom",
+					"pivot": [-3.55, 0.6, -2.775],
+					"rotation": [0, -15.5, -40.5],
+					"cubes": [
+						{"origin": [-6.55, 1.1, -5.775], "size": [6, 5, 6], "uv": [81, 10]},
+						{"origin": [-5.55, 0.1, -4.775], "size": [4, 2, 4], "uv": [82, 36]}
+					]
+				},
+				{
+					"name": "mushroom_right_stem",
+					"parent": "mushroom_right",
+					"pivot": [-3.55, 6.6, -2.775],
+					"rotation": [5.93835, 0.85942, 10.29458],
+					"cubes": [
+						{"origin": [-6.05, 5.1, -5.275], "size": [5, 4, 5], "uv": [54, 87]}
+					]
+				},
+				{
+					"name": "mushroom_right_stem2",
+					"parent": "mushroom_right_stem",
+					"pivot": [-3.55, 9.6, -2.775],
+					"rotation": [10.25, 0, 15.75],
+					"cubes": [
+						{"origin": [-5.55, 8.1, -4.775], "size": [4, 4, 4], "uv": [41, 63]}
+					]
+				},
+				{
+					"name": "mushroom_center_cap3",
+					"parent": "mushroom_right_stem2",
+					"pivot": [-3.55, 12.1, -2.775],
+					"rotation": [-60.14827, 81.97324, -56.80618],
+					"cubes": [
+						{"origin": [-8.05, 11.1, -7.275], "size": [9, 2, 9], "pivot": [-3.55, 13.1, -2.775], "rotation": [0, -11.25, 0], "uv": [65, 24]},
+						{"origin": [-8.55, 12.1, -7.775], "size": [10, 2, 10], "pivot": [-3.55, 13.6, -2.775], "rotation": [0, 14.75, 0], "uv": [-19, -8], "mirror": true},
+						{"origin": [-9.55, 12.6, -8.775], "size": [12, 3, 12], "uv": [61, 44]}
 					]
 				}
 			]
