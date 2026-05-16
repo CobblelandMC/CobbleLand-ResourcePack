@@ -1,0 +1,50 @@
+{
+  "portraitScale": 2,
+  "portraitTranslation": [ 0, 1.52, 0 ],
+  "profileScale": 0.58,
+  "profileTranslation": [ -0.02, 0.90, 0 ],
+  "poses": { 
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('neck')",
+        "q.bedrock('yvelass', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('yvelass', 'blink')"
+      ]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "FLOAT", "PROFILE"],
+      "isBattle": false,
+      "condition": "!q.is_ridden",
+      "animations": [
+        "q.look('neck')",
+        "q.bedrock('yvelass', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('yvelass', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "condition": "!q.is_ridden",
+      "animations": [
+        "q.look('neck')",
+        "q.bedrock('yvelass', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('yvelass', 'blink')"]
+    },
+    "mount-surface-idle": {
+      "poseTypes": ["WALK","STAND"],
+      "condition": "q.is_ridden",
+      "animations": [
+        "q.bedrock('yvelass', 'ride_ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('yvelass', 'blink')"
+      ]
+    }
+  }
+}
