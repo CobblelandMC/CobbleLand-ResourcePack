@@ -1,0 +1,61 @@
+{
+  "rootBone": "araquanid",
+  "portraitScale": 0.8,
+  "portraitTranslation": [-0.54, 1.02, 0],
+  "profileScale": 0.39,
+  "profileTranslation": [-0.02, 1.04, 0],
+  "animations": {
+    "cry": "q.bedrock_stateful('araquanid', 'cry')"
+  },
+  "poses": {
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": true,
+      "animations": [
+        "q.bedrock('araquanid', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('araquanid', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.bedrock('araquanid', 'ground_idle')",
+        "q.quadruped_walk(1, 1, 'leg_front_left', 'leg_front_right', 'leg_middle_left', 'leg_middle_right')",
+        "q.biped_walk(1, 1, 'leg_back_left', 'leg_back_right')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('araquanid', 'blink')"
+      ]
+    },
+    "float": {
+      "poseTypes": ["FLOAT"],
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('araquanid', 'water_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('araquanid', 'blink')"
+      ]
+    },
+    "swim": {
+      "poseTypes": ["SWIM"],
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('araquanid', 'water_idle')",
+        "q.quadruped_walk(1, 1, 'leg_front_left', 'leg_front_right', 'leg_middle_left', 'leg_middle_right')",
+        "q.biped_walk(1, 1, 'leg_back_left', 'leg_back_right')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('araquanid', 'blink')"
+      ]
+    },
+    "sleeping": {
+      "poseTypes": ["SLEEP"],
+      "animations": [
+        "q.bedrock('araquanid', 'sleep')"
+      ]
+    }
+  }
+}
