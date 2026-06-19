@@ -1,0 +1,76 @@
+{
+  "portraitScale": 1.4,
+  "portraitTranslation": [0.2, 0, 0],
+  "profileScale": 1.1,
+  "profileTranslation": [0, 0.2, 0],
+  "animations": {
+    "cry": "q.bedrock_primary('emolga_subnautica', 'cry', q.curve('symmetrical_wide'))",
+    "faint": "q.bedrock_primary('emolga_subnautica', 'faint', q.curve('symmetrical'))"
+  },
+  "poses": {
+    "portrait": {
+      "poseTypes": ["PORTRAIT"],
+      "animations": ["q.bedrock('emolga_subnautica', 'render')"]
+    },
+    "profile": {
+      "poseTypes": ["PROFILE"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('emolga_subnautica', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('emolga_subnautica', 'blink')"]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('emolga_subnautica', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('emolga_subnautica', 'blink')"]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('emolga_subnautica', 'ground_run')"
+      ],
+      "quirks": ["q.bedrock_quirk('emolga_subnautica', 'blink')"]
+    },
+    "hover": {
+      "poseTypes": ["HOVER", "FLOAT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('emolga_subnautica', 'air_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('emolga_subnautica', 'blink')"]
+    },
+    "fly": {
+      "poseTypes": ["FLY", "SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('emolga_subnautica', 'air_fly')"
+      ],
+      "quirks": ["q.bedrock_quirk('emolga_subnautica', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('emolga_subnautica', 'sleep')"]
+    },
+    "shoulder_left": {
+      "poseTypes": ["SHOULDER_LEFT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('emolga_subnautica', 'shoulder_left')"
+      ],
+      "quirks": ["q.bedrock_quirk('emolga_subnautica', 'blink')"]
+    },
+    "shoulder_right": {
+      "poseTypes": ["SHOULDER_RIGHT"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('emolga_subnautica', 'shoulder_right')"
+      ],
+      "quirks": ["q.bedrock_quirk('emolga_subnautica', 'blink')"]
+    }
+  }
+}
