@@ -1,0 +1,36 @@
+{
+  "portraitScale": 1.6,
+  "portraitTranslation": [0.05, 0.8, 0],
+  "profileScale": 0.8,
+  "profileTranslation": [-0.05, 0.65, 0],
+  "rootBone": "scraggy",
+  "poses": {
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('scrafty_pride2026', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('scrafty_pride2026', 'blink')"]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE", "FLOAT"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('scrafty_pride2026', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('scrafty_pride2026', 'blink')"]
+    },
+    "walking": {
+      "poseTypes": ["WALK", "SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('scrafty_pride2026', 'ground_idle')",
+        "q.biped_walk(0.7, 0.7, 'leg_left', 'leg_right')"
+      ],
+      "quirks": ["q.bedrock_quirk('scrafty_pride2026', 'blink')"]
+    }
+  }
+}
