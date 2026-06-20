@@ -1,0 +1,43 @@
+{
+  "portraitScale": 0.55,
+  "portraitTranslation": [0, 0.8, 0],
+  "profileScale": 0.45,
+  "profileTranslation": [0, 0.6, 0],
+  "animations": {
+    "cry": "q.bedrock_stateful('wailord_subnautica', 'cry')",
+    "faint": "q.bedrock_primary('wailord_subnautica', 'faint', q.curve('one'))"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": ["q.bedrock('wailord_subnautica', 'battle_idle')"],
+      "quirks": ["q.bedrock_quirk('wailord_subnautica', 'blink')"]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": ["q.bedrock('wailord_subnautica', 'ground_idle')"],
+      "quirks": ["q.bedrock_quirk('wailord_subnautica', 'blink')"]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": ["q.bedrock('wailord_subnautica', 'ground_walk')"],
+      "quirks": ["q.bedrock_quirk('wailord_subnautica', 'blink')"]
+    },
+    "float": {
+      "poseTypes": ["FLOAT", "HOVER"],
+      "animations": ["q.bedrock('wailord_subnautica', 'water_idle')"],
+      "quirks": ["q.bedrock_quirk('wailord_subnautica', 'blink')"]
+    },
+    "swim": {
+      "poseTypes": ["SWIM"],
+      "animations": ["q.bedrock('wailord_subnautica', 'water_swim')"],
+      "quirks": ["q.bedrock_quirk('wailord_subnautica', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('wailord_subnautica', 'sleep')"]
+    }
+  }
+}
