@@ -1,0 +1,29 @@
+{
+ "portraitScale": 1,
+ "portraitTranslation": [0, 0, 0],
+ "profileScale": 1,
+ "profileTranslation": [0, 0, 0],
+ "animations": {
+   "cry": "q.bedrock_stateful('chesnaught_worldcup', 'cry')"
+ },
+ "poses": {
+   "standing": {
+     "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('chesnaught_worldcup', 'ground_idle')"
+     ],
+     "quirks": [
+       "q.bedrock_quirk('chesnaught_worldcup', 'blink')"
+     ]
+   },
+   "walking": {
+     "poseTypes": ["WALK"],
+     "animations": [
+       "q.look('head')",
+       "q.bedrock('chesnaught_worldcup', 'ground_walk')"
+     ],
+     "quirks": ["q.bedrock_quirk('chesnaught_worldcup', 'blink')"]
+   }
+ }
+}
