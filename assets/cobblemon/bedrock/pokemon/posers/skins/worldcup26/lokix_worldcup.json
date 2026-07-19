@@ -1,0 +1,27 @@
+{
+  "portraitScale": 2.99,
+  "portraitTranslation": [-0.3, 1.04, 0],
+  "profileScale": 0.6,
+  "profileTranslation": [0.0, 0.85, 0],
+  "rootBone": "lokix",
+  "poses": {
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "animations": [
+		"q.look('head_ai')",
+        "q.bedrock('lokix_worldcup', 'ground_idle')"
+      ],
+	  "quirks": [
+        "q.bedrock_quirk('lokix_worldcup', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.bedrock('lokix_worldcup', 'ground_idle')",
+        "q.biped_walk(1, 1, 'leg_left', 'leg_right')"
+      ],
+	  "quirks": ["q.bedrock_quirk('lokix_worldcup', 'blink')"]
+    }
+  }
+ }
