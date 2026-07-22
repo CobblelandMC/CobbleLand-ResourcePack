@@ -1,0 +1,48 @@
+{
+    "portraitScale": 1.8,
+    "portraitTranslation": [-0.2, 2.45, 0],
+    "profileScale": 0.5,
+    "profileTranslation": [0, 1.0, 0],
+    "rootBone": "armaledge",
+    "animations": {
+      "faint": "q.bedrock_primary('armaledge_eclipse', 'faint', q.curve('one'))",
+      "cry": "q.bedrock_stateful('armaledge_eclipse', 'cry')",
+      "recoil": "q.bedrock_stateful('armaledge_eclipse', 'recoil')"
+    },
+    "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('armaledge_eclipse', 'battle_idle')"
+        ],
+        "namedAnimations": {
+            "cry": "q.bedrock_primary('armaledge_eclipse', 'battle_cry', q.curve('symmetrical_wide'))"
+          }
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('armaledge_eclipse', 'ground_idle')"
+        ],
+        "transitions": {
+          "battle-standing": "q.bedrock_primary('armaledge_eclipse', 'battle_intro', q.curve('symmetrical_wide'))"
+        }
+      },
+      "walking": {
+        "poseTypes": ["WALK"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('armaledge_eclipse', 'ground_walk')"
+        ]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "animations": ["q.bedrock('armaledge_eclipse', 'sleep')"],
+        "namedAnimations": {"cry": "q.bedrock_stateful('dummy', 'cry')"}
+      }
+    }
+   }

@@ -1,0 +1,48 @@
+{
+    "portraitScale": 1.8,
+    "portraitTranslation": [-0.2, 2.45, 0],
+    "profileScale": 0.5,
+    "profileTranslation": [0, 1.0, 0],
+    "rootBone": "armarouge",
+    "animations": {
+      "faint": "q.bedrock_primary('armarouge_solar', 'faint', q.curve('one'))",
+      "cry": "q.bedrock_stateful('armarouge_solar', 'cry')",
+      "recoil": "q.bedrock_stateful('armarouge_solar', 'recoil')",
+      "physical": "q.bedrock_primary('armarouge_solar', 'physical', q.curve('symmetrical_wide'))",
+      "special": "q.bedrock_primary('armarouge_solar', 'special', q.curve('symmetrical_wide'))",
+      "status": "q.bedrock_primary('armarouge_solar', 'status', q.curve('symmetrical_wide'))"
+    },
+    "poses": {
+      "battle-standing": {
+        "poseTypes": ["STAND"],
+        "isBattle": true,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('armarouge_solar', 'battle_idle')"
+        ],
+        "namedAnimations": {
+            "cry": "q.bedrock_primary('armarouge_solar', 'battle_cry', q.curve('symmetrical_wide'))"
+          }
+      },
+      "standing": {
+        "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+        "isBattle": false,
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('armarouge_solar', 'ground_idle')"
+        ]
+      },
+      "walking": {
+        "poseTypes": ["WALK"],
+        "animations": [
+          "q.look('head')",
+          "q.bedrock('armarouge_solar', 'ground_walk')"
+        ]
+      },
+      "sleep": {
+        "poseTypes": ["SLEEP"],
+        "animations": ["q.bedrock('armarouge_solar', 'sleep')"],
+        "namedAnimations": {"cry": "q.bedrock_stateful('dummy', 'cry')"}
+      }
+    }
+   }
