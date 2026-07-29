@@ -1,0 +1,132 @@
+{
+  "portraitScale": 0.92,
+  "portraitTranslation": [-0.68,1.93, 0],
+  "profileScale": 0.2,
+  "profileTranslation": [0, 1.46, -20],
+  "firstPersonCameraOffset": {
+    "seat_1": [0, 0.45, 0]
+  },
+  "thirdPersonCameraOffset": {
+    "seat_1": [0, 0.25, 1],
+    "seat_1_reverse": [0, 0.45, 1]
+  },
+  "thirdPersonCameraOffsetNoViewBobbing": {
+    "seat_1": [0, 0.45, 5],
+    "seat_1_reverse": [0, 0.45, 1]
+  },
+  "animations": {
+    
+
+    
+  },
+  "poses": {
+    "battle-standing": {
+      "transformTicks": 10,
+      "poseTypes": ["STAND", "WALK"],
+      "condition": "!q.in_air && !q.is_sprinting",
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('zyvelta', 'battle_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('zyvelta', 'blink')"
+      ]
+    },
+    "standing": {
+      "transformTicks": 10,
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "condition": "!q.in_air" ,
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('zyvelta', 'ground_idle')"
+      ],
+      "quirks": [
+       "q.bedrock_quirk('zyvelta', 'blink')"]
+    },
+    "walking": {
+      "transformTicks": 8,
+      "poseTypes": ["WALK"],
+      "condition": "!q.in_air && !q.is_sprinting",
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('zyvelta', 'ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('zyvelta', 'blink')"
+      ]
+    },
+    "hover": {
+      "transformTicks": 5,
+      "poseTypes": [  "HOVER", "FLOAT" ],
+      "condition": "!q.in_air && !q.is_sprinting",
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('zyvelta', 'fly_idle')"
+       ],
+       "quirks": [
+        "q.bedrock_quirk('zyvelta', 'blink')"
+      ]
+    },
+    "run": {
+        "poseTypes": ["STAND","WALK"],
+        "isBattle": false,
+        "condition": "!q.in_air && q.is_sprinting",
+        "animations": [
+         "q.look('head')",
+          "q.bedrock('zyvelta', 'ground_run')",
+        {
+          "condition": "q.is_ridden",
+          "animation": "q.bedrock('zyvelta', 'idle_ground_run')"
+        }
+        ],
+        "quirks": [
+          "q.bedrock_quirk('zyvelta', 'blink')"
+        ],
+        "transformTicks": 10
+      },
+    "fly": {
+      "transformTicks": 5,
+      "poseTypes": [ "FLY" ],
+      "condition": "!q.is_sprinting",
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('zyvelta', 'air_fly')"
+       ],
+       "quirks": [
+        "q.bedrock_quirk('zyvelta', 'blink')"
+      ]
+    },
+    "float": {
+      "transformTicks": 5,
+      "poseTypes": ["FLOAT"],
+      "condition": "!q.is_sprinting",
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('zyvelta', 'fly_idle'')"
+      ]
+    },
+    "in-air": {
+        "poseTypes": ["STAND", "WALK"],
+        "isBattle": false,
+        "condition": "q.in_air && q.is_ridden",
+        "animations": ["q.look('head')",
+                      "q.bedrock('zyvelta', 'ride_jump')"],
+        "transformTicks": 2,
+        "transformToTicks": 2
+      },
+    "swim": {
+      "transformTicks": 8,
+      "condition": "!q.is_sprinting",
+      "poseTypes": ["SWIM"],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('zyvelta', 'air_fly')"
+      ],
+       "quirks": [
+        "q.bedrock_quirk('zyvelta', 'blink')"
+      ]
+    }
+  }
+}
