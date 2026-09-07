@@ -1,0 +1,34 @@
+{
+  "portraitScale": 1.56,
+  "portraitTranslation": [-0.48, 0.90, 0],
+  "profileScale": 0.63,
+  "profileTranslation": [0, 0.71, 0],
+  "rootBone": "jynx",
+  "animations": {},
+  "poses": {
+    "standing": {
+      "poseTypes": ["STAND", "FLOAT", "NONE", "PORTRAIT", "PROFILE"],
+      "animations": [
+        "q.look('torso', 1, 1, 5, -5, 15, -15)",
+        "q.bedrock('jynx_christmas2025', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('jynx_christmas2025', 'blink')"]
+    },
+    "walking": {
+      "poseTypes": ["WALK", "SWIM"],
+      "animations": [
+        "q.look('torso', 1, 1, 5, -5, 15, -15)",
+        "q.bimanual_swing(0.66, 0.6, 'arm_left', 'arm_right')",
+        "q.bedrock('jynx_christmas2025', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('jynx_christmas2025', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "namedAnimations": {"cry": "q.bedrock_stateful('dummy', 'cry')"},
+      "animations": [
+        "q.bedrock('jynx', 'sleep')"
+      ]
+    }
+  }
+}

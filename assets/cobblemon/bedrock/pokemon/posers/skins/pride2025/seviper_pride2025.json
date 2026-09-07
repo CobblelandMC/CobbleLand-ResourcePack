@@ -1,0 +1,50 @@
+{
+  "portraitScale": 1.3,
+  "portraitTranslation": [0, 1.2, 0],
+  "profileScale": 0.45,
+  "profileTranslation": [-0.1, 1.0, 0],
+  "animations": {
+    "cry": "q.bedrock_stateful('seviper_pride2025', 'cry')",
+    "tongue": "q.bedrock_quirk('seviper_pride2025', 'tongue_quirk')"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('seviper_pride2025', 'battle_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('seviper_pride2025', 'blink')",
+        "q.bedrock_quirk('seviper_pride2025', 'tongue_quirk')"
+      ]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('seviper_pride2025', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('seviper_pride2025', 'blink')",
+        "q.bedrock_quirk('seviper_pride2025', 'tongue_quirk')"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK"],
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('seviper_pride2025', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('seviper_pride2025', 'blink')",
+      "q.bedrock_quirk('seviper_pride2025', 'tongue_quirk')"
+    ]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('seviper_pride2025', 'sleep')"]
+    }
+  }
+}
