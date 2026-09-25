@@ -1,0 +1,55 @@
+{
+  "portraitScale": 1.83,
+  "portraitTranslation": [ -0.35, 1.05, 0],
+  "profileScale": 0.62,
+  "profileTranslation": [ 0, 0.87, 0],
+  "rootBone": "noctowl",
+  "animations": {
+    "cry": "q.bedrock_stateful('noctowl_zelda', 'cry')"
+  },
+  "poses": {
+    "stand": {
+      "poseName": "stand",
+      "poseTypes": [
+        "STAND",
+        "PORTRAIT",
+        "PROFILE"
+      ],
+      "animations": [
+        "q.bedrock('noctowl_zelda', 'ground_idle')"
+      ],
+      "transformTicks": 10,
+      "quirks": [
+        "q.bedrock_quirk('noctowl_zelda', 'blink')"
+      ]
+    },
+    "walk": {
+      "poseName": "walk",
+      "poseTypes": [
+        "WALK"
+      ],
+      "animations": [
+        "q.bedrock('noctowl_zelda', 'ground_walk')"
+      ],
+      "transformTicks": 5,
+      "quirks": [
+        "q.bedrock_quirk('noctowl_zelda', 'blink')"
+      ]
+    },
+    "hover": {
+      "poseName": "hover",
+      "poseTypes": [
+        "HOVER",
+        "FLY",
+        "FLOAT",
+        "SWIM"
+      ],
+      "animations": [
+        "q.bedrock('noctowl_zelda', 'air_idle_placeholder')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('noctowl_zelda', 'blink')"
+      ]
+    }
+  }
+}
