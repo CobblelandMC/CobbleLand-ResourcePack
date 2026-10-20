@@ -1,52 +1,56 @@
 {
-  "head": "head",
   "portraitScale": 0.5,
   "portraitTranslation": [ -0.3, 0.9, -1 ],
   "profileScale": 0.4,
   "profileTranslation": [ 0, 1, 0 ],
-  "faint": "bedrock(lucarioundertale, faint)",
+  "rootBone": "head",
+  "animations": {
+    "cry": "q.bedrock_stateful('lucarioundertale', 'cry')"
+  },
   "poses": {
-    "standing": {
-      "poseName": "standing",
-      "transformTicks": 10,
-      "poseTypes": [
-        "STAND",
-        "NONE",
-        "PORTRAIT",
-        "PROFILE"
-      ],
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
       "animations": [
-        "look",
-	"bedrock(lucarioundertale, ground_idle)",
-  "bedrock(lucarioundertale, blink)"
-      ]
+        "q.look('head_ai')",
+        "q.bedrock('lucarioundertale', 'battle_idle')",
+        "q.bedrock('lucarioundertale', 'battle_idle_aura_left')",
+        "q.bedrock('lucarioundertale', 'battle_idle_aura_right')"
+      ],
+      "quirks": ["q.bedrock_quirk('lucarioundertale', 'blink')", "q.bedrock_quirk('lucarioundertale', 'battle_quirk')"]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "FLOAT", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('lucarioundertale', 'ground_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('lucarioundertale', 'blink')", "q.bedrock_quirk('lucarioundertale', q.array('idle_quirk','idle_quirk2'))"]
     },
     "walking": {
-      "poseName": "walking",
-      "transformTicks": 10,
-      "poseTypes": [ "WALK" ],
-      "animations": [ "bedrock(lucarioundertale, ground_walk)",
-      "bedrock(lucarioundertale, blink)" ]
+      "poseTypes": ["WALK", "SWIM"],
+      "condition": "!q.is_sprinting",
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('lucarioundertale', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('lucarioundertale', 'blink')"]
     },
-    "sleeping": {
-      "poseName": "sleeping",
-      "transformTicks": 10,
-      "poseTypes": [ "SLEEP" ],
-      "animations": [ "bedrock(lucarioundertale, sleep)" ]
+    "running": {
+      "poseTypes": ["WALK", "SWIM"],
+      "condition": "q.is_sprinting",
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('lucarioundertale', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('lucarioundertale', 'blink')"]
     },
-    "floating": {
-      "poseName": "floating",
-      "transformTicks": 10,
-      "poseTypes": [ "FLOAT" ],
-      "animations": [ "bedrock(lucarioundertale, water_idle)",
-      "bedrock(lucarioundertale, blink)" ]
-    },
-    "swimming": {
-      "poseName": "swimming",
-      "transformTicks": 10,
-      "poseTypes": [ "SWIM" ],
-      "animations": [ "bedrock(lucarioundertale, water_swim)",
-      "bedrock(lucarioundertale, blink)" ]
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('lucarioundertale', 'sleep')"],
+      "quirks": ["q.bedrock_quirk('lucarioundertale', 'sleep_quirk')"],
+      "namedAnimations": {"cry": "q.bedrock_stateful('dummy', 'cry')"}
     }
-}
+  }
 }
