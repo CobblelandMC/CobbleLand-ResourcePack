@@ -6,7 +6,7 @@
 				"identifier": "geometry.braixen",
 				"texture_width": 128,
 				"texture_height": 64,
-				"visible_bounds_width": 4,
+				"visible_bounds_width": 5,
 				"visible_bounds_height": 4.5,
 				"visible_bounds_offset": [0, 1.75, 0]
 			},
@@ -14,6 +14,56 @@
 				{
 					"name": "braixen",
 					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "torso_wand",
+					"parent": "braixen",
+					"pivot": [-4, 13.5, 3.5]
+				},
+				{
+					"name": "waist_wand",
+					"parent": "torso_wand",
+					"pivot": [-4, 18, 3.5]
+				},
+				{
+					"name": "chest_wand",
+					"parent": "waist_wand",
+					"pivot": [-4, 20.5, 3.5]
+				},
+				{
+					"name": "arms_wand",
+					"parent": "chest_wand",
+					"pivot": [-4, 22.75, 3.5]
+				},
+				{
+					"name": "arm_wand",
+					"parent": "arms_wand",
+					"pivot": [-7, 22.5, 3.5]
+				},
+				{
+					"name": "arm2_wand",
+					"parent": "arm_wand",
+					"pivot": [-11.5, 22.25, 4.5]
+				},
+				{
+					"name": "hand_wand",
+					"parent": "arm2_wand",
+					"pivot": [-16.5, 22.25, 3.5]
+				},
+				{
+					"name": "wand",
+					"parent": "hand_wand",
+					"pivot": [-4, 22.5, 3.5],
+					"rotation": [-90, 0, 0],
+					"cubes": [
+						{"origin": [-24.5, 22.5, -9.5], "size": [1, 1, 19], "inflate": 0.01, "uv": [88, 44]},
+						{"origin": [-26.5, 23, -13.5], "size": [5, 0, 6], "inflate": 0.01, "uv": [72, 58]}
+					]
+				},
+				{
+					"name": "fire",
+					"parent": "wand",
+					"pivot": [-24.5, 23, -8]
 				},
 				{
 					"name": "body",
@@ -273,20 +323,6 @@
 					]
 				},
 				{
-					"name": "hand_stick",
-					"parent": "hand_right",
-					"pivot": [-18.5, 25.5, -1],
-					"cubes": [
-						{"origin": [-19, 25, -14], "size": [1, 1, 19], "inflate": 0.01, "uv": [88, 44]},
-						{"origin": [-21, 25.5, -18], "size": [5, 0, 6], "inflate": 0.01, "uv": [72, 58]}
-					]
-				},
-				{
-					"name": "fire",
-					"parent": "hand_stick",
-					"pivot": [-19, 25.5, -12.5]
-				},
-				{
 					"name": "arm_left",
 					"parent": "chest",
 					"pivot": [3, 26, -1],
@@ -468,6 +504,11 @@
 				{
 					"name": "tail",
 					"parent": "torso_bottom",
+					"pivot": [0, 15.5, 2]
+				},
+				{
+					"name": "tail_left",
+					"parent": "tail",
 					"pivot": [0, 15.5, 2],
 					"rotation": [7.05323, 44.78238, 4.98107],
 					"cubes": [
@@ -476,12 +517,12 @@
 				},
 				{
 					"name": "stick_tail",
-					"parent": "tail",
+					"parent": "tail_left",
 					"pivot": [0, 20, 8.25],
 					"rotation": [-12.5, 0, 0],
 					"cubes": [
-						{"origin": [-0.5, 18, 7.75], "size": [1, 14, 1], "inflate": 0.01, "uv": [124, 0]},
-						{"origin": [0, 30, 5.75], "size": [0, 5, 5], "inflate": 0.01, "pivot": [0, 32.5, 8.25], "rotation": [0, 0, -180], "uv": [78, 53]},
+						{"origin": [-0.5, 18, 7.75], "size": [1, 14, 1], "uv": [124, 0]},
+						{"origin": [0, 30, 5.75], "size": [0, 5, 5], "pivot": [0, 32.5, 8.25], "rotation": [0, 0, -180], "uv": [78, 53]},
 						{"origin": [1, 20, 6.75], "size": [0, 3, 3], "pivot": [1, 20, 8.75], "rotation": [0, 0, 25], "uv": [42, 6]},
 						{"origin": [-1, 20, 6.75], "size": [0, 3, 3], "pivot": [-1, 20, 8.75], "rotation": [0, 0, -22.5], "uv": [0, 42]},
 						{"origin": [-1.25, 20, 9.25], "size": [3, 3, 0], "pivot": [0.75, 20, 9.25], "rotation": [-27.5, 0, 0], "uv": [48, 32]},
@@ -490,7 +531,7 @@
 				},
 				{
 					"name": "tail2",
-					"parent": "tail",
+					"parent": "tail_left",
 					"pivot": [0, 9, 3.75],
 					"rotation": [10, 0, 0],
 					"cubes": [
@@ -516,17 +557,17 @@
 					]
 				},
 				{
-					"name": "tail5",
-					"parent": "torso_bottom",
+					"name": "tail_right",
+					"parent": "tail",
 					"pivot": [0, 15.5, 2],
 					"rotation": [7.05323, -44.78238, -4.98107],
 					"cubes": [
-						{"origin": [-5.5, 9, 1.5], "size": [11, 11, 10], "uv": [0, 0]}
+						{"origin": [-5.5, 9, 1.5], "size": [11, 11, 10], "inflate": 0.01, "uv": [0, 0]}
 					]
 				},
 				{
 					"name": "stick_tail2",
-					"parent": "tail5",
+					"parent": "tail_right",
 					"pivot": [0, 20, 8.25],
 					"rotation": [-12.5, 0, 0],
 					"cubes": [
@@ -538,7 +579,7 @@
 				},
 				{
 					"name": "tail6",
-					"parent": "tail5",
+					"parent": "tail_right",
 					"pivot": [0, 9, 3.75],
 					"rotation": [10, 0, 0],
 					"cubes": [
