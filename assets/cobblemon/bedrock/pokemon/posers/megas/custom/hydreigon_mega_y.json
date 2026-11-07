@@ -1,0 +1,165 @@
+{
+  "portraitScale": 1.38,
+  "portraitTranslation": [-2.23, 2.22, 0],
+  "profileScale": 0.35,
+  "profileTranslation": [0, 1.37, 0],
+  "rootBone": "hydreigon",
+  "firstPersonCameraOffset": {
+    "seat_1": [0, 0.45, 0],
+    "seat_2": [0, 0.45, 0]
+  },
+  "thirdPersonCameraOffset": {
+    "seat_1": [0, 0.35, 0.5],
+    "seat_1_reverse": [0, 0.35, 0.5],
+    "seat_2": [0, 0.35, 0.5],
+    "seat_2_reverse": [0, 0.35, 0.5]
+  },
+  "thirdPersonCameraOffsetNoViewBobbing": {
+    "seat_1": [0, 0.35, 0.5],
+    "seat_1_reverse": [0, 0.35, 0.5],
+    "seat_2": [0, 0.35, 0.5],
+    "seat_2_reverse": [0, 0.35, 0.5]
+  },
+  "animations": {
+    "cry": "q.bedrock_stateful('hydreigon_mega_y', 'cry')"
+  },
+  "poses": {
+    "portrait": {
+      "poseTypes": ["PORTRAIT"],
+      "isBattle": false,
+      "animations": ["q.look('head_ai')", "q.bedrock('hydreigon_mega_y', 'potrait_pose')"],
+      "quirks": ["q.bedrock_quirk('hydreigon_mega_y', 'blink')"]
+    },
+    "mount-standing": {
+      "poseTypes": ["STAND", "NONE", "PROFILE"],
+      "isBattle": false,
+      "condition": "q.is_ridden",
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_y', 'air_idle')",
+        "q.bedrock('hydreigon_mega_y', 'ride_air_fly')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('hydreigon_mega_y', 'blink')"
+      ]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PROFILE"],
+      "isBattle": false,
+      "condition": "!q.is_ridden",
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_y', 'air_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('hydreigon_mega_y', 'blink')",
+        "q.bedrock_quirk('hydreigon_mega_y', q.array('idle_quirk1', 'idle_quirk2'), 12, 35, 1)"
+      ]
+    },
+    "walking": {
+      "poseTypes": ["WALK", "NONE"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_y', 'air_fly')",
+        {
+          "condition": "q.is_ridden",
+          "animation": "q.bedrock('hydreigon_mega_y', 'ride_air_fly')"
+        }
+      ],
+      "quirks": ["q.bedrock_quirk('hydreigon_mega_y', 'blink')"]
+    },
+    "mount-hover": {
+      "poseTypes": ["HOVER", "NONE"],
+      "isBattle": false,
+      "condition": "q.is_ridden",
+      "animations": [
+        "q.pitch_tilt('body', 1)",
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_y', 'air_idle')",
+        "q.bedrock('hydreigon_mega_y', 'ride_air_fly')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('hydreigon_mega_y', 'blink')"
+      ]
+    },
+    "hover": {
+      "poseTypes": ["HOVER", "NONE"],
+      "isBattle": false,
+      "condition": "!q.is_ridden",
+      "animations": [
+        "q.pitch_tilt('body', 1)",
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_y', 'air_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('hydreigon_mega_y', 'blink')",
+        "q.bedrock_quirk('hydreigon_mega_y', q.array('idle_quirk1', 'idle_quirk2'), 12, 35, 1)"
+      ]
+    },
+    "battle-flying": {
+      "poseTypes": ["HOVER","STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_y', 'battle_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('hydreigon_mega_y', 'blink')",
+        "q.bedrock_quirk('hydreigon_mega_y', q.array('battlebite_quirk_left1', 'battlebite_quirk_left2'), 0.7, 2, 1)",
+        "q.bedrock_quirk('hydreigon_mega_y', q.array('battlebite_quirk_right1', 'battlebite_quirk_right2'), 0.7, 2, 1)"
+      ]
+    },
+    "fly": {
+      "poseTypes": ["FLY"],
+      "condition": "!q.is_gliding",
+      "animations": [
+        "q.pitch_tilt('body', 1)",
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_y', 'air_fly')",
+        {
+          "condition": "q.is_ridden",
+          "animation": "q.bedrock('hydreigon_mega_y', 'ride_air_fly')"
+        }
+      ],
+      "quirks": ["q.bedrock_quirk('hydreigon_mega_y', 'blink')"]
+    },
+    "glide": {
+      "poseTypes": ["FLY", "SWIM"],
+      "condition": "q.is_gliding",
+      "animations": [
+        "q.pitch_tilt('body', 1)",
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_y', 'air_glide')",
+        "q.bedrock('hydreigon_mega_y', 'ride_dive')",
+        {
+          "condition": "q.is_ridden && q.has_entity",
+          "animation": "q.bedrock('hydreigon_mega_y', 'ride_air_glide')"
+        }
+      ],
+      "quirks": [
+        "q.bedrock_quirk('hydreigon_mega_y', 'blink')"
+      ]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "isBattle": false,
+      "namedAnimations": {
+        "cry": "q.bedrock_stateful('dummy', 'cry')"
+      },
+      "animations": [
+        "q.bedrock('hydreigon_mega_y', 'sleep_wild')"
+      ]
+    },
+    "battle_sleep": {
+      "poseTypes": ["SLEEP"],
+      "isBattle": true,
+      "namedAnimations": {
+        "cry": "q.bedrock_stateful('dummy', 'cry')"
+      },
+      "animations": [
+        "q.bedrock('hydreigon_mega_y', 'sleep')"
+      ]
+    }
+  }
+}

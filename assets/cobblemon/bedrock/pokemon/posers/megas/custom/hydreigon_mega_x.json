@@ -1,0 +1,78 @@
+{
+  "portraitScale": 1.38,
+  "portraitTranslation": [-1.23, 2.22, 0],
+  "profileScale": 0.35,
+  "profileTranslation": [0, 1.37, 0],
+  "rootBone": "hydreigon",
+  "firstPersonCameraOffset": {
+    "seat_1": [0, 0.45, 0],
+    "seat_2": [0, 0.45, 0]
+  },
+  "thirdPersonCameraOffset": {
+    "seat_1": [0, 0.35, 0.5],
+    "seat_1_reverse": [0, 0.35, 0.5],
+    "seat_2": [0, 0.35, 0.5],
+    "seat_2_reverse": [0, 0.35, 0.5]
+  },
+  "thirdPersonCameraOffsetNoViewBobbing": {
+    "seat_1": [0, 0.35, 0.5],
+    "seat_1_reverse": [0, 0.35, 0.5],
+    "seat_2": [0, 0.35, 0.5],
+    "seat_2_reverse": [0, 0.35, 0.5]
+  },
+  "animations": {
+    "cry": "q.bedrock_stateful('hydreigon_mega_x', 'cry')"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_x', 'battle_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('hydreigon_mega_x', 'blink')"
+      ]
+    },
+    "standing": {
+      "poseTypes": ["STAND", "NONE", "PROFILE", "PORTRAIT"],
+      "isBattle": false,
+      "animations": [
+        "q.look('head_ai')",
+        "q.bedrock('hydreigon_mega_x', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('hydreigon_mega_x', 'blink')"
+      ]
+    },
+    "running": {
+      "poseTypes": ["WALK"],
+      "isBattle": false,
+      "condition": "!q.in_air && q.is_sprinting",
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('hydreigon_mega_x', 'ground_run')"
+      ],
+      "quirks": ["q.bedrock_quirk('hydreigon_mega_x', 'blink')"]
+    },
+    "walking": {
+      "poseTypes": ["WALK", "SWIM"],
+      "condition": "!q.in_air && !q.is_sprinting",
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('hydreigon_mega_x', 'ground_walk')"
+      ],
+      "quirks": ["q.bedrock_quirk('hydreigon_mega_x', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "namedAnimations": {
+        "cry": "q.bedrock_stateful('dummy', 'cry')"
+      },
+      "animations": [
+        "q.bedrock('hydreigon_mega_x', 'sleep')"
+      ]
+    }
+  }
+}
